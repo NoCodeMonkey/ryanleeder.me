@@ -4,7 +4,7 @@
 [![GNU3 License](https://img.shields.io/github/license/sjtu-ai-go/libgoboard.svg)](https://github.com/sjtu-ai-go/libgoboard/blob/master/LICENSE)
 
 ## Description
-Personal Portfolio Web Application built with [Bootstrap](href:getbootstrap.com), [Node.js](nodejs.org), [Express](https://expressjs.com) and [Marko](href:markojs.io)
+Personal Portfolio Web Application built with [Bootstrap](https://getbootstrap.com), [Node.js](https://nodejs.org), [Express](https://expressjs.com) and [Marko](https://markojs.com)
 
 ## Get Started
 
@@ -25,6 +25,6 @@ This project is licensed under the GNU3 License - see the [LICENSE](LICENSE) fil
 
 ## Acknowledgments
 
-* **Bootstrap Navbar Menu without JavaScript - [A PEN BY Dimmi Suicide](href:codepen.io/Dimmi/pen/dpEKpP)**
-* **Implementing A Pure CSS Collapsible - [Alligator.io](href:alligator.io/css/collapsible/)**
-* **Super Simple Bootstrap Responsive Timeline - [A PEN BY mmil](href:codepen.io/mmil/pen/lxvhu)** 
+* **Bootstrap Navbar Menu without JavaScript - [A PEN BY Dimmi Suicide](https://codepen.io/Dimmi/pen/dpEKpP)**
+* **Implementing A Pure CSS Collapsible - [Alligator.io](https://alligator.io/css/collapsible/)**
+* **Super Simple Bootstrap Responsive Timeline - [A PEN BY mmil](https://codepen.io/mmil/pen/lxvhu)** 
