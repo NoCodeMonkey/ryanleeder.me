@@ -23,9 +23,7 @@
     "css:compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss public/css/style.css",
     "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output public/css/style.min.css public/css/style.css",
     "css": "npm run css:lint && npm run css:compile && npm run css:prefix && npm run css:minify",
-    "css:watch": "watch 'npm run css' scss",
-    "requirements-check": "node ./node_modules/babel-cli/bin/babel-node.js build/check-version.js",
-    "postinstall": "npm run requirements-check"
+    "css:watch": "watch 'npm run css' scss"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -56,8 +54,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
     "clean-css-cli": "^4.1.11",
     "node-sass": "^4.9.0",
     "postcss-cli": "^5.0.1",
