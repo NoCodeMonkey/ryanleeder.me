@@ -43,9 +43,9 @@
     "nconf": "^0.6.9",
     "nodemailer": "^4.6.7",
     "nodemailer-sendgrid": "^1.0.3",
-    "recaptcha": "^1.2.1",
     "request-ip": "^2.1.1",
-    "serve-static": "^1.13.2"
+    "serve-static": "^1.13.2",
+    "simple-recaptcha-new": "^1.1.1"
   },
   "noAnalyze": true,
   "engines": {

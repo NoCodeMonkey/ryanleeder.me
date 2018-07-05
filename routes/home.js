@@ -2,6 +2,7 @@ const nodemailer = require('nodemailer'),
       nodemailerSendgrid = require('nodemailer-sendgrid'),
       moment = require('moment-timezone'),
       requestIp = require('request-ip'),
+      simpleRecaptcha = require('simple-recaptcha-new'),
       fs = require('fs'),
       _ = require('lodash'),
       { body, validationResult } = require('express-validator/check'),
@@ -66,27 +67,34 @@ module.exports = function (app, nconf) {
         return res.json(422, { errors: errors.array() });
       }
       else {
-        var locals = {
-          'url': `${req.protocol}://${req.get('host')}${req.originalUrl}`,
-          'ip': requestIp.getClientIp(req),
-          'subject': req.body.subject,
-          'name': req.body.name,
-          'email': req.body.email,
-          'message': req.body.message,
-          'datetime': moment.tz(nconf.get('email:moment_timezone')).format('dddd, MMMM Do YYYY, h:mm A'),
-          'quote': randomQuote()
-        };
-        transport.sendMail({
-          to: nconf.get('email:to_address'),
-          from: req.body.email,
-          subject: `Contact Request: ${req.body.subject}`,
-          text: loadEmailTemplate('email.txt', locals),
-          html: loadEmailTemplate('email.html', locals)
-        }, function(err, info) {
+        var ip = requestIp.getClientIp(req);
+        simpleRecaptcha(nconf.get('recaptcha:secret'), ip, req.body.token, function(err) {
           if (err) {
             res.sendStatus(500);
           } else {
-            res.json(200, 'API OK');
+            var locals = {
+              'url': `${req.protocol}://${req.get('host')}${req.originalUrl}`,
+              'ip': ip,
+              'subject': req.body.subject,
+              'name': req.body.name,
+              'email': req.body.email,
+              'message': req.body.message,
+              'datetime': moment.tz(nconf.get('email:moment_timezone')).format('dddd, MMMM Do YYYY, h:mm A'),
+              'quote': randomQuote()
+            };
+            transport.sendMail({
+              to: nconf.get('email:to_address'),
+              from: req.body.email,
+              subject: `Contact Request: ${req.body.subject}`,
+              text: loadEmailTemplate('email.txt', locals),
+              html: loadEmailTemplate('email.html', locals)
+            }, function(err, info) {
+              if (err) {
+                res.sendStatus(500);
+              } else {
+                res.json(200, 'API OK');
+              }
+            });
           }
         });
       }

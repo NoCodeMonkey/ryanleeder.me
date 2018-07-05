@@ -8,8 +8,7 @@ const express = require('express'),
     methodOverride = require('method-override'),
     serveStatic = require('serve-static'),
     helmet = require('helmet'),
-    morgan = require('morgan'),
-    Recaptcha = require('recaptcha').Recaptcha;
+    morgan = require('morgan');
 
 require('marko/node-require'); // Allow Node.js to require and load `.marko` files
 
