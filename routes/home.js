@@ -8,8 +8,16 @@ const nodemailer = require('nodemailer'),
       { body, validationResult } = require('express-validator/check'),
       { sanitizeBody } = require('express-validator/filter');
 
-function loadEmailTemplate(template, locals = {}) {
-  return _.template(fs.readFileSync(`./views/email/${template}`))(locals)
+var cache = {};
+
+function loadTemplate(template) {
+  if (!(template in cache))
+      cache[template] = fs.readFileSync(`./views/email/${template}`);
+  return cache[template];
+}
+
+function parseTemplate(template, locals = {}) {
+  return _.template(loadTemplate(template))(locals)
 }
 
 function randomQuote() {
@@ -86,8 +94,8 @@ module.exports = function (app, nconf) {
               to: nconf.get('email:to_address'),
               from: req.body.email,
               subject: `Contact Request: ${req.body.subject}`,
-              text: loadEmailTemplate('email.txt', locals),
-              html: loadEmailTemplate('email.html', locals)
+              text: parseTemplate('email.txt', locals),
+              html: parseTemplate('email.html', locals)
             }, function(err, info) {
               if (err) {
                 res.sendStatus(500);
