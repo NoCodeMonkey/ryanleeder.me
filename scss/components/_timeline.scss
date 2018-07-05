@@ -346,6 +346,8 @@
 }
 
 .btn-orange.btn-arrow {
+  color: $white;
+
   @include when-less-than(md) {
     left: -1px;
     margin-left: .5rem;
