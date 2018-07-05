@@ -28,6 +28,7 @@
     "postinstall": "npm run requirements-check"
   },
   "dependencies": {
+    "babel-node": "^6.5.3",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
     "compression": "^1.7.2",
@@ -51,7 +52,8 @@
   },
   "noAnalyze": true,
   "engines": {
-    "node": ">=6.x.x"
+    "node": ">=6.x.x",
+    "npm": ">=6.x.x"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",
