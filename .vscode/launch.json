@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+      {
+          "name": "Launch & Debug",
+          "configurations": [ "Launch Program", "Launch localhost" ]
+      }
+  ],
+  "configurations": [
+      {
+          "type": "node",
+          "request": "launch",
+          "name": "Launch Program",
+          "program": "${workspaceRoot}\\server.js",
+          "cwd": "${workspaceRoot}"
+      },
+      {
+          "name": "Launch localhost",
+          "type": "chrome",
+          "request": "launch",
+          "url": "http://localhost:8080/",
+          "webRoot": "${workspaceRoot}"
+      }
+  ]
+}

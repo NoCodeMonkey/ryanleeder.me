@@ -1,0 +1,124 @@
+.js .index-page {
+  .navbar {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.intro-wrapper {
+  padding: 20px 0;
+  margin: 0;
+  background-image: url("../img/jumbotron-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: $white;
+
+    .profile-name {
+      flex: 2 0 0;
+      margin-right: 5px;
+    }
+
+    .profile-picture {
+      flex: 1 0 0;
+    }
+  }
+
+  @include when-less-than(sm) {
+    padding: 0;
+  }
+}
+
+.tag-cloud span {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  background-color: $white;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  transition: all .15s linear 0s;
+}
+
+.contact-form {
+  .bigicon {
+    font-size: 1.25rem;
+    color: #808080;
+  }
+  .input-icon {
+    position: absolute;
+    top: calc(50% - .5em);
+    left: 1rem;
+  }
+  input,
+  textarea {
+    padding-left: 48px;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+}
+
+.contact-row {
+  @include when-less-than(md) {
+    .col-md-6:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.map-container {
+  position: relative;
+}
+.map {
+  position: relative;
+  height: 0;
+  padding-top: 50px;
+  padding-bottom: 22.25%;
+  overflow: hidden;
+}
+
+/* stylelint-disable declaration-no-important  */
+.g-recaptcha > .grecaptcha-badge {
+  width: 0 !important;
+}
+
+.modal-open .contact-modal {
+  display: flex !important;
+  align-items: center !important;
+  .modal-dialog {
+    flex-grow: 1;
+  }
+  .close {
+    float: right;
+    font-size: ($font-size-base * 1.5);
+    font-weight: 500;
+    line-height: 1;
+    color: $orange;
+    opacity: .2;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .5;
+    }
+
+    button & {
+      padding: 0;
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+/* stylelint-enable */

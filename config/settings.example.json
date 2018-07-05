@@ -1,0 +1,19 @@
+{
+  "recaptcha": {
+    "site_key": "{ your recaptcha public key }",
+    "secret": "{ your recaptcha private key }"
+  },
+  "maps": {
+    "api_key": "{ your google maps api key }"
+  },
+  "analytics": {
+    "tracking_id": "{ your google maps api key }"
+  },
+  "sendgrid": {
+    "api_key": "{ your sendgrid api key }"
+  },
+  "email": {
+    "to_address": "{ your email address }",
+    "moment_timezone" : "{ your moment timezone name }"
+  }
+}

@@ -1,0 +1,12 @@
+<include('../layout.marko', {title: "Page Not Found", class: "not-found"})>
+	<@content>
+    <div class="container mt-2">
+      <h2>Opps!</h2>
+      <h5>Page Not Found (404)</h5>
+      <p>The page you're trying to access doesn't appear to exist. Please check the address of the page you were looking for, or go back to the <a href="/">home</a> page.</p>
+      <p class="text-center">
+        <a class="btn btn btn-outline-primary" href="/" role="button">Home</a>
+      </p>
+    </div>
+	</@content>
+</include>

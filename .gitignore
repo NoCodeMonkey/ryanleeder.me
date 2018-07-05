@@ -1,0 +1,7 @@
+node_modules/
+server.js.logs
+server.js.debug
+npm-debug.log
+config/settings.json
+iisnode
+Thumbs.db

@@ -1,0 +1,29 @@
+@mixin transform($transforms) {
+  transform: $transforms;
+}
+
+@mixin keyframes($animationName) {
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration;
+  animation-direction: $direction;
+}
+
+@include keyframes(pre-loader) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin pre-loader {
+  @include animate(pre-loader, 1s, infinite, alternate);
+}

@@ -1,0 +1,59 @@
+*:focus { outline: none; }
+
+[class^="icon-"]::before {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  padding-top: $navbar-height;  // Move down content because we have a fixed navbar
+}
+
+section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hline-face {
+  height: 1px;
+  margin: 0 0 .5rem 0;
+  background-image: linear-gradient(90deg, $orange, transparent);
+  border: 0;
+}
+
+.browser-upgrade {
+  width: 650px;
+  padding: 30px;
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: center;
+  border: 3px solid $danger;
+}
+
+.back-to-top {
+  position: fixed;
+  right: .5rem;
+  bottom: .5rem;
+
+  a {
+    display: block;
+    color: $white;
+    text-decoration: none;
+    background-color: $orange;
+    border-radius: .3rem;
+
+    &:hover {
+      color: $white;
+      background-color: $primary;
+    }
+
+    i {
+      margin: .5rem;
+      font-size: 2rem;
+    }
+  }
+
+  &.js {
+    display: none;
+  }
+}

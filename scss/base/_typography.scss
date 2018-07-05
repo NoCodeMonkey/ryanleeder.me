@@ -1,0 +1,24 @@
+.pre-loader h2 {
+  font-size: 3rem;
+}
+.pre-loader-text {
+  max-width: 180px;
+}
+.txt-animation-lg {
+  font-size: 6vw;
+
+  @include when-less-than(sm) {
+    font-size: 8vw;
+  }
+}
+.txt-animation-sm {
+  font-size: 3vw;
+
+  .no-js &::after {
+    content: "I write code.";
+  }
+
+  @include when-less-than(sm) {
+    font-size: 4vw;
+  }
+}

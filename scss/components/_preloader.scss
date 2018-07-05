@@ -1,0 +1,37 @@
+.pre-loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+
+  span {
+    display: inline-block;
+    width: .6em;
+    height: .6em;
+    margin: .5rem;
+    vertical-align: middle;
+    background: #007db6;
+    border-radius: .6em;
+
+    .csstransforms & {
+      @include pre-loader;
+    }
+  }
+}
+
+$colors: #008fb2, #009b9e, #00a77d, #00b247, #5ab027, #a0b61e;
+
+@for $i from 1 through length($colors) {
+  .pre-loader span:nth-of-type(#{$i + 1}) {
+    background: nth($colors, $i);
+
+    .csstransforms & {
+      animation-delay: .2s * $i;
+    }
+  }
+}

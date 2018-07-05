@@ -1,0 +1,15 @@
+Hi,
+
+You have received an contact request from ${name} at ${datetime}. Details are as follows.
+
+Request URL: ${url}
+IP Address: ${ip}
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+Message: ${message}
+
+Thanks,
+Ctrl Alt Elite Team
+
+${quote}

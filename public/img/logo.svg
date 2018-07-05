@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 135.46666 135.46667"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="ryan-logo.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="655.37715"
+     inkscape:cy="189.32406"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="BG"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-161.53332)"
+     sodipodi:insensitive="true">
+    <rect
+       style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90980392"
+       id="rect849"
+       width="0.041341145"
+       height="0.10335286"
+       x="115.48649"
+       y="178.17314" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="110.43047"
+       y="187.39635"
+       id="text857"><tspan
+         sodipodi:role="line"
+         id="tspan855"
+         x="110.43047"
+         y="187.39635"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444447px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';fill:#ffffff;stroke-width:0.26458332">&lt;Ryan Leeder /&gt;</tspan></text>
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.79374999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect861"
+       width="135.46666"
+       height="135.46666"
+       x="0"
+       y="161.53333" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Logo"
+     style="display:inline">
+    <path
+       style="fill:#ffffff;stroke-width:1"
+       d="M 66.716915,72.209286 H 48.858595 V 43.634877 l -17.857825,0.0019 v 45.239797 l 35.715645,4.5e-4 z m 36.866415,-13.87783 c -0.85245,-2.171466 -0.26952,-3.056585 3.77617,-5.733897 12.73133,-8.425204 10.57732,-29.622729 -3.72663,-36.673347 -5.132606,-2.529905 -6.951435,-2.661294 -41.542765,-3.008303 H 19.59687 l 11.361829,16.414575 45.931246,0.009 c 15.29282,0 15.29282,14.295844 0,14.295844 h -10.17303 v 16.777963 h 12.64993 l 5.28236,14.218946 5.28241,14.245227 h 25.938175 z"
+       id="path826"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccsccccccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.33312988px;line-height:1.25;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="7.0592189"
+       y="116.01547"
+       id="text882"><tspan
+         sodipodi:role="line"
+         id="tspan880"
+         x="7.0592189"
+         y="116.01547"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.33312988px;font-family:'Agency FB';-inkscape-font-specification:'Agency FB';fill:#ffffff;stroke-width:0.26458332">&lt;Ryan Leeder /&gt;</tspan></text>
+  </g>
+</svg>

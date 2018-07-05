@@ -1,0 +1,12 @@
+/* stylelint-disable declaration-no-important  */
+.no-js {
+  .hide-js-element {
+    display: none !important;
+  }
+}
+.js {
+  .hide-js-fallback-element {
+    display: none !important;
+  }
+}
+/* stylelint-enable */

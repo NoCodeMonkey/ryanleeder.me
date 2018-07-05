@@ -1,0 +1,22 @@
+@mixin hover-state {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+.footer-copyright {
+  color: $white;
+  background-color: $dark;
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    @include hover-state {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
