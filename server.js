@@ -15,7 +15,7 @@ require('marko/node-require'); // Allow Node.js to require and load `.marko` fil
 
 const nconf = require('./config/index').initialize();
 
-var port = nconf.get('port') || 8080;
+var port = nconf.get('PORT');
 var app = express();
 app.use(helmet());
 app.use(serveStatic(path.join(__dirname, 'public')));
