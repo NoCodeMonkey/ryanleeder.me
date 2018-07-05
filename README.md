@@ -5,7 +5,7 @@
 [![GNU3 License](https://img.shields.io/github/license/sjtu-ai-go/libgoboard.svg)](https://github.com/sjtu-ai-go/libgoboard/blob/master/LICENSE)
 
 ## Description
-Personal Portfolio Web Application built with [Bootstrap](https://getbootstrap.com), [Node.js](https://nodejs.org), [Express](https://expressjs.com) and [Marko](https://markojs.com)
+Personal Portfolio Web Application built with [Bootstrap](https://getbootstrap.com), [Node.js](https://nodejs.org), [Express](https://expressjs.com) and [Marko](https://markojs.com).
 
 ## Get Started
 
@@ -22,7 +22,7 @@ Personal Portfolio Web Application built with [Bootstrap](https://getbootstrap.c
 
 ## License
 
-This project is licensed under the GNU3 License - see the [LICENSE](LICENSE) file for details
+This project is licensed under the GNU3 License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
