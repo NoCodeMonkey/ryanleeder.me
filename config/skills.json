@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Front-End Web Development Skills",
+    "abbreviation": "Front-End",
+    "icon": "fa-code",
+    "skills": [
+      {
+        "name": "HTML / HTML5",
+        "competency": 95,
+        "description": ""
+      },
+      {
+        "name": "CSS / CCS3",
+        "competency": 90,
+        "description": ""
+      },
+      {
+        "name": "JavaScript / jQuery",
+        "competency": 95,
+        "description": ""
+      },
+      {
+        "name": "CSS Frameworks",
+        "competency": 90,
+        "description": "Bootstrap, foundation etc."
+      },
+      {
+        "name": "Javascript Frameworks",
+        "competency": 65,
+        "description": ""
+      },
+      {
+        "name": "Responsive Web Design",
+        "competency": 90,
+        "description": ""
+      },
+      {
+        "name": "Mobile Web Development",
+        "competency": 85,
+        "description": ""
+      },
+      {
+        "name": "Progressive Enhancement / Graceful Degradation",
+        "competency": 82,
+        "description": ""
+      },
+      {
+        "name": "Cross-Browser / Cross-Platform Development",
+        "competency": 92,
+        "description": ""
+      },
+      {
+        "name": "Feature Detection",
+        "competency": 78,
+        "description": "Feature Queries (@supports), Modernizr etc."
+      },
+      {
+        "name": "UX / Usability",
+        "competency": 84,
+        "description": ""
+      },
+      {
+        "name": "Website Speed / Performance",
+        "competency": 80,
+        "description": ""
+      },
+      {
+        "name": "Developer/Debugging Tools",
+        "competency": 94,
+        "description": "Chrome Dev Tools, Fiddler, Firebug etc."
+      },
+      {
+        "name": "CSS Pre-Processors",
+        "competency": 82,
+        "description": "Sass, Less, Stylus etc."
+      },
+      {
+        "name": "CSS Post-Processors",
+        "competency": 73,
+        "description": "Autoprefixer, PostCSS etc."
+      },
+      {
+        "name": "JavaScript Transpilers",
+        "competency": 66,
+        "description": "TypeScript, CoffeeScript, BabelJS etc."
+      },
+      {
+        "name": "JavaScript Versions",
+        "competency": 64,
+        "description": "ECMAScript 6, ES.Next etc."
+      },
+      {
+        "name": "Module/Dependency Loaders",
+        "competency": 68,
+        "description": "Webpack, Browserify, RequireJS etc."
+      },
+      {
+        "name": "JavaScript Test Frameworks",
+        "competency": 72,
+        "description": "Mocha, Jasmine, QUnit etc."
+      },
+      {
+        "name": "Linters & Code Quality Tools",
+        "competency": 75,
+        "description": "ESLint, JSLint, JSHint, Stylelint etc."
+      },
+      {
+        "name": "SVG",
+        "competency": 65,
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "Back-End Development Skills",
+    "abbreviation": "Back-End",
+    "icon": "fa-cogs",
+    "skills": []
+  },
+  {
+    "name": "General Skills",
+    "abbreviation": "General",
+    "icon": "fa-check-square-o",
+    "skills": [
+      {
+        "name": "Business Process Analysis & Modelling",
+        "competency": 89,
+        "description": "Interpret and understand the requirements of the company's customer base to develop appropriate business requirements and technical specifications."
+      },
+      {
+        "name": "Time Management",
+        "competency": 85,
+        "description": "Able to multitask, prioritize, and manage time efficiently."
+      },
+      {
+        "name": "Delivering To Defined Timelines",
+        "competency": 90,
+        "description": "Working with developers and testers and work within project timelines and budgets to meet business requirements."
+      },
+      {
+        "name": "Communications & Negotiation Skills",
+        "competency": 80,
+        "description": "Communicate clearly to both technical and business people at all levels."
+      },
+      {
+        "name": "Work Estimation & Planning",
+        "competency": 78,
+        "description": "Estimate the resources, budget, time and risks and then formulate a project plan and schedule."
+      },
+      {
+        "name": "Company Standards & Guidelines",
+        "competency": 95,
+        "description": "To develop software according to published standards and guidelines, including code standards and user interface design guidelines."
+      },
+      {
+        "name": "Understanding Of Change Management",
+        "competency": 73,
+        "description": "Ensure that changes are recorded and then evaluated, authorized, prioritized, planned, tested, implemented, documented and reviewed by participating and provide input on go/no-go decisions for product releases."
+      },
+      {
+        "name": "Technical Writing",
+        "competency": 80,
+        "description": "Write documentation for projects, including requirements, the architecture/design document, code documentation, test plans and test cases, and end-user documentation."
+      },
+      {
+        "name": "Testing, Fault Location & Rootcause Analysis",
+        "competency": 90,
+        "description": "Supporting and resolving product issues alongside test and quality assurance teams."
+      },
+      {
+        "name": "Maintaining & Improving Existing Applications",
+        "competency": 95,
+        "description": "Maintain an excellent level of understanding and knowledge of company's products, processes and services to research, test, and coordinates the conversion and/or integration of new features based on client requirements."
+      },
+      {
+        "name": "Code & Architecture Reviews",
+        "competency": 86,
+        "description": "Reviews software architectural decisions with respect to their impact on performance as well as other quality attributes, such as reliability or modifiability and examine source code to find mistakes, thereby improving overall code quality."
+      },
+      {
+        "name": "Mentor & Coaching",
+        "competency": 70,
+        "description": "Provide technical guidance and educate team members and coworkers on policies, practices and process to collaboratively & efficiently."
+      },
+      {
+        "name": "Software Development Trends",
+        "competency": 75,
+        "description": "Maintaining a strong understanding of software development trends and technology."
+      },
+      {
+        "name": "General Applications",
+        "competency": 95,
+        "description": "Word, Excel, Project, Visio, PowerPoint etc."
+      }
+    ]
+  }
+]

@@ -22,3 +22,35 @@
     font-size: 4vw;
   }
 }
+
+.abbreviate {
+  &.abbreviate-sm {
+    @include when-less-than(sm) {
+      &[data-abbreviated-text]::after {
+        content: attr(data-abbreviated-text);
+      }
+
+      > span { display: none; }
+    }
+  }
+
+  &.abbreviate-md {
+    @include when-less-than(md) {
+      &[data-abbreviated-text]::after {
+        content: attr(data-abbreviated-text);
+      }
+
+      > span { display: none; }
+    }
+  }
+
+  &.abbreviate-lg {
+    @include when-less-than(lg) {
+      &[data-abbreviated-text]::after {
+        content: attr(data-abbreviated-text);
+      }
+
+      > span { display: none; }
+    }
+  }
+}

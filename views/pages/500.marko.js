@@ -20,6 +20,11 @@ function render(input, out, __component, component, state) {
   include_tag({
       _target: layout_template,
       _arg: marko_merge({
+          tags: {
+              renderBody: function renderBody(out) {
+                out.w("<meta name=\"robots\" content=\"nofollow, noindex\">");
+              }
+            },
           content: {
               renderBody: function renderBody(out) {
                 out.w("<div class=\"container mt-2\"><h2>Breath deeply. Stay Calm.</h2><h5>Server Error (500)</h5><p>An error has occurred. A team of highly trained monkeys has been dispatched to deal with this situation.</p><p>If you need immediate help please please contact me directly please contact me directly by email at <a href=\"mailto:ryanleeder@gmail.com\">ryanleeder@gmail.com</a> or phone me on <a href=\"tel:+61411017504\">+61 411 017 504</a>. Thank you for your patience.</p><p class=\"text-center\"><a class=\"btn btn btn-outline-primary\" href=\"/\" role=\"button\">Home</a></p></div>");

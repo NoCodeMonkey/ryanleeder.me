@@ -1,0 +1,157 @@
+$padding-base: 1rem;
+$color-link: $primary;
+$border-radius: .25rem;
+
+.tab-content-skills {
+  margin-bottom: $padding-base;
+
+  .tab-state {
+    display: none;
+  }
+
+  .tab-content {
+    width: 100%;
+    padding: $padding-base;
+    background-color: $white;
+    border-top: 1px solid $border;
+    border-right: 1px solid $border;
+    border-bottom: 1px solid $border;
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+
+  .nav-tabs {
+    &-vertical {
+      display: flex;
+      flex-flow: column nowrap;
+      border-bottom: none;
+    }
+
+    &-left {
+      margin: 0;
+      background-color: $border;
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
+      border-left: 1px solid $border;
+      border-radius: $border-radius 0 0 $border-radius;
+
+      .nav-item {
+        margin-top: 0;
+        border: 0;
+        border-radius: 0;
+      }
+
+      .checkbox-label {
+        position: relative;
+        width: 100%;
+        padding: .5rem 1rem;
+        margin-bottom: 0;
+        color: $body-color;
+
+        @include when-wider-than(lg) {
+          .fa {
+            font-size: 1.5rem;
+          }
+
+          .nav-link-title {
+            width: 120px;
+          }
+        }
+      }
+
+      .nav-link {
+        color: $body-color;
+        border: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        &:hover {
+          color: $white;
+          background-color: $orange;
+        }
+
+        @include when-wider-than(lg) {
+          .fa {
+            font-size: 1.5rem;
+          }
+
+          .nav-link-title {
+            width: 120px;
+          }
+        }
+      }
+
+      .nav-link.active {
+        position: relative;
+        color: $white;
+        background-color: $primary;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          margin-top: -.5rem;
+          content: "";
+          border-top: .5rem solid transparent;
+          border-bottom: .5rem solid transparent;
+          border-left: .5rem solid $primary;
+        }
+      }
+    }
+  }
+}
+
+%base-skills {
+  float: left;
+  width: 100%;
+}
+
+.skills {
+  @extend %base-skills;
+
+  .skill {
+    @extend %base-skills;
+    margin-bottom: 1rem;
+
+    .skill-title {
+      @extend %base-skills;
+
+      margin-bottom: .25rem;
+      font-weight: 400;
+    }
+
+    .skill-bar {
+      @extend %base-skills;
+
+      width: 0;
+      background: #f0f0f0;
+      transition: 1s cubic-bezier(1, 0, .5, 1);
+
+      span {
+        position: relative;
+        float: left;
+        width: 0%;
+        height: .25rem;
+        background: $orange;
+        transition: 1s cubic-bezier(1, 0, .5, 1);
+      }
+
+      b {
+        position: absolute;
+        top: -1.5rem;
+        right: 0;
+        font-weight: 400;
+        color: $primary;
+        opacity: 0;
+
+        @include when-less-than(md) {
+          top: .25rem;
+        }
+      }
+    }
+  }
+}
+
+.skills.active .skill .skill-bar {
+  width: 100%;
+}
+

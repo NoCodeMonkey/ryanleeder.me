@@ -264,14 +264,6 @@
       text-decoration: none;
       cursor: pointer;
     }
-
-    @include when-less-than(sm) {
-      .month[data-month-abbr]::after {
-        content: attr(data-month-abbr);
-      }
-
-      .month > span { display: none; }
-    }
   }
 }
 

@@ -10,6 +10,7 @@ var marko_template = module.exports = require("marko/src/html").t(__filename),
     layout_template = marko_loadTemplate(require.resolve("../layout.marko")),
     pre_loader_template = marko_loadTemplate(require.resolve("../components/pre-loader.marko")),
     carousel_template = marko_loadTemplate(require.resolve("../components/carousel.marko")),
+    skills_template = marko_loadTemplate(require.resolve("../components/skills.marko")),
     tag_cloud_template = marko_loadTemplate(require.resolve("../components/tag-cloud.marko")),
     timeline_template = marko_loadTemplate(require.resolve("../components/timeline.marko")),
     contact_template = marko_loadTemplate(require.resolve("../components/contact.marko")),
@@ -50,17 +51,23 @@ function render(input, out, __component, component, state) {
                     _target: carousel_template
                   }, out, __component, "19");
 
-                out.w("<p>If you are looking for an experienced developer who can offer a fresh take on solving your software problems or just want to connect, we should <a href=\"#contact\">talk</a>.</p><p class=\"text-center\"><a class=\"btn btn-outline-primary\" href=\"#contact\" role=\"button\">Get In Touch</a></p></div></section><section class=\"bg-light\"><div id=\"skills\" class=\"container\"><h2>Skills</h2><hr class=\"hline-face\"><h5>Recently I've worked with these...</h5>");
+                out.w("<p>If you are looking for an experienced developer who can offer a fresh take on solving your software problems or just want to connect, we should <a href=\"#contact\">talk</a>.</p><p class=\"text-center\"><a class=\"btn btn-outline-primary\" href=\"#contact\" role=\"button\">Get In Touch</a></p></div></section><section class=\"bg-light\"><div id=\"skills\" class=\"container\"><h2>Skills</h2><hr class=\"hline-face\">");
+
+                include_tag({
+                    _target: skills_template
+                  }, out, __component, "28");
+
+                out.w("<h5>Recently I've worked with these...</h5>");
 
                 include_tag({
                     _target: tag_cloud_template
-                  }, out, __component, "29");
+                  }, out, __component, "30");
 
                 out.w("</div></section><section class=\"bg-white\"><div id=\"experience\" class=\"container\"><h2>Experience</h2><hr class=\"hline-face\"><p>The following is a brief timeline of my professional development experience in reverse chronological order.</p>");
 
                 include_tag({
                     _target: timeline_template
-                  }, out, __component, "35");
+                  }, out, __component, "36");
 
                 out.w("</div></section><section class=\"bg-light\"><div id=\"portfolio\" class=\"container\"><h2>Portfolio</h2><hr class=\"hline-face\"><p>I am currently finalising my Portfolio, please contact me if you require examples of my work. Please check back soon.</p></div></section><section class=\"bg-white\"><div id=\"contact\" class=\"container\"><h2>Contact</h2><hr class=\"hline-face\">");
 
@@ -69,7 +76,7 @@ function render(input, out, __component, component, state) {
                     _arg: {
                         recaptcha_site_key: data.recaptcha_site_key
                       }
-                  }, out, __component, "45");
+                  }, out, __component, "46");
 
                 out.w("</div></section>");
               }
@@ -106,6 +113,7 @@ marko_template.meta = {
       "../layout.marko",
       "../components/pre-loader.marko",
       "../components/carousel.marko",
+      "../components/skills.marko",
       "../components/tag-cloud.marko",
       "../components/timeline.marko",
       "../components/contact.marko",
