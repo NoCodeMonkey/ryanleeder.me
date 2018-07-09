@@ -111,6 +111,7 @@
 
       .front {
         text-align: center;
+        border-radius: .25rem;
         transition: all .5s ease-in-out;
         transform: rotateX(0deg) rotateY(0deg);
         backface-visibility: hidden;
@@ -158,6 +159,7 @@
         width: 100%;
         height: inherit;
         text-align: center;
+        border-radius: .25rem;
         transition: all .5s ease-in-out;
         transform: rotateX(0deg) rotateY(-180deg);
         backface-visibility: hidden;

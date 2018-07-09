@@ -10166,6 +10166,7 @@ blockquote footer::before {
   }
   .navbar-nav .nav-link .front {
     text-align: center;
+    border-radius: .25rem;
     transition: all .5s ease-in-out;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     transform: rotateX(0deg) rotateY(0deg);
@@ -10217,6 +10218,7 @@ blockquote footer::before {
     width: 100%;
     height: inherit;
     text-align: center;
+    border-radius: .25rem;
     transition: all .5s ease-in-out;
     -webkit-transform: rotateX(0deg) rotateY(-180deg);
     transform: rotateX(0deg) rotateY(-180deg);
@@ -10270,11 +10272,24 @@ blockquote footer::before {
 }
 
 .intro-wrapper {
+  position: relative;
   padding: 20px 0;
   margin: 0;
+  background-color: transparent;
+}
+
+.intro-wrapper::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
   background-image: url("../img/jumbotron-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: .35;
 }
 
 .intro-wrapper .intro {
@@ -10286,7 +10301,6 @@ blockquote footer::before {
   justify-content: center;
   width: 100%;
   padding: 15px;
-  background-color: #fff;
 }
 
 .intro-wrapper .intro .profile-name {
@@ -10332,7 +10346,7 @@ blockquote footer::before {
 
 .contact-form .bigicon {
   font-size: 1.25rem;
-  color: #808080;
+  color: #dfdfdf;
 }
 
 .contact-form .input-icon {

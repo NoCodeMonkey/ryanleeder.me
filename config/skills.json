@@ -212,12 +212,12 @@
       {
         "name": "Source Control",
         "competency": 92,
-        "description": "Git, CVS, VSS, SVN etc."
+        "description": "Working with multiple source controls: Git, CVS, VSS, SVN etc."
       },
       {
         "name": "Automation and Task Runners",
         "competency": 84,
-        "description": "Grunt, Gulp etc."
+        "description": "Workflow management tools: Grunt, Gulp, Webpack etc."
       },
       {
         "name": "Package Managers",
