@@ -133,6 +133,11 @@
         "description": "Working with developers and testers and work within project timelines and budgets to meet business requirements."
       },
       {
+        "name": "Project Management Frameworks",
+        "competency": 84,
+        "description": "Agile to Scrum to Waterfall to Kanban etc."
+      },
+      {
         "name": "Work Estimation & Planning",
         "competency": 78,
         "description": "Estimate the resources, budget, time and risks and then formulate a project plan and schedule."
@@ -176,6 +181,11 @@
         "name": "Software Development Trends",
         "competency": 75,
         "description": "Maintaining a strong understanding of software development trends and technology."
+      },
+      {
+        "name": "Continuous Integration and Deployment",
+        "competency": 70,
+        "description": "Jenkins, Bitbucket, Maven, JIRA etc."
       }
     ]
   },
@@ -196,13 +206,43 @@
       },
       {
         "name": "Innovation",
-        "competency": 92,
+        "competency": 96,
         "description": "The ability to come up with new ideas and techniques."
+      },
+      {
+        "name": "Source Control",
+        "competency": 92,
+        "description": "Git, CVS, VSS, SVN etc."
+      },
+      {
+        "name": "Automation and Task Runners",
+        "competency": 84,
+        "description": "Grunt, Gulp etc."
+      },
+      {
+        "name": "Package Managers",
+        "competency": 90,
+        "description": "npm, Bower etc."
+      },
+      {
+        "name": "Ecommerce Software",
+        "competency": 95,
+        "description": "Shopify, nopCommerce etc"
+      },
+      {
+        "name": "Image Editing Tools",
+        "competency": 80,
+        "description": "Photoshop, Paint.NET etc"
       },
       {
         "name": "General Applications",
         "competency": 95,
         "description": "Word, Excel, Project, Visio, PowerPoint etc."
+      },
+      {
+        "name": "SEO",
+        "competency": 78,
+        "description": "Search engine optimization."
       }
     ]
   }

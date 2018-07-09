@@ -10,8 +10,8 @@ var marko_template = module.exports = require("marko/src/html").t(__filename),
     marko_forEach = marko_helpers.f,
     marko_escapeXml = marko_helpers.x,
     marko_escapeStyle = marko_helpers.xc,
-    marko_forEachWithStatusVar = require("marko/src/runtime/helper-forEachWithStatusVar"),
-    marko_escapeXmlAttr = marko_helpers.xa;
+    marko_escapeXmlAttr = marko_helpers.xa,
+    marko_forEachWithStatusVar = require("marko/src/runtime/helper-forEachWithStatusVar");
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -45,9 +45,11 @@ function render(input, out, __component, component, state) {
   });
 
   if (categoriesWithId && categoriesWithId.length) {
-    out.w("<p>List of categorised skills used throughout my development career.<br><br> The categories are a bit rudimentary, but click on a category link e.g. \"" +
+    out.w("<p>List of categorised skills used throughout my development career. Click on a category link e.g. \"<span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
+      marko_escapeXmlAttr(categoriesWithId[0].abbreviation) +
+      "\"><span>" +
       marko_escapeXml(categoriesWithId[0].name) +
-      "\" to see the relevant subset.</p>");
+      "</span></span>\" to see the relevant subset.</p>");
   }
 
   if (categoriesWithId && categoriesWithId.length) {
