@@ -171,6 +171,14 @@
         /* stylelint-enable */
       }
     }
+
+    @include when-less-than(md) {
+      .front {
+        float: left;
+      }
+      .back {
+        margin-left: 1.5em;
+      }
+    }
   }
 }
-

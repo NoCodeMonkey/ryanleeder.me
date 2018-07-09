@@ -10233,6 +10233,15 @@ blockquote footer::before {
   }
 }
 
+@media screen and (max-width: 766.8px) {
+  .navbar-nav .nav-link .front {
+    float: left;
+  }
+  .navbar-nav .nav-link .back {
+    margin-left: 1.5em;
+  }
+}
+
 .footer-copyright {
   color: #fff;
   background-color: #000;

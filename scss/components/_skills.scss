@@ -164,9 +164,10 @@ $border-radius: .25rem;
       }
     }
   }
-}
 
-.skills-matrix.active .skill .skill-bar {
-  width: 100%;
+  &.active {
+    .skill .skill-bar {
+      width: 100%;
+    }
+  }
 }
-
