@@ -2,7 +2,7 @@
   {
     "name": "Front-End Web Development Skills",
     "abbreviation": "Front-End",
-    "icon": "fa-code",
+    "icon": "fas fa-code",
     "skills": [
       {
         "name": "HTML / HTML5",
@@ -107,20 +107,20 @@
       {
         "name": "SVG",
         "competency": 65,
-        "description": ""
+        "description": "Scalable vector graphic design and implementation."
       }
     ]
   },
   {
     "name": "Back-End Development Skills",
     "abbreviation": "Back-End",
-    "icon": "fa-cogs",
+    "icon": "fas fa-cogs",
     "skills": []
   },
   {
-    "name": "General Skills",
-    "abbreviation": "General",
-    "icon": "fa-check-square-o",
+    "name": "Business Skills",
+    "abbreviation": "Business",
+    "icon": "fas fa-user-tie",
     "skills": [
       {
         "name": "Business Process Analysis & Modelling",
@@ -128,19 +128,9 @@
         "description": "Interpret and understand the requirements of the company's customer base to develop appropriate business requirements and technical specifications."
       },
       {
-        "name": "Time Management",
-        "competency": 85,
-        "description": "Able to multitask, prioritize, and manage time efficiently."
-      },
-      {
         "name": "Delivering To Defined Timelines",
         "competency": 90,
         "description": "Working with developers and testers and work within project timelines and budgets to meet business requirements."
-      },
-      {
-        "name": "Communications & Negotiation Skills",
-        "competency": 80,
-        "description": "Communicate clearly to both technical and business people at all levels."
       },
       {
         "name": "Work Estimation & Planning",
@@ -154,7 +144,7 @@
       },
       {
         "name": "Understanding Of Change Management",
-        "competency": 73,
+        "competency": 78,
         "description": "Ensure that changes are recorded and then evaluated, authorized, prioritized, planned, tested, implemented, documented and reviewed by participating and provide input on go/no-go decisions for product releases."
       },
       {
@@ -179,13 +169,35 @@
       },
       {
         "name": "Mentor & Coaching",
-        "competency": 70,
+        "competency": 78,
         "description": "Provide technical guidance and educate team members and coworkers on policies, practices and process to collaboratively & efficiently."
       },
       {
         "name": "Software Development Trends",
         "competency": 75,
         "description": "Maintaining a strong understanding of software development trends and technology."
+      }
+    ]
+  },
+  {
+    "name": "General Skills",
+    "abbreviation": "General",
+    "icon": "fas fa-user-check",
+    "skills": [
+      {
+        "name": "Time Management",
+        "competency": 89,
+        "description": "Able to multitask, prioritize, and manage time efficiently."
+      },
+      {
+        "name": "Communications & Negotiation Skills",
+        "competency": 85,
+        "description": "Communicate clearly to both technical and business people at all levels."
+      },
+      {
+        "name": "Innovation",
+        "competency": 92,
+        "description": "The ability to come up with new ideas and techniques."
       },
       {
         "name": "General Applications",

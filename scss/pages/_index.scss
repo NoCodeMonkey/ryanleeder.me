@@ -26,6 +26,7 @@
 
     .profile-picture {
       flex: 1 0 0;
+      text-align: right;
     }
   }
 
@@ -35,7 +36,10 @@
 }
 
 .skills-tab {
-  .fa {
+  .fas,
+  .fab,
+  .far,
+  .fal {
     @include when-wider-than(lg) {
       font-size: 2rem;
     }

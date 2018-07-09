@@ -38,6 +38,15 @@ $border-radius: .25rem;
         margin-top: 0;
         border: 0;
         border-radius: 0;
+
+        .category-icon {
+          width: 1rem;
+          margin-right: 1rem;
+
+          @include when-wider-than(lg) {
+            margin-right: 1.75rem;
+          }
+        }
       }
 
       .checkbox-label {
@@ -48,8 +57,11 @@ $border-radius: .25rem;
         color: $body-color;
 
         @include when-wider-than(lg) {
-          .fa {
-            font-size: 1.5rem;
+          .fas,
+          .fab,
+          .fal,
+          .far {
+            margin-right: 1.5rem;
           }
 
           .nav-link-title {
@@ -70,7 +82,10 @@ $border-radius: .25rem;
         }
 
         @include when-wider-than(lg) {
-          .fa {
+          .far,
+          .fab,
+          .fal,
+          .fas {
             font-size: 1.5rem;
           }
 
@@ -105,7 +120,7 @@ $border-radius: .25rem;
   width: 100%;
 }
 
-.skills {
+.skills-matrix {
   @extend %base-skills;
 
   .skill {
@@ -151,7 +166,7 @@ $border-radius: .25rem;
   }
 }
 
-.skills.active .skill .skill-bar {
+.skills-matrix.active .skill .skill-bar {
   width: 100%;
 }
 

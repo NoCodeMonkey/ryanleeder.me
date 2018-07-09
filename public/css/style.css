@@ -36,7 +36,7 @@
 }
 
 body {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 section {
@@ -62,12 +62,13 @@ section {
 
 .back-to-top {
   position: fixed;
-  right: .5rem;
-  bottom: .5rem;
+  right: .65rem;
+  bottom: .65rem;
 }
 
 .back-to-top a {
   display: block;
+  font-size: 1.25rem;
   color: #fff;
   text-decoration: none;
   background-color: #ff9000;
@@ -81,7 +82,6 @@ section {
 
 .back-to-top a i {
   margin: .5rem;
-  font-size: 2rem;
 }
 
 .back-to-top.js {
@@ -9487,9 +9487,10 @@ blockquote::before {
   left: -1rem;
   z-index: 100;
   padding: 7px;
-  font-family: FontAwesome;
+  font-family: "Font Awesome\ 5 Free";
   font-size: 1rem;
   font-style: normal;
+  font-weight: 900;
   line-height: 1;
   color: #ff9000;
   content: "\f10d";
@@ -9504,9 +9505,10 @@ blockquote::after {
   bottom: -1rem;
   z-index: 100;
   padding: 7px;
-  font-family: FontAwesome;
+  font-family: "Font Awesome\ 5 Free";
   font-size: 1rem;
   font-style: normal;
+  font-weight: 900;
   line-height: 1;
   color: #ff9000;
   content: "\f10e";
@@ -9667,6 +9669,7 @@ blockquote footer::before {
   right: -.5rem;
   z-index: 100;
   width: 1rem;
+  height: 1rem;
   color: #fff;
   text-align: center;
   background-color: #1bd139;
@@ -9675,6 +9678,7 @@ blockquote footer::before {
 
 .timeline > li > .timeline-badge > a {
   display: block;
+  font-size: .5rem;
   line-height: 1rem;
   color: #fff;
   /* stylelint-disable selector-max-id, selector-max-compound-selectors */
@@ -9683,11 +9687,6 @@ blockquote footer::before {
 
 .timeline > li > .timeline-badge > a:hover ~ .timeline-badge {
   background-color: #006fff;
-}
-
-.timeline > li > .timeline-badge .fa {
-  font-size: .5rem;
-  line-height: 1rem;
 }
 
 @media screen and (max-width: 766.8px) {
@@ -9782,11 +9781,11 @@ blockquote footer::before {
 }
 
 .timeline .timeline-heading [data-toggle="collapse"] .fa::before {
-  content: "\f077";
+  content: "\f151";
 }
 
 .timeline .timeline-heading [data-toggle="collapse"].collapsed .fa::before {
-  content: "\f078";
+  content: "\f150";
 }
 
 .timeline .timeline-body > p {
@@ -9819,7 +9818,7 @@ blockquote footer::before {
 }
 
 .toggle-collapsible:checked ~ .timeline-heading > .toggle-collapsible-header > .fa::before {
-  content: "\f077";
+  content: "\f151";
 }
 
 .toggle-collapsible:checked ~ .timeline-body {
@@ -9827,7 +9826,7 @@ blockquote footer::before {
 }
 
 .toggle-collapsible:not(:checked) ~ .timeline-heading > .toggle-collapsible-header > .fa::before {
-  content: "\f078";
+  content: "\f150";
 }
 
 .no-js .toggle-collapsible:not(:checked) ~ .timeline-body {
@@ -9861,32 +9860,18 @@ blockquote footer::before {
   z-index: 9;
 }
 
-.btn-arrow.btn-arrow-bottom::before {
-  left: 50%;
-  margin-left: -6px;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-
 .btn-arrow.btn-arrow-bottom::after {
   left: 50%;
-  margin-left: -8px;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
+  margin-left: -.5rem;
+  border-right: .5rem solid transparent;
+  border-left: .5rem solid transparent;
 }
 
 .btn-arrow.btn-arrow-top::before {
   left: 50%;
-  margin-left: -6px;
-  border-right: 6px solid transparent;
-  border-left: 6px solid transparent;
-}
-
-.btn-arrow.btn-arrow-top::after {
-  left: 50%;
-  margin-left: -8px;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
+  margin-left: -.5rem;
+  border-right: .5rem solid transparent;
+  border-left: .5rem solid transparent;
 }
 
 .btn-orange.btn-arrow {
@@ -9904,20 +9889,18 @@ blockquote footer::before {
 
 @media screen and (min-width: 768px) {
   .btn-orange.btn-arrow.btn-arrow-top::before {
-    top: -6px;
-    border-bottom: 6px solid #ff9000;
+    top: -.5rem;
+    border-bottom: 0.5rem solid #ff9000;
   }
-  .btn-orange.btn-arrow.btn-arrow-top::after {
-    top: -8px;
-    border-bottom: 8px solid #ff9000;
+  .btn-orange.btn-arrow.btn-arrow-top:hover::before {
+    border-bottom: 0.5rem solid #d97a00;
   }
-  .btn-orange.btn-arrow.btn-arrow-bottom::before {
-    bottom: -6px;
-    border-top: 6px solid #ff9000;
+  .btn-orange.btn-arrow.btn-arrow-bottom::after {
+    bottom: -.5rem;
+    border-top: 0.5rem solid #ff9000;
   }
-  .btn-orange.btn-arrow .btn-arrow-bottom::after {
-    bottom: -8px;
-    border-top: 8px solid #ff9000;
+  .btn-orange.btn-arrow.btn-arrow-bottom:hover::after {
+    border-top: 0.5rem solid #d97a00;
   }
 }
 
@@ -9962,6 +9945,17 @@ blockquote footer::before {
   border-radius: 0;
 }
 
+.tab-content-skills .nav-tabs-left .nav-item .category-icon {
+  width: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .tab-content-skills .nav-tabs-left .nav-item .category-icon {
+    margin-right: 1.75rem;
+  }
+}
+
 .tab-content-skills .nav-tabs-left .checkbox-label {
   position: relative;
   width: 100%;
@@ -9971,8 +9965,11 @@ blockquote footer::before {
 }
 
 @media screen and (min-width: 992px) {
-  .tab-content-skills .nav-tabs-left .checkbox-label .fa {
-    font-size: 1.5rem;
+  .tab-content-skills .nav-tabs-left .checkbox-label .fas,
+  .tab-content-skills .nav-tabs-left .checkbox-label .fab,
+  .tab-content-skills .nav-tabs-left .checkbox-label .fal,
+  .tab-content-skills .nav-tabs-left .checkbox-label .far {
+    margin-right: 1.5rem;
   }
   .tab-content-skills .nav-tabs-left .checkbox-label .nav-link-title {
     width: 120px;
@@ -9992,7 +9989,10 @@ blockquote footer::before {
 }
 
 @media screen and (min-width: 992px) {
-  .tab-content-skills .nav-tabs-left .nav-link .fa {
+  .tab-content-skills .nav-tabs-left .nav-link .far,
+  .tab-content-skills .nav-tabs-left .nav-link .fab,
+  .tab-content-skills .nav-tabs-left .nav-link .fal,
+  .tab-content-skills .nav-tabs-left .nav-link .fas {
     font-size: 1.5rem;
   }
   .tab-content-skills .nav-tabs-left .nav-link .nav-link-title {
@@ -10017,27 +10017,27 @@ blockquote footer::before {
   border-left: 0.5rem solid #006fff;
 }
 
-.skills, .skills .skill, .skills .skill .skill-title, .skills .skill .skill-bar {
+.skills-matrix, .skills-matrix .skill, .skills-matrix .skill .skill-title, .skills-matrix .skill .skill-bar {
   float: left;
   width: 100%;
 }
 
-.skills .skill {
+.skills-matrix .skill {
   margin-bottom: 1rem;
 }
 
-.skills .skill .skill-title {
+.skills-matrix .skill .skill-title {
   margin-bottom: .25rem;
   font-weight: 400;
 }
 
-.skills .skill .skill-bar {
+.skills-matrix .skill .skill-bar {
   width: 0;
   background: #f0f0f0;
   transition: 1s cubic-bezier(1, 0, 0.5, 1);
 }
 
-.skills .skill .skill-bar span {
+.skills-matrix .skill .skill-bar span {
   position: relative;
   float: left;
   width: 0%;
@@ -10046,7 +10046,7 @@ blockquote footer::before {
   transition: 1s cubic-bezier(1, 0, 0.5, 1);
 }
 
-.skills .skill .skill-bar b {
+.skills-matrix .skill .skill-bar b {
   position: absolute;
   top: -1.5rem;
   right: 0;
@@ -10056,17 +10056,17 @@ blockquote footer::before {
 }
 
 @media screen and (max-width: 766.8px) {
-  .skills .skill .skill-bar b {
+  .skills-matrix .skill .skill-bar b {
     top: .25rem;
   }
 }
 
-.skills.active .skill .skill-bar {
+.skills-matrix.active .skill .skill-bar {
   width: 100%;
 }
 
 .navbar {
-  padding: 0 15px;
+  padding: 0;
   font-size: 1rem;
   /* stylelint-disable selector-max-id */
   /* stylelint-enable */
@@ -10077,7 +10077,7 @@ blockquote footer::before {
 }
 
 .navbar .navbar-brand .logo {
-  height: 80px;
+  height: 100px;
 }
 
 .navbar .navbar-toggler:focus {
@@ -10101,50 +10101,136 @@ blockquote footer::before {
 }
 
 @media screen and (min-width: 768px) {
-  .navbar .navbar-nav {
+  .navbar-nav {
     position: relative;
   }
 }
 
-.magic-line {
-  position: absolute;
-  bottom: .25rem;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: #ff9000;
-}
-
-@media screen and (max-width: 766.8px) {
-  .magic-line {
-    display: none;
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-item {
+    position: relative;
+    width: calc(100px - 1rem);
+    height: calc(100px - 1rem);
+    line-height: calc(100px - 1rem);
+  }
+  .navbar-nav .nav-item.home {
+    margin-right: .5rem;
+  }
+  .navbar-nav .nav-item.home .back,
+  .navbar-nav .nav-item.home .front {
+    background-color: #eb4d4b;
+  }
+  .navbar-nav .nav-item.about {
+    margin-right: .5rem;
+  }
+  .navbar-nav .nav-item.about .front,
+  .navbar-nav .nav-item.about .back {
+    background-color: #686de0;
+  }
+  .navbar-nav .nav-item.skills {
+    margin-right: .5rem;
+  }
+  .navbar-nav .nav-item.skills .front,
+  .navbar-nav .nav-item.skills .back {
+    background-color: #6ab04c;
+  }
+  .navbar-nav .nav-item.experience {
+    margin-right: .5rem;
+  }
+  .navbar-nav .nav-item.experience .front,
+  .navbar-nav .nav-item.experience .back {
+    background-color: #e056fd;
+  }
+  .navbar-nav .nav-item.portfolio {
+    margin-right: .5rem;
+  }
+  .navbar-nav .nav-item.portfolio .front,
+  .navbar-nav .nav-item.portfolio .back {
+    background-color: #f0932b;
+  }
+  .navbar-nav .nav-item.contact .front,
+  .navbar-nav .nav-item.contact .back {
+    background-color: #7ed6df;
   }
 }
 
-.no-js .nav-item .nav-link span {
-  position: relative;
-}
-
-.no-js .nav-item .nav-link span::after {
-  position: absolute;
-  bottom: -.25rem;
-  left: 0;
-  width: 100%;
-  content: "";
-  border-bottom: 3px solid transparent;
-  transition: all .3s ease-in-out;
-}
-
-.no-js .nav-item .nav-link:hover:not(.active) {
+.navbar-nav .nav-link {
   color: #fff;
 }
 
-.no-js .nav-item .nav-link:hover:not(.active) span::after {
-  border-bottom: 3px solid #ff9000;
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link {
+    /* stylelint-disable declaration-no-important  */
+    padding: 0 !important;
+    /* stylelint-enable */
+  }
+  .navbar-nav .nav-link .front {
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  .navbar-nav .nav-link .fas,
+  .navbar-nav .nav-link .fab,
+  .navbar-nav .nav-link .far,
+  .navbar-nav .nav-link .fal {
+    font-size: 2rem;
+    vertical-align: middle;
+    opacity: .5;
+  }
 }
 
-.no-js .nav-item.active span::after {
-  border-bottom: 3px solid #ff9000;
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .navbar-nav .nav-link .fas,
+  .navbar-nav .nav-link .fab,
+  .navbar-nav .nav-link .far,
+  .navbar-nav .nav-link .fal {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-link.active .fas,
+  .navbar-nav .nav-link.active .fab,
+  .navbar-nav .nav-link.active .far,
+  .navbar-nav .nav-link.active .fal {
+    opacity: 1;
+  }
+  .navbar-nav .nav-link:hover .front {
+    -webkit-transform: rotateX(0deg) rotateY(180deg);
+    transform: rotateX(0deg) rotateY(180deg);
+  }
+  .navbar-nav .nav-link:hover .back {
+    z-index: 1;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  .navbar-nav .nav-link .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    transition: all .5s ease-in-out;
+    -webkit-transform: rotateX(0deg) rotateY(-180deg);
+    transform: rotateX(0deg) rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    /* stylelint-disable font-family-no-missing-generic-family-keyword */
+    /* stylelint-enable */
+  }
+  .navbar-nav .nav-link .back span {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+  }
 }
 
 .footer-copyright {
@@ -10153,6 +10239,7 @@ blockquote footer::before {
 }
 
 .footer-copyright a {
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
 }
@@ -10160,6 +10247,12 @@ blockquote footer::before {
 .footer-copyright a:hover, .footer-copyright a:active, .footer-copyright a:focus {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 574.8px) {
+  .footer-copyright a {
+    font-size: 1.25rem;
+  }
 }
 
 .js .index-page .navbar {
@@ -10196,6 +10289,7 @@ blockquote footer::before {
 .intro-wrapper .intro .profile-picture {
   -ms-flex: 1 0 0px;
   flex: 1 0 0;
+  text-align: right;
 }
 
 @media screen and (max-width: 574.8px) {
@@ -10205,7 +10299,10 @@ blockquote footer::before {
 }
 
 @media screen and (min-width: 992px) {
-  .skills-tab .fa {
+  .skills-tab .fas,
+  .skills-tab .fab,
+  .skills-tab .far,
+  .skills-tab .fal {
     font-size: 2rem;
   }
 }

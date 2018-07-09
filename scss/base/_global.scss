@@ -32,11 +32,12 @@ section {
 
 .back-to-top {
   position: fixed;
-  right: .5rem;
-  bottom: .5rem;
+  right: .65rem;
+  bottom: .65rem;
 
   a {
     display: block;
+    font-size: 1.25rem;
     color: $white;
     text-decoration: none;
     background-color: $orange;
@@ -49,7 +50,6 @@ section {
 
     i {
       margin: .5rem;
-      font-size: 2rem;
     }
   }
 

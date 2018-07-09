@@ -1,5 +1,5 @@
 .navbar {
-  padding: 0 15px;
+  padding: 0;
   font-size: 1rem;
 
   .navbar-brand {
@@ -33,58 +33,144 @@
     box-shadow: 0 1px 1px rgba($dark, .075) inset, 0 0 8px rgba($orange, .6);
   }
   /* stylelint-enable */
+}
 
-  .navbar-nav {
+.navbar-nav {
+  @include when-wider-than(md) {
+    position: relative;
+  }
+
+  .nav-item {
     @include when-wider-than(md) {
       position: relative;
-    }
-  }
-}
+      width: calc(#{$navbar-height} - 1rem);
+      height: calc(#{$navbar-height} - 1rem);
+      line-height: calc(#{$navbar-height} - 1rem);
 
-.magic-line {
-  position: absolute;
-  bottom: .25rem;
-  left: 0;
-  width: 0;
-  height: 4px;
-  background: $orange;
+      &.home {
+        margin-right: .5rem;
 
-  @include when-less-than(md) {
-    display: none;
-  }
-}
-
-.no-js .nav-item {
-  .nav-link {
-    span {
-      position: relative;
-
-      &::after{
-        position: absolute;
-        bottom: -.25rem;
-        left: 0;
-        width: 100%;
-        content: "";
-        border-bottom: 3px solid transparent;
-        transition: all .3s ease-in-out;
+        .back,
+        .front {
+          background-color: #eb4d4b;
+        }
       }
-    }
-    &:hover:not(.active) {
-      color: $white;
 
-      span {
-        &::after{
-          border-bottom: 3px solid $orange;
+      &.about {
+        margin-right: .5rem;
+
+        .front,
+        .back {
+          background-color: #686de0;
+        }
+      }
+
+      &.skills {
+        margin-right: .5rem;
+
+        .front,
+        .back {
+          background-color: #6ab04c;
+        }
+      }
+
+      &.experience {
+        margin-right: .5rem;
+
+        .front,
+        .back {
+          background-color: #e056fd;
+        }
+      }
+
+      &.portfolio {
+        margin-right: .5rem;
+
+        .front,
+        .back {
+          background-color: #f0932b;
+        }
+      }
+
+      &.contact {
+        .front,
+        .back {
+          background-color: #7ed6df;
         }
       }
     }
   }
 
-  &.active {
-    span {
-      &::after{
-        border-bottom: 3px solid $orange;
+  .nav-link {
+    color: $white;
+
+    @include when-wider-than(md) {
+      /* stylelint-disable declaration-no-important  */
+      padding: 0 !important;
+      /* stylelint-enable */
+
+      .front {
+        text-align: center;
+        transition: all .5s ease-in-out;
+        transform: rotateX(0deg) rotateY(0deg);
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+      }
+
+      .fas,
+      .fab,
+      .far,
+      .fal {
+        font-size: 2rem;
+        vertical-align: middle;
+        opacity: .5;
+
+        @include when-wider-than(xl) {
+          font-size: 2.5rem;
+        }
+      }
+
+      &.active {
+        .fas,
+        .fab,
+        .far,
+        .fal {
+          opacity: 1;
+        }
+      }
+
+      &:hover {
+        .front {
+          transform: rotateX(0deg) rotateY(180deg);
+        }
+
+        .back {
+          z-index: 1;
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+      }
+
+      .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: inherit;
+        text-align: center;
+        transition: all .5s ease-in-out;
+        transform: rotateX(0deg) rotateY(-180deg);
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+
+        /* stylelint-disable font-family-no-missing-generic-family-keyword */
+        span {
+          font-family: "Roboto Condensed";
+          font-weight: 400;
+        }
+        /* stylelint-enable */
       }
     }
   }
 }
+

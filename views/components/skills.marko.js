@@ -45,12 +45,18 @@ function render(input, out, __component, component, state) {
   });
 
   if (categoriesWithId && categoriesWithId.length) {
+    out.w("<p>List of categorised skills used throughout my development career.<br><br> The categories are a bit rudimentary, but click on a category link e.g. \"" +
+      marko_escapeXml(categoriesWithId[0].name) +
+      "\" to see the relevant subset.</p>");
+  }
+
+  if (categoriesWithId && categoriesWithId.length) {
     out.w("<div class=\"d-flex flex-row mt-2 tab-content-skills\">");
 
-    var for__2 = 0;
+    var for__5 = 0;
 
     marko_forEachWithStatusVar(categoriesWithId, function(category, loop) {
-      var keyscope__3 = "[" + ((for__2++) + "]");
+      var keyscope__6 = "[" + ((for__5++) + "]");
 
       if (loop.isFirst()) {
         out.w("<input class=\"tab-state\" type=\"radio\" name=\"tabs\" checked=\"checked\" id=\"" +
@@ -80,9 +86,9 @@ function render(input, out, __component, component, state) {
         marko_escapeXmlAttr(tabClass) +
         " hide-js-element\" data-toggle=\"tab\" role=\"tab\" aria-controls=\"" +
         marko_escapeXmlAttr(category.id) +
-        "\"><div class=\"d-flex flex-row align-items-center\"><div><i class=\"fa " +
+        "\"><div class=\"d-flex flex-row align-items-center\"><div class=\"category-icon\"><i class=\"" +
         marko_escapeXmlAttr(category.icon) +
-        " pr-3\" aria-hidden=\"true\"></i></div><div class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
+        "\" aria-hidden=\"true\"></i></div><div class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
         marko_escapeXmlAttr(category.abbreviation) +
         "\"><span>" +
         marko_escapeXml(category.name) +
@@ -90,9 +96,9 @@ function render(input, out, __component, component, state) {
         marko_escapeXmlAttr(category.id) +
         "_label\" for=\"" +
         marko_escapeXmlAttr(category.id) +
-        "_tab\" class=\"checkbox-label hide-js-fallback-element\"><div class=\"d-flex flex-row align-items-center\"><div><i class=\"fa " +
+        "_tab\" class=\"checkbox-label hide-js-fallback-element\"><div class=\"d-flex flex-row align-items-center\"><div class=\"category-icon\"><i class=\"" +
         marko_escapeXmlAttr(category.icon) +
-        " pr-3\" aria-hidden=\"true\"></i></div><div class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
+        "\" aria-hidden=\"true\"></i></div><div class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
         marko_escapeXmlAttr(category.abbreviation) +
         "\"><span>" +
         marko_escapeXml(category.name) +
@@ -101,10 +107,10 @@ function render(input, out, __component, component, state) {
 
     out.w("</ul><div class=\"tab-content pre-scrollable\">");
 
-    var for__23 = 0;
+    var for__26 = 0;
 
     marko_forEachWithStatusVar(categoriesWithId, function(category, loop) {
-      var keyscope__24 = "[" + ((for__23++) + "]");
+      var keyscope__27 = "[" + ((for__26++) + "]");
 
       out.w("<div class=\"tab-pane\" id=\"" +
         marko_escapeXmlAttr(category.id) +
@@ -113,12 +119,12 @@ function render(input, out, __component, component, state) {
         "</h5>");
 
       if (category.skills && category.skills.length) {
-        out.w("<div class=\"skills\">");
+        out.w("<div class=\"skills-matrix\">");
 
-        var for__28 = 0;
+        var for__31 = 0;
 
         marko_forEach(category.skills, function(skill) {
-          var keyscope__29 = "[" + (((for__28++) + keyscope__24) + "]");
+          var keyscope__32 = "[" + (((for__31++) + keyscope__27) + "]");
 
           out.w("<div class=\"skill\">");
 

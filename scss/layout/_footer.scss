@@ -11,12 +11,17 @@
   background-color: $dark;
 
   a {
+    font-size: 2rem;
     color: $white;
     text-decoration: none;
 
     @include hover-state {
       color: $white;
       text-decoration: none;
+    }
+
+    @include when-less-than(sm) {
+      font-size: 1.25rem;
     }
   }
 }

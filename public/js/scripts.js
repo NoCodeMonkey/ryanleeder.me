@@ -1,4 +1,4 @@
-(function(core, $, cache, undefined) {
+(function(core, $, undefined) {
   'use strict';
 
   core.removeLoader = function() {
@@ -10,127 +10,43 @@
   }
 
   core.handleScrolling = function() {
-    // Smooth scrolling using jQuery easing
-    var headerHeight = cache('.navbar').innerHeight();
-    cache('a.js-scroll-trigger[href*=\'#\']:not([href=\'#\'])').click(function() {
-      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          cache('html, body').animate({
-            scrollTop: (target.offset().top - headerHeight)
-          }, 1000, 'easeInOutExpo');
-          return false;
-        }
-      }
+    $('.nav-link', '.navbar-nav .nav-item').each(function() {
+      $(this).attr('href', $(this).attr('href').replace(/^\/+|\/+$/g, ''));
     });
 
-    cache('.nav-link', '.navbar-nav .nav-item').each(function() {
-      cache(this).attr('href', cache(this).attr('href').replace(/^\/+|\/+$/g, ''));
-    });
-
-    cache('body').scrollspy({
+    $('body').scrollspy({
       target: '.navbar',
-			offset: $(window).height() * 0.2 //offset.top
+			offset: $('.navbar-brand').innerHeight() + parseInt(getComputedStyle(document.documentElement).fontSize)
     });
 
-    core.setActiveSection(0);
-
-    cache(document).on('keydown', function(e) {
-      if (!$('input, textarea').is(':focus')) {
-        var sections = cache('.jumbotron, section');
-        var activeSection = sections.filter('.active'),
-            prevSection = activeSection.prev(),
-            nextSection = activeSection.next();
-        switch (e.keyCode) {
-          case 40 : // Scroll down
-            if (nextSection.length && sections.index(nextSection) < sections.length) {
-              e.preventDefault();
-              e.stopPropagation();
-              core.scrollToSection(sections, sections.index(nextSection));
-            }
-            break;
-          case 38 : // Scroll up
-            if (prevSection.length && sections.index(prevSection) > -1) {
-              e.preventDefault();
-              e.stopPropagation();
-              core.scrollToSection(sections, sections.index(prevSection));
-            } break;
-        }
-      }
-    });
-
-    cache(window).on('scroll', function(e) {
+    $(window).on('scroll', function(e) {
       if ($(this).scrollTop() > 400) {
         $('.back-to-top').fadeIn();
       } else {
         $('.back-to-top').fadeOut();
       }
-      clearTimeout($.data(this, 'scrollTimer'));
-      $.data(this, 'scrollTimer', setTimeout(function() {
-        var navItems = cache('.nav-link', '.navbar-nav .nav-item');
-        var magicLine = cache('.magic-line', '.navbar-nav');
-        var activeItem = navItems.filter('.active');
-        core.setActiveMenu(magicLine, activeItem);
-        core.setActiveSection(navItems.index(activeItem));
-        clearTimeout($.data(this, 'scrollTimer'));
-      }, 400));
     });
-  }
 
-  core.scrollToSection = function(sections, index){
-    var element = sections.eq(index);
-    var headerHeight = cache('.navbar').innerHeight();
-    var navItems = cache('.nav-link', '.navbar-nav .nav-item');
-    var activeItem = navItems.eq(index);
-    var magicLine = cache('.magic-line', '.navbar-nav');
-    cache('html, body').stop().animate({
-      scrollTop: (element.offset().top - headerHeight)
-    }, 400, 'easeInOutExpo');
-    core.setActiveSection(index);
-    core.setActiveMenu(magicLine, activeItem);
-  }
-
-  core.animateMenu = function() {
-    var navItems = cache('.nav-link', '.navbar-nav .nav-item');
-    navItems.append('<li class=\'magic-line\'></li>');
-    var magicLine = cache('.magic-line', '.navbar-nav');
-
-    core.setActiveMenu(magicLine, navItems.filter('.active'));
-
-    navItems.hover(
-      function() {
-        var link = cache(this).find('span');
-        magicLine.stop().animate({
-          left: link.position().left,
-          width: link.width()
-        });
-      },
-      function() {
-        magicLine.stop().animate({
-          left: magicLine.data('position-left'),
-          width: magicLine.data('position-width')
-        });
+    $('.js-scroll-trigger').on('click', function(e) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        e.preventDefault();
+        e.stopPropagation();
+        core.scrollToSection(target);
+        if ($('.navbar-toggler').css('display') !== 'none'){
+          $('.navbar-toggler').trigger('click');
+        }
+        return false;
       }
-    );
-
-    navItems.on('click', function() {
-      core.setActiveMenu(magicLine, cache(this));
-      core.setActiveSection(navItems.index(cache(this)));
     });
   }
 
-  core.setActiveMenu = function(magicLine, activeItem) {
-    var link = activeItem.find('span');
-    magicLine
-      .width(link.width())
-      .css('left', link.position().left)
-      .data('position-left', magicLine.position().left)
-      .data('position-width', magicLine.width());
-  }
-
-  core.setActiveSection = function(index) {
-    cache('.jumbotron, section').eq(index).addClass('active').siblings().removeClass('active');
+  core.scrollToSection = function(target){
+    var headerHeight = $('.navbar-brand').innerHeight();
+    $('html, body').stop().animate({
+      scrollTop: (target.offset().top - headerHeight)
+    }, 400, 'easeInOutExpo');
   }
 
   core.animateIntro = function() {
@@ -158,25 +74,25 @@
     });
   }
 
-  core.animateSkills = function() {
-    $(".skills").removeClass("active");
-    $(".skills .skill .skill-bar").children('span').remove();
-    $(".skills .skill .skill-bar").css({'opacity': 0});
-    $(".skills .skill .skill-bar").each(function() {
+  core.animateSkillsMatrix = function() {
+    $(".skills-matrix").removeClass("active");
+    $(".skills-matrix .skill .skill-bar").children('span').remove();
+    $(".skills-matrix .skill .skill-bar").css({'opacity': 0});
+    $(".skills-matrix .skill .skill-bar").each(function() {
       $(this).append('<span></span>');
     });
-    $(".skills .skill .skill-bar span").each(function() {
+    $(".skills-matrix .skill .skill-bar span").each(function() {
       $(this).animate({
         "width": $(this).parent().attr("data-bar") + "%"
       }, 1000, function() {
         $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
         setTimeout(function() {
-          $(".skills .skill .skill-bar span b").animate({"opacity":"1"}, 2000);
+          $(".skills-matrix .skill .skill-bar span b").animate({"opacity":"1"}, 2000);
         }, 1000);
       });
     });
-    $(".skills .skill .skill-bar").css({'opacity': 1});
-    $(".skills").addClass("active");
+    $(".skills-matrix .skill .skill-bar").css({'opacity': 1});
+    $(".skills-matrix").addClass("active");
   }
 
   core.initMap = function() {
@@ -220,7 +136,7 @@
   }
 
   core.onSuccess = function() {
-    core.modal('Thank You!', 'Your message has been sent and I\'ll get back to you in a moment. If you don\'t seem get any answer please contact me directly by email or phone.', '<i class=\'fa fa-smile-o\'></i> Ok');
+    core.modal('Thank You!', 'Your message has been sent and I\'ll get back to you in a moment. If you don\'t seem get any answer please contact me directly by email or phone.', '<i class=\'far fa-smile\'></i> Ok');
   }
 
   core.onFailure = function(jqXHR, textStatus, errorThrown) {
@@ -240,7 +156,7 @@
       catch (e) {
       }
     }
-    core.modal(title, message, '<i class=\'fa fa-frown-o\'></i> Ok');
+    core.modal(title, message, '<i class=\'far fa-frown\'></i> Ok');
   }
 
   core.strip = function(html) {
@@ -258,7 +174,7 @@
       show : true
     });
   }
-})(window.core = window.core || {}, $, $$);
+})(window.core = window.core || {}, $);
 
 $(document).ready(function () {
   autosize($('textarea'));
@@ -269,10 +185,7 @@ $(document).ready(function () {
   $('.back-to-top').hide();
 
   $(document).on('click', '.back-to-top', function() {
-    core.setActiveSection(0);
-    $('body, html').animate({
-      scrollTop: 0
-    }, 400, 'easeInOutExpo');
+    core.scrollToSection(0);
     return false;
   });
 
@@ -290,7 +203,7 @@ $(document).ready(function () {
 
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     $(".tab-content").animate({ scrollTop: 0 }, "fast");
-    core.animateSkills();
+    core.animateSkillsMatrix();
   });
 
   $('.tab-pane').each(function(index) {
@@ -299,9 +212,8 @@ $(document).ready(function () {
 
   core.removeLoader();
   core.handleScrolling();
-  core.animateMenu();
   core.animateIntro();
-  core.animateSkills();
+  core.animateSkillsMatrix();
   core.initMap();
 
   window.handleSubmit = core.onSubmit;

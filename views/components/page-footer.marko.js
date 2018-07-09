@@ -14,9 +14,9 @@ function render(input, out, __component, component, state) {
 
   var year = new Date().getFullYear();
 
-  out.w("<footer role=\"contentinfo\"><div class=\"footer-copyright text-center\"><div class=\"container\"><div class=\"row py-4 d-flex align-items-center\"><div class=\"col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0\">&copy; Copyright " +
+  out.w("<footer role=\"contentinfo\"><div class=\"footer-copyright text-center\"><div class=\"container\"><div class=\"row py-1 d-flex align-items-center\"><div class=\"col-6 text-right text-lg-left\">&copy; Copyright " +
     marko_escapeXml(year) +
-    " Ryan Leeder</div><div class=\"col-md-6 col-lg-7 text-center text-md-right\"><a href=\"https://www.linkedin.com/in/ryanleeder/\" class=\"li-ic\"><i class=\"fa fa-linkedin white-text mr-4\"> </i></a><a href=\"https://twitter.com/nocodemonkey\" class=\"tw-ic\"><i class=\"fa fa-twitter white-text mr-4\"> </i></a><a href=\"https://github.com/nocodemonkey\" class=\"gh-ic\"><i class=\"fa fa-github white-text mr-lg-4\"> </i></a></div></div></div></div></footer>");
+    " Ryan Leeder</div><div class=\"col-6 text-left text-lg-right\"><a href=\"https://www.linkedin.com/in/ryanleeder/\"><i class=\"fab fa-linkedin white-text mr-4\"> </i></a><a href=\"https://twitter.com/nocodemonkey\"><i class=\"fab fa-twitter-square white-text mr-4\"> </i></a><a href=\"https://github.com/nocodemonkey\"><i class=\"fab fa-github-square white-text\"> </i></a></div></div></div></div></footer>");
 }
 
 marko_template._ = marko_renderer(render, {
