@@ -30,8 +30,7 @@ $ {
   	background-color: #ff9000;
   }
 </style>
-<p if(categoriesWithId && categoriesWithId.length)>List of categorised skills used throughout my development career.<br /><br />
-The categories are a bit rudimentary, but click on a category link e.g. "${categoriesWithId[0].name}" to see the relevant subset.</p>
+<p if(categoriesWithId && categoriesWithId.length)>List of categorised skills used throughout my development career. Click on a category link e.g. "${categoriesWithId[0].name}" to see the relevant subset.</p>
 <div class="d-flex flex-row mt-2 tab-content-skills" if(categoriesWithId && categoriesWithId.length)>
   <for(category in categoriesWithId | status-var=loop)>
     <if(loop.isFirst())>
