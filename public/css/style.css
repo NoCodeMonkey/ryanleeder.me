@@ -9780,11 +9780,11 @@ blockquote footer::before {
   justify-content: space-between;
 }
 
-.timeline .timeline-heading [data-toggle="collapse"] .fa::before {
+.timeline .timeline-heading [data-toggle="collapse"] .far::before {
   content: "\f151";
 }
 
-.timeline .timeline-heading [data-toggle="collapse"].collapsed .fa::before {
+.timeline .timeline-heading [data-toggle="collapse"].collapsed .far::before {
   content: "\f150";
 }
 
@@ -9817,7 +9817,7 @@ blockquote footer::before {
   cursor: pointer;
 }
 
-.toggle-collapsible:checked ~ .timeline-heading > .toggle-collapsible-header > .fa::before {
+.toggle-collapsible:checked ~ .timeline-heading > .toggle-collapsible-header > .far::before {
   content: "\f151";
 }
 
@@ -9825,7 +9825,7 @@ blockquote footer::before {
   display: block;
 }
 
-.toggle-collapsible:not(:checked) ~ .timeline-heading > .toggle-collapsible-header > .fa::before {
+.toggle-collapsible:not(:checked) ~ .timeline-heading > .toggle-collapsible-header > .far::before {
   content: "\f150";
 }
 
