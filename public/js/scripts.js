@@ -185,7 +185,7 @@ $(document).ready(function () {
   $('.back-to-top').hide();
 
   $(document).on('click', '.back-to-top', function() {
-    core.scrollToSection(0);
+    core.scrollToSection($('#page-top'));
     return false;
   });
 
