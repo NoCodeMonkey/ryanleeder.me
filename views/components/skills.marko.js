@@ -71,7 +71,7 @@ function render(input, out, __component, component, state) {
       }
     });
 
-    out.w("<ul class=\"nav nav-tabs nav-tabs-vertical nav-tabs-left\" role=\"navigation\">");
+    out.w("<ul class=\"nav nav-tabs nav-tabs-vertical nav-tabs-left\">");
 
     marko_forEachWithStatusVar(categoriesWithId, function(category, loop) {
       out.w("<li class=\"nav-item\">");
@@ -98,13 +98,13 @@ function render(input, out, __component, component, state) {
         marko_escapeXmlAttr(category.id) +
         "_label\" for=\"" +
         marko_escapeXmlAttr(category.id) +
-        "_tab\" class=\"checkbox-label hide-js-fallback-element\"><div class=\"d-flex flex-row align-items-center\"><div class=\"category-icon\"><i class=\"" +
+        "_tab\" class=\"checkbox-label hide-js-fallback-element\"><span class=\"d-flex flex-row align-items-center\"><span class=\"category-icon\"><i class=\"" +
         marko_escapeXmlAttr(category.icon) +
-        "\" aria-hidden=\"true\"></i></div><div class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
+        "\" aria-hidden=\"true\"></i></span><span class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
         marko_escapeXmlAttr(category.abbreviation) +
         "\"><span>" +
         marko_escapeXml(category.name) +
-        "</span></span></div></div></label></li>");
+        "</span></span></span></span></label></li>");
     });
 
     out.w("</ul><div class=\"tab-content pre-scrollable\">");

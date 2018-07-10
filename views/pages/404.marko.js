@@ -20,6 +20,11 @@ function render(input, out, __component, component, state) {
   include_tag({
       _target: layout_template,
       _arg: marko_merge({
+          tags: {
+              renderBody: function renderBody(out) {
+                out.w("<meta name=\"robots\" content=\"nofollow, noindex\">");
+              }
+            },
           content: {
               renderBody: function renderBody(out) {
                 out.w("<div class=\"container mt-2\"><h2>Opps!</h2><h5>Page Not Found (404)</h5><p>The page you're trying to access doesn't appear to exist. Please check the address of the page you were looking for, or go back to the <a href=\"/\">home</a> page.</p><p class=\"text-center\"><a class=\"btn btn btn-outline-primary\" href=\"/\" role=\"button\">Home</a></p></div>");

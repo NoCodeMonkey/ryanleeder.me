@@ -14,7 +14,7 @@ function render(input, out, __component, component, state) {
 
   var year = new Date().getFullYear();
 
-  out.w("<footer role=\"contentinfo\"><div class=\"footer-copyright text-center\"><div class=\"container\"><div class=\"row py-1 d-flex align-items-center\"><div class=\"col-6 text-right text-lg-left\">&copy; Copyright " +
+  out.w("<footer><div class=\"footer-copyright text-center\"><div class=\"container\"><div class=\"row py-1 d-flex align-items-center\"><div class=\"col-6 text-right text-lg-left\">&copy; Copyright " +
     marko_escapeXml(year) +
     " Ryan Leeder</div><div class=\"col-6 text-left text-lg-right\"><a href=\"https://www.linkedin.com/in/ryanleeder/\"><i class=\"fab fa-linkedin white-text mr-4\"> </i></a><a href=\"https://twitter.com/nocodemonkey\"><i class=\"fab fa-twitter-square white-text mr-4\"> </i></a><a href=\"https://github.com/nocodemonkey\"><i class=\"fab fa-github-square white-text\"> </i></a></div></div></div></div></footer>");
 }

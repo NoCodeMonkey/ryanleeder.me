@@ -10017,6 +10017,15 @@ blockquote footer::before {
   border-left: 0.5rem solid #006fff;
 }
 
+@media screen and (min-width: 992px) {
+  .no-js .category-icon .far,
+  .no-js .category-icon .fab,
+  .no-js .category-icon .fal,
+  .no-js .category-icon .fas {
+    font-size: 1.5rem;
+  }
+}
+
 .skills-matrix, .skills-matrix .skill, .skills-matrix .skill .skill-title, .skills-matrix .skill .skill-bar {
   float: left;
   width: 100%;
@@ -11491,6 +11500,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
+@namespace svg "http://www.w3.org/2000/svg";
 .navbar {
   padding: 0;
   font-size: 1rem;

@@ -115,6 +115,17 @@ $border-radius: .25rem;
   }
 }
 
+.no-js .category-icon {
+  @include when-wider-than(lg) {
+    .far,
+    .fab,
+    .fal,
+    .fas {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 %base-skills {
   float: left;
   width: 100%;
