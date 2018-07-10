@@ -98,7 +98,7 @@ function render(input, out, __component, component, state) {
         marko_escapeXmlAttr(category.id) +
         "_label\" for=\"" +
         marko_escapeXmlAttr(category.id) +
-        "_tab\" class=\"checkbox-label hide-js-fallback-element\" role=\"tab\"><span class=\"d-flex flex-row align-items-center\"><span class=\"category-icon\"><i class=\"" +
+        "_tab\" class=\"checkbox-label hide-js-fallback-element\"><span class=\"d-flex flex-row align-items-center\"><span class=\"category-icon\"><i class=\"" +
         marko_escapeXmlAttr(category.icon) +
         "\" aria-hidden=\"true\"></i></span><span class=\"nav-link-title\"><span class=\"abbreviate abbreviate-lg\" data-abbreviated-text=\"" +
         marko_escapeXmlAttr(category.abbreviation) +
