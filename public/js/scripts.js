@@ -3,10 +3,8 @@
 
   core.removeLoader = function() {
     $('.pre-loader').fadeOut(500, function(){
-        $(this).remove();
-        $('.navbar').css({opacity: 1.0, visibility: 'visible'});
-      }
-    );
+      $(this).remove();
+    });
   }
 
   core.handleScrolling = function() {

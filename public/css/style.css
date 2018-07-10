@@ -11692,11 +11692,6 @@ blockquote footer::before {
   }
 }
 
-.js .index-page .navbar {
-  visibility: hidden;
-  opacity: 0;
-}
-
 .intro-wrapper {
   position: relative;
   padding: 20px 0;
