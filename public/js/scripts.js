@@ -150,7 +150,9 @@
         var $ul = $('<ul>'),
             errors = $.parseJSON(jqXHR.responseText)['errors'];
         for(var i in errors) {
-          $ul.append(`<li>${errors[i]['msg']}.</li>`);
+          $ul.append('<li>');
+          $ul.append(errors[i]['msg']);
+          $ul.append('.</li>');
         }
         message += $ul.html();
       }
