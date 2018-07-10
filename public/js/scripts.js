@@ -83,9 +83,9 @@
     });
     $(".skills-matrix .skill .skill-bar span").each(function() {
       $(this).animate({
-        "width": $(this).parent().attr("data-bar") + "%"
+        "width": $(this).parent().attr("data-bar-width") + "%"
       }, 1000, function() {
-        $(this).append('<b>' + $(this).parent().attr("data-bar") + '%</b>');
+        $(this).append('<b>' + $(this).parent().attr("data-bar-width") + '%</b>');
         setTimeout(function() {
           $(".skills-matrix .skill .skill-bar span b").animate({"opacity":"1"}, 2000);
         }, 1000);

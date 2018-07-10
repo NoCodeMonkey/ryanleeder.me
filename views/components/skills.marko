@@ -77,11 +77,13 @@ $ {
             <div class="skill">
               <div class="skill-title" data-toggle="tooltip" data-placement="bottom" title="${skill.description}" if(skill.description)>
                 ${skill.name}
+                <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
               </div>
               <div class="skill-title" else>
                 ${skill.name}
+                <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
               </div>
-              <div class="skill-bar" data-bar="${skill.competency}"></div>
+              <div class="skill-bar" data-bar-width="${skill.competency}"></div>
             </div>
           </for>
         </div>

@@ -135,14 +135,22 @@ function render(input, out, __component, component, state) {
               marko_escapeXmlAttr(skill.description) +
               "\">" +
               marko_escapeXml(skill.name) +
-              "</div>");
+              "<b class=\"hide-js-fallback-element skill-competency\" data-offset=\"" +
+              marko_escapeXmlAttr(100 - skill.competency) +
+              "\">" +
+              marko_escapeXml(skill.competency) +
+              "%</b></div>");
           } else {
             out.w("<div class=\"skill-title\">" +
               marko_escapeXml(skill.name) +
-              "</div>");
+              "<b class=\"hide-js-fallback-element skill-competency\" data-offset=\"" +
+              marko_escapeXmlAttr(100 - skill.competency) +
+              "\">" +
+              marko_escapeXml(skill.competency) +
+              "%</b></div>");
           }
 
-          out.w("<div class=\"skill-bar\" data-bar=\"" +
+          out.w("<div class=\"skill-bar\" data-bar-width=\"" +
             marko_escapeXmlAttr(skill.competency) +
             "\"></div></div>");
         });

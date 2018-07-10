@@ -10031,6 +10031,12 @@ blockquote footer::before {
   font-weight: 400;
 }
 
+.skills-matrix .skill .skill-title .skill-competency {
+  float: right;
+  font-weight: 400;
+  color: #006fff;
+}
+
 .skills-matrix .skill .skill-bar {
   width: 0;
   background: #f0f0f0;
@@ -10065,13 +10071,417 @@ blockquote footer::before {
   width: 100%;
 }
 
+.no-js .skills-matrix .skill .skill-competency[data-offset="0"] {
+  margin-right: 0%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="1"] {
+  margin-right: 1%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="2"] {
+  margin-right: 2%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="3"] {
+  margin-right: 3%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="4"] {
+  margin-right: 4%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="5"] {
+  margin-right: 5%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="6"] {
+  margin-right: 6%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="7"] {
+  margin-right: 7%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="8"] {
+  margin-right: 8%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="9"] {
+  margin-right: 9%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="10"] {
+  margin-right: 10%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="11"] {
+  margin-right: 11%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="12"] {
+  margin-right: 12%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="13"] {
+  margin-right: 13%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="14"] {
+  margin-right: 14%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="15"] {
+  margin-right: 15%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="16"] {
+  margin-right: 16%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="17"] {
+  margin-right: 17%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="18"] {
+  margin-right: 18%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="19"] {
+  margin-right: 19%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="20"] {
+  margin-right: 20%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="21"] {
+  margin-right: 21%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="22"] {
+  margin-right: 22%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="23"] {
+  margin-right: 23%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="24"] {
+  margin-right: 24%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="25"] {
+  margin-right: 25%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="26"] {
+  margin-right: 26%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="27"] {
+  margin-right: 27%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="28"] {
+  margin-right: 28%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="29"] {
+  margin-right: 29%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="30"] {
+  margin-right: 30%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="31"] {
+  margin-right: 31%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="32"] {
+  margin-right: 32%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="33"] {
+  margin-right: 33%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="34"] {
+  margin-right: 34%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="35"] {
+  margin-right: 35%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="36"] {
+  margin-right: 36%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="37"] {
+  margin-right: 37%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="38"] {
+  margin-right: 38%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="39"] {
+  margin-right: 39%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="40"] {
+  margin-right: 40%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="41"] {
+  margin-right: 41%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="42"] {
+  margin-right: 42%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="43"] {
+  margin-right: 43%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="44"] {
+  margin-right: 44%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="45"] {
+  margin-right: 45%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="46"] {
+  margin-right: 46%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="47"] {
+  margin-right: 47%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="48"] {
+  margin-right: 48%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="49"] {
+  margin-right: 49%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="50"] {
+  margin-right: 50%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="51"] {
+  margin-right: 51%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="52"] {
+  margin-right: 52%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="53"] {
+  margin-right: 53%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="54"] {
+  margin-right: 54%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="55"] {
+  margin-right: 55%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="56"] {
+  margin-right: 56%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="57"] {
+  margin-right: 57%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="58"] {
+  margin-right: 58%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="59"] {
+  margin-right: 59%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="60"] {
+  margin-right: 60%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="61"] {
+  margin-right: 61%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="62"] {
+  margin-right: 62%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="63"] {
+  margin-right: 63%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="64"] {
+  margin-right: 64%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="65"] {
+  margin-right: 65%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="66"] {
+  margin-right: 66%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="67"] {
+  margin-right: 67%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="68"] {
+  margin-right: 68%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="69"] {
+  margin-right: 69%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="70"] {
+  margin-right: 70%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="71"] {
+  margin-right: 71%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="72"] {
+  margin-right: 72%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="73"] {
+  margin-right: 73%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="74"] {
+  margin-right: 74%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="75"] {
+  margin-right: 75%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="76"] {
+  margin-right: 76%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="77"] {
+  margin-right: 77%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="78"] {
+  margin-right: 78%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="79"] {
+  margin-right: 79%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="80"] {
+  margin-right: 80%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="81"] {
+  margin-right: 81%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="82"] {
+  margin-right: 82%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="83"] {
+  margin-right: 83%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="84"] {
+  margin-right: 84%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="85"] {
+  margin-right: 85%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="86"] {
+  margin-right: 86%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="87"] {
+  margin-right: 87%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="88"] {
+  margin-right: 88%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="89"] {
+  margin-right: 89%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="90"] {
+  margin-right: 90%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="91"] {
+  margin-right: 91%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="92"] {
+  margin-right: 92%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="93"] {
+  margin-right: 93%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="94"] {
+  margin-right: 94%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="95"] {
+  margin-right: 95%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="96"] {
+  margin-right: 96%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="97"] {
+  margin-right: 97%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="98"] {
+  margin-right: 98%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="99"] {
+  margin-right: 99%;
+}
+
+.no-js .skills-matrix .skill .skill-competency[data-offset="100"] {
+  margin-right: 100%;
+}
+
 .no-js .skills-matrix .skill .skill-bar {
   position: relative;
   width: 100%;
   height: 4px;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="0"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="0"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10081,7 +10491,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="1"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="1"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10091,7 +10501,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="2"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="2"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10101,7 +10511,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="3"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="3"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10111,7 +10521,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="4"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="4"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10121,7 +10531,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="5"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="5"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10131,7 +10541,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="6"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="6"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10141,7 +10551,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="7"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="7"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10151,7 +10561,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="8"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="8"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10161,7 +10571,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="9"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="9"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10171,7 +10581,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="10"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="10"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10181,7 +10591,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="11"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="11"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10191,7 +10601,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="12"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="12"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10201,7 +10611,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="13"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="13"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10211,7 +10621,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="14"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="14"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10221,7 +10631,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="15"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="15"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10231,7 +10641,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="16"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="16"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10241,7 +10651,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="17"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="17"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10251,7 +10661,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="18"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="18"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10261,7 +10671,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="19"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="19"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10271,7 +10681,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="20"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="20"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10281,7 +10691,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="21"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="21"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10291,7 +10701,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="22"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="22"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10301,7 +10711,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="23"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="23"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10311,7 +10721,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="24"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="24"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10321,7 +10731,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="25"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="25"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10331,7 +10741,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="26"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="26"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10341,7 +10751,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="27"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="27"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10351,7 +10761,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="28"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="28"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10361,7 +10771,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="29"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="29"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10371,7 +10781,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="30"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="30"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10381,7 +10791,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="31"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="31"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10391,7 +10801,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="32"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="32"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10401,7 +10811,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="33"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="33"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10411,7 +10821,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="34"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="34"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10421,7 +10831,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="35"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="35"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10431,7 +10841,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="36"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="36"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10441,7 +10851,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="37"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="37"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10451,7 +10861,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="38"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="38"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10461,7 +10871,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="39"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="39"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10471,7 +10881,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="40"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="40"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10481,7 +10891,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="41"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="41"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10491,7 +10901,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="42"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="42"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10501,7 +10911,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="43"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="43"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10511,7 +10921,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="44"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="44"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10521,7 +10931,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="45"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="45"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10531,7 +10941,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="46"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="46"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10541,7 +10951,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="47"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="47"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10551,7 +10961,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="48"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="48"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10561,7 +10971,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="49"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="49"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10571,7 +10981,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="50"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="50"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10581,7 +10991,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="51"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="51"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10591,7 +11001,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="52"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="52"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10601,7 +11011,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="53"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="53"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10611,7 +11021,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="54"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="54"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10621,7 +11031,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="55"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="55"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10631,7 +11041,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="56"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="56"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10641,7 +11051,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="57"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="57"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10651,7 +11061,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="58"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="58"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10661,7 +11071,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="59"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="59"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10671,7 +11081,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="60"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="60"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10681,7 +11091,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="61"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="61"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10691,7 +11101,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="62"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="62"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10701,7 +11111,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="63"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="63"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10711,7 +11121,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="64"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="64"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10721,7 +11131,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="65"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="65"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10731,7 +11141,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="66"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="66"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10741,7 +11151,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="67"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="67"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10751,7 +11161,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="68"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="68"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10761,7 +11171,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="69"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="69"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10771,7 +11181,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="70"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="70"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10781,7 +11191,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="71"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="71"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10791,7 +11201,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="72"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="72"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10801,7 +11211,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="73"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="73"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10811,7 +11221,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="74"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="74"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10821,7 +11231,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="75"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="75"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10831,7 +11241,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="76"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="76"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10841,7 +11251,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="77"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="77"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10851,7 +11261,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="78"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="78"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10861,7 +11271,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="79"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="79"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10871,7 +11281,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="80"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="80"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10881,7 +11291,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="81"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="81"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10891,7 +11301,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="82"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="82"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10901,7 +11311,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="83"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="83"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10911,7 +11321,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="84"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="84"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10921,7 +11331,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="85"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="85"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10931,7 +11341,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="86"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="86"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10941,7 +11351,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="87"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="87"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10951,7 +11361,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="88"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="88"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10961,7 +11371,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="89"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="89"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10971,7 +11381,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="90"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="90"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10981,7 +11391,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="91"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="91"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -10991,7 +11401,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="92"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="92"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11001,7 +11411,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="93"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="93"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11011,7 +11421,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="94"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="94"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11021,7 +11431,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="95"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="95"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11031,7 +11441,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="96"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="96"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11041,7 +11451,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="97"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="97"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11051,7 +11461,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="98"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="98"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11061,7 +11471,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="99"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="99"]::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -11071,7 +11481,7 @@ blockquote footer::before {
   background-color: #ff9000;
 }
 
-.no-js .skills-matrix .skill .skill-bar[data-bar="100"]::after {
+.no-js .skills-matrix .skill .skill-bar[data-bar-width="100"]::after {
   position: absolute;
   top: 0;
   left: 0;

@@ -132,6 +132,12 @@ $border-radius: .25rem;
 
       margin-bottom: .25rem;
       font-weight: 400;
+
+      .skill-competency {
+        float: right;
+        font-weight: 400;
+        color: $primary;
+      }
     }
 
     .skill-bar {
@@ -174,13 +180,21 @@ $border-radius: .25rem;
 
 .no-js .skills-matrix {
   .skill {
+    .skill-competency {
+      @for $i from 0 through 100 {
+        &[data-offset="#{$i}"] {
+          margin-right: percentage($i/100);
+        }
+      }
+    }
+
     .skill-bar {
       position: relative;
       width: 100%;
       height: 4px;
 
       @for $i from 0 through 100 {
-        &[data-bar="#{$i}"] {
+        &[data-bar-width="#{$i}"] {
           &::after {
             position: absolute;
             top: 0;
