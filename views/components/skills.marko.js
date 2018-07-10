@@ -71,10 +71,10 @@ function render(input, out, __component, component, state) {
       }
     });
 
-    out.w("<ul class=\"nav nav-tabs nav-tabs-vertical nav-tabs-left\">");
+    out.w("<ul class=\"nav nav-tabs nav-tabs-vertical nav-tabs-left\" role=\"navigation\">");
 
     marko_forEachWithStatusVar(categoriesWithId, function(category, loop) {
-      out.w("<li class=\"nav-item\">");
+      out.w("<li class=\"nav-item\" role=\"tablist\">");
 
       let tabClass = 'nav-link';
 
