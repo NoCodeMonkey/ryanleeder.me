@@ -10315,6 +10315,15 @@ blockquote footer::before {
   text-align: right;
 }
 
+.intro-wrapper .intro .profile-picture img {
+  padding: 4px;
+  text-align: right;
+  border-color: #000;
+  border-style: dotted;
+  border-width: 2px;
+  border-radius: 1rem;
+}
+
 @media screen and (max-width: 574.8px) {
   .intro-wrapper {
     padding: 0;

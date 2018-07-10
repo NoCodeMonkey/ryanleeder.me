@@ -115,7 +115,103 @@
     "name": "Back-End Development Skills",
     "abbreviation": "Back-End",
     "icon": "fas fa-cogs",
-    "skills": []
+    "skills": [
+      {
+        "name": ".NET Framework",
+        "competency": 95,
+        "description": "Server-side applications implemented in .NET Framework."
+      },
+      {
+        "name": ".NET Core",
+        "competency": 90,
+        "description": "Server-side applications implemented in .NET Core."
+      },
+      {
+        "name": "ASP.NET Web Forms",
+        "competency": 95,
+        "description": ""
+      },
+      {
+        "name": "ASP.NET MVC",
+        "competency": 90,
+        "description": ""
+      },
+      {
+        "name": "ASP.NET Web API",
+        "competency": 88,
+        "description": ""
+      },
+      {
+        "name": "Node.js",
+        "competency": 85,
+        "description": "Server-side development on Node.js."
+      },
+      {
+        "name": "LINQ",
+        "competency": 85,
+        "description": "Language Integrated Query."
+      },
+      {
+        "name": "Redis",
+        "competency": 87,
+        "description": "Redis back-end storage/caching."
+      },
+      {
+        "name": "Entity Framework",
+        "competency": 85,
+        "description": "Object-relational mapping using entity framework."
+      },
+      {
+        "name": "NHibernate",
+        "competency": 80,
+        "description": "Object-relational mapping using NHibernate."
+      },
+      {
+        "name": "SignalR",
+        "competency": 80,
+        "description": "Server-to-client remote procedure calls using SignalR."
+      },
+      {
+        "name": "Socket.IO",
+        "competency": 75,
+        "description": "Bi-directional remote procedure calls using Socket.IO."
+      },
+      {
+        "name": "Web Services",
+        "competency": 95,
+        "description": "Design, implementation, and Data integration using web services."
+      },
+      {
+        "name": "ASP.NET Identity/IdentityServer",
+        "competency": 75,
+        "description": "Authentication and authorization."
+      },
+      {
+        "name": "SQL Server",
+        "competency": 95,
+        "description": "Back-end development using SQL Server."
+      },
+      {
+        "name": "MySQL",
+        "competency": 80,
+        "description": "Back-end development using MySQL."
+      },
+      {
+        "name": "MongoDB",
+        "competency": 70,
+        "description": "Back-end development using MongoDB."
+      },
+      {
+        "name": "SQLite",
+        "competency": 85,
+        "description": "Back-end development using SQLite."
+      },
+      {
+        "name": "SQLite",
+        "competency": 85,
+        "description": "Back-end development using SQLite."
+      }
+    ]
   },
   {
     "name": "Business Skills",
@@ -243,6 +339,16 @@
         "name": "SEO",
         "competency": 78,
         "description": "Search engine optimization."
+      },
+      {
+        "name": "Office 365",
+        "competency": 85,
+        "description": ""
+      },
+      {
+        "name": "Salesforce.com",
+        "competency": 80,
+        "description": ""
       }
     ]
   }
