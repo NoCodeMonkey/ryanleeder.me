@@ -171,3 +171,27 @@ $border-radius: .25rem;
     }
   }
 }
+
+.no-js .skills-matrix {
+  .skill {
+    .skill-bar {
+      position: relative;
+      width: 100%;
+      height: 4px;
+
+      @for $i from 0 through 100 {
+        &[data-bar="#{$i}"] {
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: percentage($i/100);
+            height: 4px;
+            content: "";
+            background-color: #ff9000;
+          }
+        }
+      }
+    }
+  }
+}

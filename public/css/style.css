@@ -10065,6 +10065,1022 @@ blockquote footer::before {
   width: 100%;
 }
 
+.no-js .skills-matrix .skill .skill-bar {
+  position: relative;
+  width: 100%;
+  height: 4px;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="0"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="1"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="2"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="3"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="4"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="5"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="6"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="7"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="8"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="9"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 9%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="10"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="11"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="12"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="13"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 13%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="14"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="15"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="16"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="17"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="18"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="19"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="20"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="21"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="22"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="23"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="24"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="25"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="26"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="27"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="28"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="29"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="30"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="31"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 31%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="32"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="33"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="34"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="35"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="36"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 36%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="37"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="38"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="39"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 39%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="40"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="41"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 41%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="42"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="43"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 43%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="44"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="45"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="46"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="47"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="48"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="49"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 49%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="50"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="51"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 51%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="52"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="53"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="54"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="55"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="56"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="57"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="58"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="59"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 59%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="60"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="61"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="62"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 62%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="63"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 63%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="64"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="65"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="66"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="67"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 67%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="68"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="69"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 69%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="70"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="71"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 71%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="72"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="73"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 73%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="74"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="75"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="76"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 76%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="77"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 77%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="78"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 78%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="79"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 79%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="80"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="81"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 81%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="82"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="83"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 83%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="84"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="85"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="86"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="87"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 87%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="88"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="89"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 89%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="90"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="91"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 91%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="92"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="93"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 93%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="94"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 94%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="95"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="96"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="97"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="98"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="99"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
+.no-js .skills-matrix .skill .skill-bar[data-bar="100"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #ff9000;
+}
+
 .navbar {
   padding: 0;
   font-size: 1rem;
