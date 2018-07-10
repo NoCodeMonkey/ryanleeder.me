@@ -40,8 +40,8 @@ $ {
       <input class="tab-state" type="radio" name="tabs" id="${category.id}_tab" />
     </else>
   </for>
-  <ul class="nav nav-tabs nav-tabs-vertical nav-tabs-left" role="navigation">
-    <li class="nav-item" role="tablist" for(category in categoriesWithId | status-var=loop)>
+  <ul class="nav nav-tabs nav-tabs-vertical nav-tabs-left" role="tablist">
+    <li class="nav-item" for(category in categoriesWithId | status-var=loop)>
       $ let tabClass = 'nav-link';
       <if(loop.isFirst())>
         $ tabClass += ' active';
@@ -56,7 +56,7 @@ $ {
           </div>
         </div>
       </a>
-      <label id="${category.id}_label" for="${category.id}_tab" class="checkbox-label hide-js-fallback-element">
+      <label id="${category.id}_label" for="${category.id}_tab" class="checkbox-label hide-js-fallback-element" role="tab">
         <span class="d-flex flex-row align-items-center">
           <span class="category-icon">
             <i class="${category.icon}" aria-hidden="true"></i>
