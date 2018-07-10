@@ -11818,6 +11818,10 @@ blockquote footer::before {
 }
 
 /* stylelint-disable declaration-no-important  */
+.g-recaptcha > .grecaptcha-badge {
+  width: 0 !important;
+}
+
 .modal-open .contact-modal {
   display: -ms-flexbox !important;
   display: flex !important;

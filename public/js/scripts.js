@@ -131,6 +131,9 @@
     })
     .always(function() {
       $('.contact-form').removeClass('was-validated');
+      $('.submit-form-btn')
+        .text("Contact Me")
+        .prop("disabled", false);
       grecaptcha.reset();
     });
   }
@@ -195,6 +198,9 @@ $(document).ready(function () {
     var $form = $('.contact-form');
     $form.addClass('was-validated');
     if ($form[0].checkValidity() !== false) {
+      $('.submit-form-btn')
+        .text("Please wait...")
+        .prop("disabled", true);
       grecaptcha.execute();
     }
   });
