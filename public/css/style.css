@@ -9650,9 +9650,13 @@ blockquote footer::before {
   padding: 0 15px;
   margin: 10px 0;
   font-size: 1.09375rem;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.09375rem;
-  color: #006fff;
+  color: #6ab04c;
+}
+
+.timeline > li > .timeline-panel .icon-action {
+  color: #e056fd;
 }
 
 @media screen and (max-width: 766.8px) {
@@ -9767,8 +9771,7 @@ blockquote footer::before {
 .timeline .timeline-heading h5 {
   padding: 0 15px;
   margin: 10px 0;
-  font-weight: 200;
-  color: #006fff;
+  font-weight: 400;
 }
 
 .timeline .timeline-heading h5 a {
@@ -9778,6 +9781,7 @@ blockquote footer::before {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  color: #6ab04c;
 }
 
 .timeline .timeline-heading [data-toggle="collapse"] .far::before {
@@ -9902,6 +9906,43 @@ blockquote footer::before {
   .btn-orange.btn-arrow.btn-arrow-bottom:hover::after {
     border-top: 0.5rem solid #d97a00;
   }
+}
+
+.timeline-navigation {
+  position: absolute;
+  left: -3rem;
+  z-index: 101;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 574.8px) {
+  .timeline-navigation {
+    margin-top: 3.5rem;
+  }
+}
+
+.timeline-navigation .expand-timelines a,
+.timeline-navigation .collapse-timelines a {
+  display: block;
+  width: 128px;
+  height: 53px;
+  margin: 0 0 .5rem -2.5rem;
+}
+
+.timeline-navigation .expand-timelines a {
+  background-image: url("/img/expand.png");
+}
+
+.timeline-navigation .collapse-timelines a {
+  background-image: url("/img/collapse.png");
+}
+
+.timeline-navigation .far {
+  float: right;
+  padding-left: 1rem;
+  line-height: 1.25rem;
+  vertical-align: middle;
 }
 
 .tab-content-skills {

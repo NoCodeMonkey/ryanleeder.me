@@ -216,6 +216,23 @@ $(document).ready(function () {
     $(this).addClass(index === 0 ? 'fade show active' : 'fade');
   });
 
+  $(document).on('click', '.expand-timelines', function (e) {
+    $('.timeline-body.collapse:not(".show,.collapsing")').collapse('show');
+  });
+  $(document).on('click', '.collapse-timelines', function (e) {
+    $('.timeline-body.collapse.show').collapse('hide');
+  });
+
+  //$('.timeline-navigation').stick_in_parent('.timeline');
+  $('.timeline-navigation > li').hover(
+    function () {
+      $('a', $(this)).stop().animate({'marginLeft':'3rem'}, 200);
+    },
+    function () {
+      $('a', $(this)).stop().animate({'marginLeft':'-2.5rem'}, 200);
+    }
+  );
+
   core.removeLoader();
   core.handleScrolling();
   core.animateIntro();
