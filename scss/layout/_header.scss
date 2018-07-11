@@ -1,5 +1,3 @@
-@namespace svg "http://www.w3.org/2000/svg";
-
 .navbar {
   padding: 0;
   font-size: 1rem;
@@ -126,19 +124,9 @@
       .fal {
         font-size: 2rem;
         vertical-align: middle;
-        opacity: .5;
 
         @include when-wider-than(xl) {
           font-size: 2.5rem;
-        }
-      }
-
-      &.active {
-        .fas,
-        .fab,
-        .far,
-        .fal {
-          opacity: 1;
         }
       }
 
@@ -185,4 +173,66 @@
       }
     }
   }
+}
+
+@include when-wider-than(md) {
+  .tooltip.home > .tooltip-inner { background-color: #eb4d4b; }
+  .bs-tooltip-auto[x-placement^="top"].home .arrow::before,
+  .bs-tooltip-top.home .arrow::before { border-bottom-color: #eb4d4b; }
+  .bs-tooltip-auto[x-placement^="right"].home .arrow::before,
+  .bs-tooltip-right.home .arrow::before { border-bottom-color: #eb4d4b; }
+  .bs-tooltip-auto[x-placement^="bottom"].home .arrow::before,
+  .bs-tooltip-bottom.home .arrow::before { border-bottom-color: #eb4d4b; }
+  .bs-tooltip-auto[x-placement^="left"].home .arrow::before,
+  .bs-tooltip-left.home .arrow::before { border-bottom-color: #eb4d4b; }
+
+  .tooltip.about > .tooltip-inner { background-color: #686de0; }
+  .bs-tooltip-auto[x-placement^="top"].about .arrow::before,
+  .bs-tooltip-top.about .arrow::before { border-bottom-color: #686de0; }
+  .bs-tooltip-auto[x-placement^="right"].about .arrow::before,
+  .bs-tooltip-right.about .arrow::before { border-bottom-color: #686de0; }
+  .bs-tooltip-auto[x-placement^="bottom"].about .arrow::before,
+  .bs-tooltip-bottom.about .arrow::before { border-bottom-color: #686de0; }
+  .bs-tooltip-auto[x-placement^="left"].about .arrow::before,
+  .bs-tooltip-left.about .arrow::before { border-bottom-color: #686de0; }
+
+  .tooltip.skills > .tooltip-inner { background-color: #6ab04c; }
+  .bs-tooltip-auto[x-placement^="top"].skills .arrow::before,
+  .bs-tooltip-top.skills .arrow::before { border-bottom-color: #6ab04c; }
+  .bs-tooltip-auto[x-placement^="right"].skills .arrow::before,
+  .bs-tooltip-right.skills .arrow::before { border-bottom-color: #6ab04c; }
+  .bs-tooltip-auto[x-placement^="bottom"].skills .arrow::before,
+  .bs-tooltip-bottom.skills .arrow::before { border-bottom-color: #6ab04c; }
+  .bs-tooltip-auto[x-placement^="left"].skills .arrow::before,
+  .bs-tooltip-left.skills .arrow::before { border-bottom-color: #6ab04c; }
+
+  .tooltip.experience > .tooltip-inner { background-color: #e056fd; }
+  .bs-tooltip-auto[x-placement^="top"].experience .arrow::before,
+  .bs-tooltip-top.experience .arrow::before { border-bottom-color: #e056fd; }
+  .bs-tooltip-auto[x-placement^="right"].experience .arrow::before,
+  .bs-tooltip-right.experience .arrow::before { border-bottom-color: #e056fd; }
+  .bs-tooltip-auto[x-placement^="bottom"].experience .arrow::before,
+  .bs-tooltip-bottom.experience .arrow::before { border-bottom-color: #e056fd; }
+  .bs-tooltip-auto[x-placement^="left"].experience .arrow::before,
+  .bs-tooltip-left.experience .arrow::before { border-bottom-color: #e056fd; }
+
+  .tooltip.portfolio > .tooltip-inner { background-color: #f0932b; }
+  .bs-tooltip-auto[x-placement^="top"].portfolio .arrow::before,
+  .bs-tooltip-top.portfolio .arrow::before { border-bottom-color: #f0932b; }
+  .bs-tooltip-auto[x-placement^="right"].portfolio .arrow::before,
+  .bs-tooltip-right.portfolio .arrow::before { border-bottom-color: #f0932b; }
+  .bs-tooltip-auto[x-placement^="bottom"].portfolio .arrow::before,
+  .bs-tooltip-bottom.portfolio .arrow::before { border-bottom-color: #f0932b; }
+  .bs-tooltip-auto[x-placement^="left"].portfolio .arrow::before,
+  .bs-tooltip-left.portfolio .arrow::before { border-bottom-color: #f0932b; }
+
+  .tooltip.contact > .tooltip-inner { background-color: #7ed6df; }
+  .bs-tooltip-auto[x-placement^="top"].contact .arrow::before,
+  .bs-tooltip-top.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-auto[x-placement^="right"].contact .arrow::before,
+  .bs-tooltip-right.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-auto[x-placement^="bottom"].contact .arrow::before,
+  .bs-tooltip-bottom.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-auto[x-placement^="left"].contact .arrow::before,
+  .bs-tooltip-left.contact .arrow::before { border-bottom-color: #7ed6df; }
 }

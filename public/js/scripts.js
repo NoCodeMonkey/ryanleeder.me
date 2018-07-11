@@ -31,6 +31,7 @@
       if (target.length) {
         e.preventDefault();
         e.stopPropagation();
+        $('[data-toggle="title-tooltip"]').tooltip('hide');
         core.scrollToSection(target);
         if ($('.navbar-toggler').css('display') !== 'none'){
           $('.navbar-toggler').trigger('click');
@@ -205,6 +206,16 @@ $(document).ready(function () {
     }
   });
 
+  $('[data-toggle="title-tooltip"]').each(function() {
+    var listClass = $(this).parent('.nav-item').prop("class").replace("nav-item", "").trim();
+    $(this).tooltip({
+      template: "<div class=\"tooltip " + listClass + "\" role=\"tooltip\"><div class=\"arrow\"></div><div class=\"tooltip-inner\"></div></div>",
+      delay: {
+        "show": 2000,
+        "hide": 100
+      }
+    });
+  });
   $('[data-toggle="tooltip"]').tooltip();
 
   $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
