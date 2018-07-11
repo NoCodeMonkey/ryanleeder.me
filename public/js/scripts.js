@@ -237,10 +237,10 @@ $(document).ready(function () {
   //$('.timeline-navigation').stick_in_parent('.timeline');
   $('.timeline-navigation > li').hover(
     function () {
-      $('a', $(this)).stop().animate({'marginLeft':'3rem'}, 200);
+      $('a', $(this)).stop().animate({'marginLeft':'64px'}, 200);
     },
     function () {
-      $('a', $(this)).stop().animate({'marginLeft':'-2.5rem'}, 200);
+      $('a', $(this)).stop().animate({'marginLeft':'-38px'}, 200);
     }
   );
 

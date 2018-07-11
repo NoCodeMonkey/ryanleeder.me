@@ -9910,7 +9910,7 @@ blockquote footer::before {
 
 .timeline-navigation {
   position: absolute;
-  left: -3rem;
+  left: -64px;
   z-index: 101;
   padding: 0;
   list-style: none;
@@ -9925,7 +9925,7 @@ blockquote footer::before {
 .timeline-navigation .expand-timelines a,
 .timeline-navigation .collapse-timelines a {
   display: block;
-  width: 128px;
+  width: 144px;
   height: 53px;
   margin: 0 0 .5rem -2.5rem;
 }
@@ -11626,7 +11626,7 @@ blockquote footer::before {
   }
   .navbar-nav .nav-item.contact .front,
   .navbar-nav .nav-item.contact .back {
-    background-color: #7ed6df;
+    background-color: #f9ca24;
   }
 }
 
@@ -11715,6 +11715,8 @@ blockquote footer::before {
 
 @media screen and (min-width: 768px) {
   .tooltip.home > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
     background-color: #eb4d4b;
   }
   .bs-tooltip-auto[x-placement^="top"].home .arrow::before,
@@ -11738,6 +11740,8 @@ blockquote footer::before {
     border-bottom-color: #eb4d4b;
   }
   .tooltip.about > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
     background-color: #686de0;
   }
   .bs-tooltip-auto[x-placement^="top"].about .arrow::before,
@@ -11761,6 +11765,8 @@ blockquote footer::before {
     border-bottom-color: #686de0;
   }
   .tooltip.skills > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
     background-color: #6ab04c;
   }
   .bs-tooltip-auto[x-placement^="top"].skills .arrow::before,
@@ -11784,6 +11790,8 @@ blockquote footer::before {
     border-bottom-color: #6ab04c;
   }
   .tooltip.experience > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
     background-color: #e056fd;
   }
   .bs-tooltip-auto[x-placement^="top"].experience .arrow::before,
@@ -11807,6 +11815,8 @@ blockquote footer::before {
     border-bottom-color: #e056fd;
   }
   .tooltip.portfolio > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
     background-color: #f0932b;
   }
   .bs-tooltip-auto[x-placement^="top"].portfolio .arrow::before,
@@ -11830,27 +11840,29 @@ blockquote footer::before {
     border-bottom-color: #f0932b;
   }
   .tooltip.contact > .tooltip-inner {
-    background-color: #7ed6df;
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #f9ca24;
   }
   .bs-tooltip-auto[x-placement^="top"].contact .arrow::before,
   .bs-tooltip-top.contact .arrow::before,
   .contact.bs-tooltip-auto[x-placement^="top"] .arrow::before {
-    border-bottom-color: #7ed6df;
+    border-bottom-color: #f9ca24;
   }
   .bs-tooltip-auto[x-placement^="right"].contact .arrow::before,
   .bs-tooltip-right.contact .arrow::before,
   .contact.bs-tooltip-auto[x-placement^="right"] .arrow::before {
-    border-bottom-color: #7ed6df;
+    border-bottom-color: #f9ca24;
   }
   .bs-tooltip-auto[x-placement^="bottom"].contact .arrow::before,
   .bs-tooltip-bottom.contact .arrow::before,
   .contact.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
-    border-bottom-color: #7ed6df;
+    border-bottom-color: #f9ca24;
   }
   .bs-tooltip-auto[x-placement^="left"].contact .arrow::before,
   .bs-tooltip-left.contact .arrow::before,
   .contact.bs-tooltip-auto[x-placement^="left"] .arrow::before {
-    border-bottom-color: #7ed6df;
+    border-bottom-color: #f9ca24;
   }
 }
 

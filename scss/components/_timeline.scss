@@ -358,7 +358,7 @@ $timeline-header-color: #6ab04c;
 
 .timeline-navigation {
   position: absolute;
-  left: -3rem;
+  left: -64px;
   z-index: 101;
   padding: 0;
   list-style: none;
@@ -370,7 +370,7 @@ $timeline-header-color: #6ab04c;
 .timeline-navigation .expand-timelines a,
 .timeline-navigation .collapse-timelines a {
   display: block;
-  width: 128px;
+  width: 144px;
   height: 53px;
   margin: 0 0 .5rem -2.5rem;
 }

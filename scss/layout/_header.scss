@@ -95,7 +95,7 @@
       &.contact {
         .front,
         .back {
-          background-color: #7ed6df;
+          background-color: #f9ca24;
         }
       }
     }
@@ -176,7 +176,11 @@
 }
 
 @include when-wider-than(md) {
-  .tooltip.home > .tooltip-inner { background-color: #eb4d4b; }
+  .tooltip.home > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #eb4d4b;
+  }
   .bs-tooltip-auto[x-placement^="top"].home .arrow::before,
   .bs-tooltip-top.home .arrow::before { border-bottom-color: #eb4d4b; }
   .bs-tooltip-auto[x-placement^="right"].home .arrow::before,
@@ -186,7 +190,11 @@
   .bs-tooltip-auto[x-placement^="left"].home .arrow::before,
   .bs-tooltip-left.home .arrow::before { border-bottom-color: #eb4d4b; }
 
-  .tooltip.about > .tooltip-inner { background-color: #686de0; }
+  .tooltip.about > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #686de0;
+  }
   .bs-tooltip-auto[x-placement^="top"].about .arrow::before,
   .bs-tooltip-top.about .arrow::before { border-bottom-color: #686de0; }
   .bs-tooltip-auto[x-placement^="right"].about .arrow::before,
@@ -196,7 +204,11 @@
   .bs-tooltip-auto[x-placement^="left"].about .arrow::before,
   .bs-tooltip-left.about .arrow::before { border-bottom-color: #686de0; }
 
-  .tooltip.skills > .tooltip-inner { background-color: #6ab04c; }
+  .tooltip.skills > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #6ab04c;
+  }
   .bs-tooltip-auto[x-placement^="top"].skills .arrow::before,
   .bs-tooltip-top.skills .arrow::before { border-bottom-color: #6ab04c; }
   .bs-tooltip-auto[x-placement^="right"].skills .arrow::before,
@@ -206,7 +218,11 @@
   .bs-tooltip-auto[x-placement^="left"].skills .arrow::before,
   .bs-tooltip-left.skills .arrow::before { border-bottom-color: #6ab04c; }
 
-  .tooltip.experience > .tooltip-inner { background-color: #e056fd; }
+  .tooltip.experience > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #e056fd;
+  }
   .bs-tooltip-auto[x-placement^="top"].experience .arrow::before,
   .bs-tooltip-top.experience .arrow::before { border-bottom-color: #e056fd; }
   .bs-tooltip-auto[x-placement^="right"].experience .arrow::before,
@@ -216,7 +232,11 @@
   .bs-tooltip-auto[x-placement^="left"].experience .arrow::before,
   .bs-tooltip-left.experience .arrow::before { border-bottom-color: #e056fd; }
 
-  .tooltip.portfolio > .tooltip-inner { background-color: #f0932b; }
+  .tooltip.portfolio > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #f0932b;
+  }
   .bs-tooltip-auto[x-placement^="top"].portfolio .arrow::before,
   .bs-tooltip-top.portfolio .arrow::before { border-bottom-color: #f0932b; }
   .bs-tooltip-auto[x-placement^="right"].portfolio .arrow::before,
@@ -226,13 +246,17 @@
   .bs-tooltip-auto[x-placement^="left"].portfolio .arrow::before,
   .bs-tooltip-left.portfolio .arrow::before { border-bottom-color: #f0932b; }
 
-  .tooltip.contact > .tooltip-inner { background-color: #7ed6df; }
+  .tooltip.contact > .tooltip-inner {
+    font-weight: 600;
+    text-shadow: #565656 1px 1px 0;
+    background-color: #f9ca24;
+  }
   .bs-tooltip-auto[x-placement^="top"].contact .arrow::before,
-  .bs-tooltip-top.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-top.contact .arrow::before { border-bottom-color: #f9ca24; }
   .bs-tooltip-auto[x-placement^="right"].contact .arrow::before,
-  .bs-tooltip-right.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-right.contact .arrow::before { border-bottom-color: #f9ca24; }
   .bs-tooltip-auto[x-placement^="bottom"].contact .arrow::before,
-  .bs-tooltip-bottom.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-bottom.contact .arrow::before { border-bottom-color: #f9ca24; }
   .bs-tooltip-auto[x-placement^="left"].contact .arrow::before,
-  .bs-tooltip-left.contact .arrow::before { border-bottom-color: #7ed6df; }
+  .bs-tooltip-left.contact .arrow::before { border-bottom-color: #f9ca24; }
 }
