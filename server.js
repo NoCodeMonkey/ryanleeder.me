@@ -29,19 +29,15 @@ if (nconf.get('NODE_ENV') !== 'production') {
         case "text/javascript":
         case "application/javascript":
         case "text/css":
-          res.set({
-            'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 30,
-            'Expires': Date.now() + 60 * 60 * 24 * 1000 * 30
-          });
+          res.setHeader('Cache-Control', 'public, max-age=' + 60 * 60 * 24 * 30);
+          res.setHeader('Expires', Date.now() + 60 * 60 * 24 * 1000 * 30);
 			    break;
         case "image/png":
         case "image/jpeg":
         case "image/svg+xml":
-          res.set({
-            'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 365,
-            'Expires': Date.now() + 60 * 60 * 24 * 1000 * 365
-          });
-			  break;
+          res.setHeader('Cache-Control', 'public, max-age=' + 60 * 60 * 24 * 365);
+          res.setHeader('Expires', Date.now() + 60 * 60 * 24 * 1000 * 365);
+			    break;
       }
     }
   }));
