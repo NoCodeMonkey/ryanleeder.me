@@ -1,17 +1,17 @@
 // Compiled using marko@4.11.5 - DO NOT EDIT
 "use strict";
 
-var marko_template = module.exports = require("marko/dist/html").t(__filename),
+var marko_template = module.exports = require("marko/src/html").t(__filename),
     marko_componentType = "/ryanleeder.me$1.0.0/views/components/skills.marko",
-    components_helpers = require("marko/dist/components/helpers"),
+    components_helpers = require("marko/src/components/helpers"),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    marko_helpers = require("marko/dist/runtime/html/helpers"),
+    marko_helpers = require("marko/src/runtime/html/helpers"),
     marko_forEach = marko_helpers.f,
     marko_escapeXml = marko_helpers.x,
     marko_escapeStyle = marko_helpers.xc,
     marko_escapeXmlAttr = marko_helpers.xa,
-    marko_forEachWithStatusVar = require("marko/dist/runtime/helper-forEachWithStatusVar");
+    marko_forEachWithStatusVar = require("marko/src/runtime/helper-forEachWithStatusVar");
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -170,8 +170,8 @@ function render(input, out, __component, component, state) {
 }
 
 marko_template._ = marko_renderer(render, {
-    ae_: true,
-    _l_: marko_componentType
+    ___implicit: true,
+    ___type: marko_componentType
   });
 
 marko_template.Component = marko_defineComponent({}, marko_template._);
