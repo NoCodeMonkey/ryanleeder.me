@@ -11542,6 +11542,7 @@ blockquote footer::before {
 }
 
 .navbar {
+  height: 100px;
   padding: 0;
   font-size: 1rem;
   /* stylelint-disable selector-max-id */
@@ -11554,6 +11555,9 @@ blockquote footer::before {
 
 .navbar .navbar-brand .logo {
   height: 100px;
+  background: transparent url("/img/logo.jpg") center center no-repeat;
+  background-image: linear-gradient(transparent, transparent), url("/img/logo.svg");
+  background-size: contain;
 }
 
 .navbar .navbar-toggler:focus {

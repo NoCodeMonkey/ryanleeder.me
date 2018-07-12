@@ -1,4 +1,5 @@
 .navbar {
+  height: $navbar-height;
   padding: 0;
   font-size: 1rem;
 
@@ -7,6 +8,9 @@
 
     .logo {
       height: $navbar-height;
+      background: transparent url("/img/logo.jpg") center center no-repeat;
+      background-image: linear-gradient(transparent, transparent), url("/img/logo.svg");
+      background-size: contain;
     }
   }
 
