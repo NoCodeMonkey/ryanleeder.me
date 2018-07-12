@@ -1,22 +1,22 @@
 // Compiled using marko@4.11.5 - DO NOT EDIT
 "use strict";
 
-var marko_template = module.exports = require("marko/src/html").t(__filename),
+var marko_template = module.exports = require("marko/dist/html").t(__filename),
     marko_componentType = "/ryanleeder.me$1.0.0/views/components/contact.marko",
-    components_helpers = require("marko/src/components/helpers"),
+    components_helpers = require("marko/dist/components/helpers"),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    marko_helpers = require("marko/src/runtime/html/helpers"),
+    marko_helpers = require("marko/dist/runtime/html/helpers"),
     marko_escapeXmlAttr = marko_helpers.xa,
     marko_loadTag = marko_helpers.t,
-    _preserve_tag = marko_loadTag(require("marko/src/components/taglib/preserve-tag"));
+    _preserve_tag = marko_loadTag(require("marko/dist/components/taglib/preserve-tag"));
 
 function render(input, out, __component, component, state) {
   var data = input;
 
   out.w("<div class=\"row contact-row\"><div class=\"col-12 col-md-6\"><div class=\"card h-100\"><div class=\"card-body\"><h5 class=\"card-title\">HAVE A QUESTION OR COMMENT?</h5><h6 class=\"card-subtitle mb-2 text-muted\">I'd love to hear from you.</h6><form class=\"form-horizontal contact-form hide-js-element needs-validation\" method=\"post\" novalidate>");
 
-  var __key8 = __component.___nextKey("7");
+  var __key8 = __component._h_("7");
 
   _preserve_tag({
       key: __key8,
@@ -31,8 +31,8 @@ function render(input, out, __component, component, state) {
 }
 
 marko_template._ = marko_renderer(render, {
-    ___implicit: true,
-    ___type: marko_componentType
+    ae_: true,
+    _l_: marko_componentType
   });
 
 marko_template.Component = marko_defineComponent({}, marko_template._);
@@ -40,6 +40,6 @@ marko_template.Component = marko_defineComponent({}, marko_template._);
 marko_template.meta = {
     id: "/ryanleeder.me$1.0.0/views/components/contact.marko",
     tags: [
-      "marko/src/components/taglib/preserve-tag"
+      "marko/dist/components/taglib/preserve-tag"
     ]
   };

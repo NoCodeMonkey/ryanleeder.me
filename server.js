@@ -24,7 +24,7 @@ if (nconf.get('NODE_ENV') !== 'production') {
   app.use(serveStatic(path.join(__dirname, 'public'), {
     maxAge: '1y',
     setHeaders: function (res, path, stat) {
-      var fileType = mime.lookup(path);
+      var fileType = mime.getType(path);
       switch(fileType){
         case "text/javascript":
         case "application/javascript":

@@ -1,17 +1,17 @@
 // Compiled using marko@4.11.5 - DO NOT EDIT
 "use strict";
 
-var marko_template = module.exports = require("marko/src/html").t(__filename),
+var marko_template = module.exports = require("marko/dist/html").t(__filename),
     marko_componentType = "/ryanleeder.me$1.0.0/views/components/about.marko",
-    components_helpers = require("marko/src/components/helpers"),
+    components_helpers = require("marko/dist/components/helpers"),
     marko_renderer = components_helpers.r,
     marko_defineComponent = components_helpers.c,
-    marko_loadTemplate = require("marko/src/runtime/helper-loadTemplate"),
+    marko_loadTemplate = require("marko/dist/runtime/helper-loadTemplate"),
     carousel_template = marko_loadTemplate(require.resolve("../components/carousel.marko")),
-    marko_helpers = require("marko/src/runtime/html/helpers"),
+    marko_helpers = require("marko/dist/runtime/html/helpers"),
     marko_escapeXml = marko_helpers.x,
     marko_loadTag = marko_helpers.t,
-    include_tag = marko_loadTag(require("marko/src/taglibs/core/include-tag"));
+    include_tag = marko_loadTag(require("marko/dist/taglibs/core/include-tag"));
 
 function render(input, out, __component, component, state) {
   var data = input;
@@ -31,8 +31,8 @@ function render(input, out, __component, component, state) {
 }
 
 marko_template._ = marko_renderer(render, {
-    ___implicit: true,
-    ___type: marko_componentType
+    ae_: true,
+    _l_: marko_componentType
   });
 
 marko_template.Component = marko_defineComponent({}, marko_template._);
@@ -41,6 +41,6 @@ marko_template.meta = {
     id: "/ryanleeder.me$1.0.0/views/components/about.marko",
     tags: [
       "../components/carousel.marko",
-      "marko/src/taglibs/core/include-tag"
+      "marko/dist/taglibs/core/include-tag"
     ]
   };
