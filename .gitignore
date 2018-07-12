@@ -6,3 +6,7 @@ config/settings.json
 iisnode
 Thumbs.db
 build/.stylelintcache
+*.marko.js
+*.marko.xml.js
+.vscode
+coverage
