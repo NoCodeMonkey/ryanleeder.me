@@ -23,7 +23,9 @@
     "css:compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss public/css/style.css",
     "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output public/css/style.min.css public/css/style.css",
     "css": "npm run css:lint && npm run css:compile && npm run css:prefix && npm run css:minify",
-    "css:watch": "watch 'npm run css' scss"
+    "css:watch": "watch 'npm run css' scss",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -51,7 +53,8 @@
     "request": "^2.87.0",
     "request-ip": "^2.1.1",
     "serve-static": "^1.13.2",
-    "simple-recaptcha-new": "^1.1.1"
+    "simple-recaptcha-new": "^1.1.1",
+    "snyk": "^1.88.2"
   },
   "noAnalyze": true,
   "engines": {
@@ -86,5 +89,6 @@
     "Safari >= 9",
     "Android >= 4.4",
     "Opera >= 30"
-  ]
+  ],
+  "snyk": true
 }
