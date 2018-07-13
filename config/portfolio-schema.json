@@ -1,0 +1,74 @@
+{
+  "$id": "http://ryanleeder.me/portfolio.json",
+  "type": "array",
+  "items": {
+    "$id": "http://ryanleeder.me/portfolio.json/items",
+    "type": "object",
+    "properties": {
+      "title": {
+        "$id": "http://ryanleeder.me/portfolio.json/items/properties/title",
+        "type": "string",
+        "title": "The Title Schema ",
+        "default": "",
+        "examples": [
+          "Peaceland Australia Website"
+        ]
+      },
+      "description": {
+        "$id": "http://ryanleeder.me/portfolio.json/items/properties/description",
+        "type": "string",
+        "title": "The Description Schema ",
+        "default": "",
+        "examples": [
+          "Relative new business selling horse floats in Australia. They were relying purely on equestrian magazine advertisements and word-of-mouth for sales and needed an online presence that they could easily update themselves. "
+        ]
+      },
+      "website": {
+        "$id": "http://ryanleeder.me/portfolio.json/items/properties/website",
+        "type": "object",
+        "properties": {
+          "url": {
+            "$id": "http://ryanleeder.me/portfolio.json/items/properties/website/properties/url",
+            "type": "string",
+            "title": "The Url Schema ",
+            "default": "",
+            "examples": [
+              "http://www.peacelandaustralia.com.au/"
+            ]
+          },
+          "verification": {
+            "$id": "http://ryanleeder.me/portfolio.json/items/properties/website/properties/verification",
+            "type": "string",
+            "title": "The Verification Schema ",
+            "default": "",
+            "examples": [
+              "ul.copyright"
+            ]
+          }
+        }
+      },
+      "technologies": {
+        "$id": "http://ryanleeder.me/portfolio.json/items/properties/technologies",
+        "type": "array",
+        "items": {
+          "$id": "http://ryanleeder.me/portfolio.json/items/properties/technologies/items",
+          "type": "string",
+          "title": "The 0th Schema ",
+          "default": "",
+          "examples": [
+            "ASP.NET MVC",
+            "Dynamic Tabs and Content",
+            "JQuery",
+            "HTML5",
+            "Responsive Design",
+            "Modernizr"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "technologies"
+    ]
+  }
+}

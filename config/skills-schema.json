@@ -1,0 +1,79 @@
+{
+  "$id": "http://ryanleeder.me/config.json",
+  "type": "array",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "items": {
+    "$id": "http://ryanleeder.me/config.json/items",
+    "type": "object",
+    "properties": {
+      "name": {
+        "$id": "http://ryanleeder.me/config.json/items/properties/name",
+        "type": "string",
+        "title": "The Name Schema ",
+        "default": "",
+        "examples": [
+          "Front-End Web Development Skills"
+        ]
+      },
+      "abbreviation": {
+        "$id": "http://ryanleeder.me/config.json/items/properties/abbreviation",
+        "type": "string",
+        "title": "The Abbreviation Schema ",
+        "default": "",
+        "examples": [
+          "Front-End"
+        ]
+      },
+      "icon": {
+        "$id": "http://ryanleeder.me/config.json/items/properties/icon",
+        "type": "string",
+        "title": "The Icon Schema ",
+        "default": "",
+        "examples": [
+          "fas fa-code"
+        ]
+      },
+      "skills": {
+        "$id": "http://ryanleeder.me/config.json/items/properties/skills",
+        "type": "array",
+        "items": {
+          "$id": "http://ryanleeder.me/config.json/items/properties/skills/items",
+          "type": "object",
+          "properties": {
+            "name": {
+              "$id": "http://ryanleeder.me/config.json/items/properties/skills/items/properties/name",
+              "type": "string",
+              "title": "The Name Schema ",
+              "default": "",
+              "examples": [
+                "HTML / HTML5"
+              ]
+            },
+            "competency": {
+              "$id": "http://ryanleeder.me/config.json/items/properties/skills/items/properties/competency",
+              "type": "integer",
+              "title": "The Competency Schema ",
+              "default": 0,
+              "examples": [
+                95
+              ]
+            },
+            "description": {
+              "$id": "http://ryanleeder.me/config.json/items/properties/skills/items/properties/description",
+              "type": "string",
+              "title": "The Description Schema ",
+              "default": "",
+              "examples": [
+                "This is a long description. "
+              ]
+            }
+          },
+          "required": ["name","competency","description"],
+          "additionalProperties" : false
+        }
+      }
+    },
+    "required": ["name", "abbreviation", "icon"]
+  }
+}

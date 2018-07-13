@@ -244,6 +244,47 @@ $(document).ready(function () {
     }
   );
 
+  $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+    e.preventDefault();
+    $(this).ekkoLightbox({
+      alwaysShowClose: false
+    });
+  });
+
+  $(document).on("click", '.info', function(e) {
+    e.preventDefault();
+    var elem = $(this);
+    var content = '';
+    var description = elem.data('description');
+    var technologies = elem.data('technologies');
+    if (description && description.length) {
+      content += '<h6>Brief</h6>'
+      content += description;
+      if (technologies) {
+        content += '<br /><br />';
+      }
+    }
+    if (technologies && technologies.length) {
+      var tech = technologies.split(',');
+      content += '<h6>Technologies Used</h6>'
+      content += '<div class="tag-cloud small">';
+      for (i = 0; i < tech.length; i++) {
+        content += '<span>'
+        content += tech[i];
+        content += '</span>'
+      }
+      content += '</div>';
+    }
+    core.modal(elem.data('title'), content, '<i class=\'far fa-smile\'></i> Ok');
+    return false;
+  });
+
+  $(document).on("click", '.website', function(e) {
+    e.preventDefault();
+    window.open(this.href);
+    return false;
+  });
+
   core.removeLoader();
   core.handleScrolling();
   core.animateIntro();

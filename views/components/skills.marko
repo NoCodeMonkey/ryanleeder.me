@@ -1,105 +1,121 @@
 $ {
   const _ = require('lodash'),
-        categories = require('../../config/skills.json');
+        djv = require('djv'),
+        env = new djv(),
+        skillsJsonSchema = require('../../config/skills-schema.json'),
+        skillsJson = require('../../config/skills.json');
+
+  env.addSchema('skills', skillsJsonSchema);
+  var errors = env.validate('skills', _.extend(true, {}, skillsJson));
 
   var ID = function (name) {
     return `${name.replace(/[\W_]+/g, "_").toLowerCase()}_${Math.random().toString(36).substr(2, 9)}`;
   };
-  var categoriesWithId = _.map(categories, o => _.extend({ id: ID(o.name) }, o));
 }
-<style for(category in categoriesWithId)>
-  .no-js #${category.id}_tab:checked ~ .tab-content > #${category.id} {
-    display: block;
-  }
-  .no-js #${category.id}_tab:checked ~ .nav-tabs > .nav-item > #${category.id}_label {
-    color: #fff;
-  	background-color: #006fff;
-  }
-  .no-js #${category.id}_tab:checked ~ .nav-tabs > .nav-item > #${category.id}_label::after {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -.5rem;
-    content: "";
-    border-top: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    border-left: .5rem solid #006fff;
-  }
-  .no-js #${category.id}_tab:not(:checked) ~ .nav-tabs > .nav-item > #${category.id}_label:hover {
-    color: #fff;
-  	background-color: #ff9000;
-  }
-</style>
-<p if(categoriesWithId && categoriesWithId.length)>List of categorised skills used throughout my development career. Click on a category link e.g. "<span class="abbreviate abbreviate-lg" data-abbreviated-text="${categoriesWithId[0].abbreviation}"><span>${categoriesWithId[0].name}</span></span>" to see the relevant subset.</p>
-<div class="d-flex flex-row mt-2 tab-content-skills" if(categoriesWithId && categoriesWithId.length)>
-  <for(category in categoriesWithId | status-var=loop)>
-    <if(loop.isFirst())>
-      <input class="tab-state" type="radio" name="tabs" checked="checked" id="${category.id}_tab" />
-    </if>
-    <else>
-      <input class="tab-state" type="radio" name="tabs" id="${category.id}_tab" />
-    </else>
-  </for>
-  <ul class="nav nav-tabs nav-tabs-vertical nav-tabs-left" role="tablist">
-    <li class="nav-item" for(category in categoriesWithId | status-var=loop)>
-      $ let tabClass = 'nav-link';
-      <if(loop.isFirst())>
-        $ tabClass += ' active';
-      </if>
-      <a href="#${category.id}" class="${tabClass} hide-js-element" data-toggle="tab" role="tab" aria-controls="${category.id}">
-        <div class="d-flex flex-row align-items-center">
-          <div class="category-icon">
-            <i class="${category.icon}" aria-hidden="true"></i>
-          </div>
-          <div class="nav-link-title">
-            <span class="abbreviate abbreviate-lg" data-abbreviated-text="${category.abbreviation}"><span>${category.name}</span></span>
-          </div>
-        </div>
-      </a>
-      <label id="${category.id}_label" for="${category.id}_tab" class="checkbox-label hide-js-fallback-element">
-        <span class="d-flex flex-row align-items-center">
-          <span class="category-icon">
-            <i class="${category.icon}" aria-hidden="true"></i>
-          </span>
-          <span class="nav-link-title">
-            <span class="abbreviate abbreviate-lg" data-abbreviated-text="${category.abbreviation}"><span>${category.name}</span></span>
-          </span>
-        </span>
-      </label>
-    </li>
-  </ul>
-  <div class="tab-content pre-scrollable">
-    <for(category in categoriesWithId | status-var=loop)>
-      <div class="tab-pane" id="${category.id}" role="tabpanel">
-        <h5>${category.name}</h5>
-        <div class="skills-matrix" if(category.skills && category.skills.length)>
-          <for(skill in category.skills)>
-            <div class="skill">
-              <div class="skill-title" data-toggle="tooltip" data-placement="bottom" title="${skill.description}" if(skill.description)>
-                ${skill.name}
-                <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
-              </div>
-              <div class="skill-title" else>
-                ${skill.name}
-                <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
-              </div>
-              <div class="skill-bar" data-bar-width="${skill.competency}"></div>
-            </div>
-          </for>
-        </div>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert" else>
-          <strong>An Error Occurred:</strong> Category has no skills.
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      </div>
-    </for>
+<if(errors && errors.length)>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>An Error Occurred:</strong> Skills local JSON file failed validation.
+    <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
-</div>
-<div class="alert alert-warning alert-dismissible fade show" role="alert" else>
-  <strong>An Error Occurred:</strong> Cannot load skills data from local JSON file.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
+</if>
+<else>
+  $ var categoriesWithId = _.map(skillsJson, skill => _.extend({ id: ID(skill.name) }, skill));
+  <style for(category in categoriesWithId)>
+    .no-js #${category.id}_tab:checked ~ .tab-content > #${category.id} {
+      display: block;
+    }
+    .no-js #${category.id}_tab:checked ~ .nav-tabs > .nav-item > #${category.id}_label {
+      color: #fff;
+      background-color: #006fff;
+    }
+    .no-js #${category.id}_tab:checked ~ .nav-tabs > .nav-item > #${category.id}_label::after {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      margin-top: -.5rem;
+      content: "";
+      border-top: .5rem solid transparent;
+      border-bottom: .5rem solid transparent;
+      border-left: .5rem solid #006fff;
+    }
+    .no-js #${category.id}_tab:not(:checked) ~ .nav-tabs > .nav-item > #${category.id}_label:hover {
+      color: #fff;
+      background-color: #ff9000;
+    }
+  </style>
+  <p if(categoriesWithId && categoriesWithId.length)>List of categorised skills used throughout my development career. Click on a category link e.g. "<span class="abbreviate abbreviate-lg" data-abbreviated-text="${categoriesWithId[0].abbreviation}"><span>${categoriesWithId[0].name}</span></span>" to see the relevant subset.</p>
+  <div class="d-flex flex-row mt-2 tab-content-skills" if(categoriesWithId && categoriesWithId.length)>
+    <for(category in categoriesWithId | status-var=loop)>
+      <if(loop.isFirst())>
+        <input class="tab-state" type="radio" name="tabs" checked="checked" id="${category.id}_tab" />
+      </if>
+      <else>
+        <input class="tab-state" type="radio" name="tabs" id="${category.id}_tab" />
+      </else>
+    </for>
+    <ul class="nav nav-tabs nav-tabs-vertical nav-tabs-left" role="tablist">
+      <li class="nav-item" for(category in categoriesWithId | status-var=loop)>
+        $ let tabClass = 'nav-link';
+        <if(loop.isFirst())>
+          $ tabClass += ' active';
+        </if>
+        <a href="#${category.id}" class="${tabClass} hide-js-element" data-toggle="tab" role="tab" aria-controls="${category.id}">
+          <div class="d-flex flex-row align-items-center">
+            <div class="category-icon">
+              <i class="${category.icon}" aria-hidden="true"></i>
+            </div>
+            <div class="nav-link-title">
+              <span class="abbreviate abbreviate-lg" data-abbreviated-text="${category.abbreviation}"><span>${category.name}</span></span>
+            </div>
+          </div>
+        </a>
+        <label id="${category.id}_label" for="${category.id}_tab" class="checkbox-label hide-js-fallback-element">
+          <span class="d-flex flex-row align-items-center">
+            <span class="category-icon">
+              <i class="${category.icon}" aria-hidden="true"></i>
+            </span>
+            <span class="nav-link-title">
+              <span class="abbreviate abbreviate-lg" data-abbreviated-text="${category.abbreviation}"><span>${category.name}</span></span>
+            </span>
+          </span>
+        </label>
+      </li>
+    </ul>
+    <div class="tab-content pre-scrollable">
+      <for(category in categoriesWithId | status-var=loop)>
+        <div class="tab-pane" id="${category.id}" role="tabpanel">
+          <h5>${category.name}</h5>
+          <div class="skills-matrix" if(category.skills && category.skills.length)>
+            <for(skill in category.skills)>
+              <div class="skill">
+                <div class="skill-title" data-toggle="tooltip" data-placement="bottom" title="${skill.description}" if(skill.description)>
+                  ${skill.name}
+                  <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
+                </div>
+                <div class="skill-title" else>
+                  ${skill.name}
+                  <b class="hide-js-fallback-element skill-competency" data-offset="${100 - skill.competency}">${skill.competency}%</b>
+                </div>
+                <div class="skill-bar" data-bar-width="${skill.competency}"></div>
+              </div>
+            </for>
+          </div>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert" else>
+            <strong>An Error Occurred:</strong> Category has no skills.
+            <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+      </for>
+    </div>
+  </div>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert" else>
+    <strong>An Error Occurred:</strong> Cannot load skills data from local JSON file.
+    <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</else>

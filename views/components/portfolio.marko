@@ -1,1 +1,84 @@
-<p>I am currently finalising my Portfolio, please contact me if you require examples of my work. Please check back soon.</p>
+$ {
+  const _ = require('lodash'),
+        request = require('request'),
+        regexWebUrl = require('regex-weburl'),
+        cheerio = require('cheerio'),
+        djv = require('djv'),
+        env = new djv(),
+        portfolioJsonSchema = require('../../config/portfolio-schema.json'),
+        portfolioJson = require('../../config/portfolio.json');
+
+  var validatePortfolioWebsite = function (website, callback) {
+    var re = new RegExp(regexWebUrl);
+    var isValid = re.test(website.url);
+    if (isValid) {
+      var result = false;
+      request(website.url, function (error, response, html) {
+        if (!error && response.statusCode == 200) {
+          var $ = cheerio.load(html);
+          callback($(website.verification).length > 0);
+        } else {
+          callback(false);
+        }
+      });
+    }
+    else {
+      callback(false);
+    }
+  }
+
+  env.addSchema('portfolio', portfolioJsonSchema);
+  const errors = env.validate('portfolio', _.extend(true, {}, portfolioJson));
+}
+<if(errors && errors.length)>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>An Error Occurred:</strong> portfolio local JSON file failed validation.
+    <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</if>
+<else>
+  $ {
+    function checkAvailable(portfolio) {
+      return new Promise(function(resolve, reject) {
+        if (portfolio.website) {
+          validatePortfolioWebsite(portfolio.website, function(result) {
+            portfolio.website = _.extend({ available : result }, portfolio.website);
+            resolve(portfolio);
+          });
+        } else {
+          return resolve(portfolio);
+        }
+      });
+    }
+
+    var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio => checkAvailable(portfolio)));
+    var effects = ["effect1", "effect2", "effect3", "effect4"];
+
+
+  }
+  <p>Here's a small selection of the projects I've worked on both past and present, for clients ranging from small business to fortune 500 companies.</p>
+  <p>Mostly developed in ASP.NET, C#, JQuery and SQL Server. Enhanced with a dash of Windows Azure and Amazon cloud platform development. Finally garnished with a sprinkle of Shopify and WordPress for good measure!</p>
+  <await(portfolioItems from portfolioPromise)>
+    <div class="gallery">
+      <for(portfolio in portfolioItems | status-var=loop)>
+        $ var effect = effects[loop.getIndex() % effects.length];
+        <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="http://placehold.it/600x400" data-gallery="gallery" data-type="image">
+          <img class="gallery-img" src="http://placehold.it/600x400" alt="${portfolio.title}">
+          <div class="overlay">
+            <h2>${portfolio.title}</h2>
+            <div class="links-container">
+              <div class="links">
+                <a class="btn btn-primary preview hide-js-element" href="#" title="Preview"><i class="far fa-eye"></i></a>
+                <a class="btn btn-primary info hide-js-element ml-2" href="#" title="View Information" data-title="${portfolio.title}" data-description="${portfolio.description}" data-technologies="${portfolio.technologies.join()}">View Information</a>
+                <a class="btn btn-primary website" target="_blank" title="Visit Website" href="${portfolio.website.url}" if (portfolio.website && portfolio.website.available === true)>Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </for>
+    </div>
+  </await>
+  <p>The items above reflect just a small sample of the projects I have worked on. If you are looking for more samples of a specific type, please contact me.</p>
+</else>
