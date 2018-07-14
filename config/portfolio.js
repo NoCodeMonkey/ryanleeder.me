@@ -57,6 +57,10 @@ function waitLoad(page, loadTimeout) {
   })
 }
 
+function isOSWin64() {
+  return process.arch === 'x64' || process.env.hasOwnProperty('PROCESSOR_ARCHITEW6432');
+}
+
 async function checkPortfolioItems() {
   var promises = portfolioJson.map(async portfolio => {
     var directory = get(portfolio, 'directory.path', null);
@@ -71,19 +75,21 @@ async function checkPortfolioItems() {
     return portfolio;
   });
   var portfolios = await Promise.all(promises);
-  var portfoliosToScreenshot = _.filter(portfolios, (portfolio) => {
-    var url = get(portfolio, 'website.url', null);
-    var files = get(portfolio, 'directory.files', null);
-    return (url && (!files || files && files.length === 0));
-  });
-  if (portfoliosToScreenshot && portfoliosToScreenshot.length) {
-    await screenshotWebsites(portfoliosToScreenshot);
-    portfoliosToScreenshot.forEach(async (portfolio) => {
-      const files = await fs.readdir(portfolio.directory.path);
-      const images = files.filter(file => imageRegex.test(file));
-      let index = portfolios.findIndex((p => p.title === portfolio.title));
-      portfolios[index] = _.merge({ directory: { files: images } }, portfolio);
+  if (isOSWin64()) {
+    var portfoliosToScreenshot = _.filter(portfolios, (portfolio) => {
+      var url = get(portfolio, 'website.url', null);
+      var files = get(portfolio, 'directory.files', null);
+      return (url && (!files || files && files.length === 0));
     });
+    if (portfoliosToScreenshot && portfoliosToScreenshot.length) {
+      await screenshotWebsites(portfoliosToScreenshot);
+      portfoliosToScreenshot.forEach(async (portfolio) => {
+        const files = await fs.readdir(portfolio.directory.path);
+        const images = files.filter(file => imageRegex.test(file));
+        let index = portfolios.findIndex((p => p.title === portfolio.title));
+        portfolios[index] = _.merge({ directory: { files: images } }, portfolio);
+      });
+    }
   }
   const config = path.join(__dirname, 'portfolio.json');
   const json = JSON.stringify(portfolios);
