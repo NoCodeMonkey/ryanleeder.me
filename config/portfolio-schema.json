@@ -64,11 +64,29 @@
             "Modernizr"
           ]
         }
+      },
+      "directory": {
+        "$id": "http://ryanleeder.me/portfolio.json/items/properties/directory",
+        "type": "object",
+        "properties": {
+          "path": {
+            "$id": "http://ryanleeder.me/portfolio.json/items/properties/directory/properties/path",
+            "type": "string",
+            "title": "The Path Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "files": {
+            "$id": "http://ryanleeder.me/portfolio.json/items/properties/directory/properties/files",
+            "type": "array"
+          }
+        }
       }
     },
     "required": [
-      "title",
-      "technologies"
+      "title"
     ]
   }
 }

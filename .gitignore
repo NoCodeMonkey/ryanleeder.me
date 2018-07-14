@@ -10,3 +10,4 @@ build/.stylelintcache
 *.marko.xml.js
 .vscode
 coverage
+public/img/portfolio/

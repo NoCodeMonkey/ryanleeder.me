@@ -1,6 +1,7 @@
 $ {
   const _ = require('lodash'),
         request = require('request'),
+        rp = require('request-promise-native'),
         regexWebUrl = require('regex-weburl'),
         cheerio = require('cheerio'),
         djv = require('djv'),
@@ -8,23 +9,30 @@ $ {
         portfolioJsonSchema = require('../../config/portfolio-schema.json'),
         portfolioJson = require('../../config/portfolio.json');
 
-  var validatePortfolioWebsite = function (website, callback) {
+  async function checkAvailable(portfolio) {
+    if (!portfolio.website || !portfolio.website.url) {
+      return portfolio;
+    }
     var re = new RegExp(regexWebUrl);
-    var isValid = re.test(website.url);
-    if (isValid) {
-      var result = false;
-      request(website.url, function (error, response, html) {
-        if (!error && response.statusCode == 200) {
-          var $ = cheerio.load(html);
-          callback($(website.verification).length > 0);
-        } else {
-          callback(false);
-        }
-      });
+    var isValid = re.test(portfolio.website.url);
+    if (!isValid) {
+      return portfolio;
     }
-    else {
-      callback(false);
+    var options = {
+      uri: portfolio.website.url,
+      transform: function (body) {
+        return cheerio.load(body);
+      }
+    };
+    try
+    {
+      const $r = await rp(options);
+      const result = (portfolio.website.verification && portfolio.website.verification.length) ? ($r(portfolio.website.verification).length > 0) : true;
+      portfolio = _.merge({ website: { available : result } }, portfolio);
     }
+    catch(err)
+    {}
+    return portfolio;
   }
 
   env.addSchema('portfolio', portfolioJsonSchema);
@@ -40,23 +48,20 @@ $ {
 </if>
 <else>
   $ {
-    function checkAvailable(portfolio) {
-      return new Promise(function(resolve, reject) {
-        if (portfolio.website) {
-          validatePortfolioWebsite(portfolio.website, function(result) {
-            portfolio.website = _.extend({ available : result }, portfolio.website);
-            resolve(portfolio);
-          });
+    var effects = ['effect1', 'effect2', 'effect3'];
+    var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio =>checkAvailable(portfolio)));
+
+    function getPicture(portfolio) {
+      if (portfolio.directory && portfolio.directory.files && portfolio.directory.files.length) {
+        var directory = portfolio.directory.path.split('\\').pop();
+        if (portfolio.website && portfolio.website.url) {
+          return `img/portfolio/${directory}/fullsize-1920x1280.png`;
         } else {
-          return resolve(portfolio);
+          return `img/portfolio/${directory}/${portfolio.directory.files[0]}`;
         }
-      });
+      }
+      return 'img/noimageavailable.png';
     }
-
-    var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio => checkAvailable(portfolio)));
-    var effects = ["effect1", "effect2", "effect3", "effect4"];
-
-
   }
   <p>Here's a small selection of the projects I've worked on both past and present, for clients ranging from small business to fortune 500 companies.</p>
   <p>Mostly developed in ASP.NET, C#, JQuery and SQL Server. Enhanced with a dash of Windows Azure and Amazon cloud platform development. Finally garnished with a sprinkle of Shopify and WordPress for good measure!</p>
@@ -64,8 +69,9 @@ $ {
     <div class="gallery">
       <for(portfolio in portfolioItems | status-var=loop)>
         $ var effect = effects[loop.getIndex() % effects.length];
-        <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="http://placehold.it/600x400" data-gallery="gallery" data-type="image">
-          <img class="gallery-img" src="http://placehold.it/600x400" alt="${portfolio.title}">
+        $ var picture = getPicture(portfolio);
+        <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture}" data-gallery="gallery" data-type="image">
+          <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
           <div class="overlay">
             <h2>${portfolio.title}</h2>
             <div class="links-container">

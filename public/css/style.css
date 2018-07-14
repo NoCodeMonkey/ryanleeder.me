@@ -11700,11 +11700,13 @@ blockquote footer::before {
 .gallery .gallery-item.effect3 .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: all .2s .2s ease-in-out;
+  transition: all .2s .4s ease-in-out;
 }
 
 .gallery .gallery-item.effect3 .gallery-img {
-  transition: all .4s ease-in;
+  transition: .3s ease-in-out;
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 .gallery .gallery-item.effect3 h2,
@@ -11712,9 +11714,6 @@ blockquote footer::before {
 .gallery .gallery-item.effect3 .info,
 .gallery .gallery-item.effect3 .website {
   opacity: 0;
-}
-
-.gallery .gallery-item.effect3 h2 {
   transition: all .2s ease-in-out;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -11733,8 +11732,8 @@ blockquote footer::before {
 }
 
 .gallery .gallery-item.effect3:hover .gallery-img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .gallery .gallery-item.effect3:hover h2,

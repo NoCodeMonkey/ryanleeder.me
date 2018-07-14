@@ -36,9 +36,14 @@ app.use(morgan('short', {
 require('./routes/home')(app, nconf);
 require('./routes/error')(app);
 
-app.listen(port, function(err) {
-  if (err) {
-      throw err;
-  }
-  console.log('Listening on port %d', port);
-});
+(async function() {
+  const portfolio = require('./config/portfolio');
+  portfolio.initialize().then(() => {
+    app.listen(port, function(err) {
+      if (err) {
+          throw err;
+      }
+      console.log('Listening on port %d', port);
+    });
+  });
+})();

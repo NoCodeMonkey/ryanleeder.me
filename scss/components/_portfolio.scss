@@ -151,11 +151,12 @@
       .overlay {
         background-color: rgba(0, 0, 0, .5);
         opacity: 0;
-        transition: all .2s .2s ease-in-out;
+        transition: all .2s .4s ease-in-out;
       }
 
       .gallery-img {
-        transition: all .4s ease-in;
+        transition: .3s ease-in-out;
+        transform: scale(1.4);
       }
 
       h2,
@@ -163,9 +164,6 @@
       .info,
       .website {
         opacity: 0;
-      }
-
-      h2 {
         transition: all .2s ease-in-out;
         transform: scale(.1);
       }
@@ -183,7 +181,7 @@
         }
 
         .gallery-img {
-          transform: scale(1.2);
+          transform: scale(1);
         }
 
         h2,
