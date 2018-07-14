@@ -5,7 +5,7 @@ const _ = require('lodash'),
       sanitize = require("sanitize-filename"),
       djv = require('djv'),
       puppeteer = require('puppeteer'),
-      sharp = require('sharp'),
+      jimp = require('jimp'),
       portfolioJsonSchema = require('./portfolio-schema.json'),
       portfolioJson = require('./portfolio.json'),
       portfolioDirectory = path.join(__dirname, '../public/img/portfolio'),
@@ -57,10 +57,6 @@ function waitLoad(page, loadTimeout) {
   })
 }
 
-function isOSWin64() {
-  return process.arch === 'x64' || process.env.hasOwnProperty('PROCESSOR_ARCHITEW6432');
-}
-
 async function checkPortfolioItems() {
   var promises = portfolioJson.map(async portfolio => {
     var directory = get(portfolio, 'directory.path', null);
@@ -75,21 +71,19 @@ async function checkPortfolioItems() {
     return portfolio;
   });
   var portfolios = await Promise.all(promises);
-  if (isOSWin64()) {
-    var portfoliosToScreenshot = _.filter(portfolios, (portfolio) => {
-      var url = get(portfolio, 'website.url', null);
-      var files = get(portfolio, 'directory.files', null);
-      return (url && (!files || files && files.length === 0));
+  var portfoliosToScreenshot = _.filter(portfolios, (portfolio) => {
+    var url = get(portfolio, 'website.url', null);
+    var files = get(portfolio, 'directory.files', null);
+    return (url && (!files || files && files.length === 0));
+  });
+  if (portfoliosToScreenshot && portfoliosToScreenshot.length) {
+    await screenshotWebsites(portfoliosToScreenshot);
+    portfoliosToScreenshot.forEach(async (portfolio) => {
+      const files = await fs.readdir(portfolio.directory.path);
+      const images = files.filter(file => imageRegex.test(file));
+      let index = portfolios.findIndex((p => p.title === portfolio.title));
+      portfolios[index] = _.merge({ directory: { files: images } }, portfolio);
     });
-    if (portfoliosToScreenshot && portfoliosToScreenshot.length) {
-      await screenshotWebsites(portfoliosToScreenshot);
-      portfoliosToScreenshot.forEach(async (portfolio) => {
-        const files = await fs.readdir(portfolio.directory.path);
-        const images = files.filter(file => imageRegex.test(file));
-        let index = portfolios.findIndex((p => p.title === portfolio.title));
-        portfolios[index] = _.merge({ directory: { files: images } }, portfolio);
-      });
-    }
   }
   const config = path.join(__dirname, 'portfolio.json');
   const json = JSON.stringify(portfolios);
@@ -105,14 +99,7 @@ async function screenshotWebsites(portfolios) {
     await page.setViewport({width: 1920, height: 1280});
     await page.goto(portfolio.website.url);
     await waitLoad(page, 300);
-    let image = sharp(await page.screenshot())
-      .png({
-        progressive: true,
-        quality: 82,
-        adaptiveFiltering: false,
-        compressionLevel: 9,
-        force: true
-      });
+    var buffer = await page.screenshot();
     var sizes  = {
       xsmall: [320, 214],
       small: [576, 384],
@@ -121,9 +108,10 @@ async function screenshotWebsites(portfolios) {
       fullsize: [1920, 1280]
     };
     for (const size of Object.keys(sizes)) {
-      await image.resize(sizes[size][0], sizes[size][1])
-        .withMetadata()
-        .toFile(path.join(portfolio.directory.path, `${size}-${sizes[size][0]}x${sizes[size][1]}.png`));
+      var image = await jimp.read(buffer);
+      await image.resize(sizes[size][0], sizes[size][1], jimp.RESIZE_BEZIER);
+      await image.quality(82);
+      await image.write(path.join(portfolio.directory.path, `${size}-${sizes[size][0]}x${sizes[size][1]}.png`));
     }
     await page.close();
   });
