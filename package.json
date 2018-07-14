@@ -67,6 +67,7 @@
     "node": ">=6.x.x <10",
     "npm": ">=5.6.0"
   },
+  "cpu" : [ "x64" ],
   "devDependencies": {
     "autoprefixer": "^8.6.4",
     "clean-css-cli": "^4.1.11",
