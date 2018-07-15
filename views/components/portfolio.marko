@@ -5,9 +5,20 @@ $ {
         regexWebUrl = require('regex-weburl'),
         cheerio = require('cheerio'),
         djv = require('djv'),
+        fs = require('fs-extra'),
+        path = require('path'),
         env = new djv(),
         portfolioJsonSchema = require('../../config/portfolio-schema.json'),
         portfolioJson = require('../../config/portfolio.json');
+
+  async function exists(path) {
+    try {
+      await fs.stat(path)
+    } catch (err) {
+      return false
+    }
+    return true
+  }
 
   async function checkAvailable(portfolio) {
     if (!portfolio.website || !portfolio.website.url) {
@@ -51,16 +62,20 @@ $ {
     var effects = ['effect1', 'effect2', 'effect3'];
     var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio =>checkAvailable(portfolio)));
 
-    function getPicture(portfolio) {
+    async function getPicture(portfolio) {
+      var picture = '';
       if (portfolio.directory && portfolio.directory.files && portfolio.directory.files.length) {
         var directory = portfolio.directory.path.split('\\').pop();
         if (portfolio.website && portfolio.website.url) {
-          return `img/portfolio/${directory}/fullsize-1920x1280.png`;
+          picture = `img/portfolio/${directory}/fullsize-1920x1280.png`;
         } else {
-          return `img/portfolio/${directory}/${portfolio.directory.files[0]}`;
+          picture = `img/portfolio/${directory}/${portfolio.directory.files[0]}`;
         }
       }
-      return 'img/noimageavailable.png';
+      if (await exists(path.join(__dirname, '../../public', picture)))
+        return picture;
+      else
+        return 'img/noimageavailable.png';
     }
   }
   <p>Here's a small selection of the projects I've worked on both past and present, for clients ranging from small business to fortune 500 companies.</p>
@@ -69,22 +84,29 @@ $ {
     <div class="gallery">
       <for(portfolio in portfolioItems | status-var=loop)>
         $ var effect = effects[loop.getIndex() % effects.length];
-        $ var picture = getPicture(portfolio);
-        <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture}" data-gallery="gallery" data-type="image">
-          <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
-          <div class="overlay">
-            <h2>${portfolio.title}</h2>
-            <div class="links-container">
-              <div class="links">
-                <a class="btn btn-primary preview hide-js-element" href="#" title="Preview"><i class="far fa-eye"></i></a>
-                <a class="btn btn-primary info hide-js-element ml-2" href="#" title="View Information" data-title="${portfolio.title}" data-description="${portfolio.description}" data-technologies="${portfolio.technologies.join()}">View Information</a>
-                <a class="btn btn-primary website" target="_blank" title="Visit Website" href="${portfolio.website.url}" if (portfolio.website && portfolio.website.available === true)>Visit Website</a>
+        $ var picturePromise = getPicture(portfolio);
+        <await(picture from picturePromise)>
+          <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture}" data-gallery="gallery" data-type="image">
+            <if(portfolio.website && portfolio.website.url)>
+              <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
+            </if>
+            <else>
+              <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
+            </else>
+            <div class="overlay">
+              <h2>${portfolio.title}</h2>
+              <div class="links-container">
+                <div class="links">
+                  <a class="btn btn-primary preview hide-js-element" href="#" title="Preview"><i class="far fa-eye"></i></a>
+                  <a class="btn btn-primary info hide-js-element ml-2" href="#" title="View Information" data-title="${portfolio.title}" data-description="${portfolio.description}" data-technologies="${portfolio.technologies.join()}">View Information</a>
+                  <a class="btn btn-primary website" target="_blank" title="Visit Website" href="${portfolio.website.url}" if (portfolio.website && portfolio.website.available === true)>Visit Website</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </await>
       </for>
     </div>
   </await>
-  <p>The items above reflect just a small sample of the projects I have worked on. If you are looking for more samples of a specific type, please contact me.</p>
+  <p class="mt-3">The items above reflect just a small sample of the projects I have worked on. If you are looking for more samples of a specific type, please contact me.</p>
 </else>
