@@ -64,22 +64,24 @@ $ {
     var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio =>checkAvailable(portfolio)));
 
     async function getPicture(portfolio) {
-      var picture;
+      var picture = {
+        large: 'img/noimageavailable.png',
+        small: 'img/noimageavailable.png'
+      };
       var portfolioPath = get(portfolio, 'directory.path', null);
       var portfolioFiles = get(portfolio, 'directory.files', null);
       if (portfolioPath && portfolioFiles && portfolioFiles.length) {
         var directory = portfolioPath.split(path.sep).pop();
         var portfolioUrl = get(portfolio, 'website.url', null);
-        if (portfolioUrl) {
-          picture = `img/portfolio/${directory}/fullsize-1920x1280.png`;
-        } else {
-          picture = `img/portfolio/${directory}/${files[0]}`;
+        if (portfolioUrl && await exists(path.join(__dirname, `../../public/img/portfolio/${directory}/fullsize-1920x1280.png`))) {
+          picture.large = `img/portfolio/${directory}/fullsize-1920x1280.png`;
+          picture.small = `img/portfolio/${directory}/xsmall-320x214.png`;
+        } else if (await exists(path.join(__dirname, `../../public/img/portfolio/${directory}/${files[0]}`))) {
+          picture.large = `img/portfolio/${directory}/${files[0]}`;
+          picture.small = picture.large;
         }
       }
-      if (picture && await exists(path.join(__dirname, '../../public', picture)))
-        return picture;
-      else
-        return 'img/noimageavailable.png';
+      return picture;
     }
 
     async function getSourceSet(portfolio) {
@@ -108,16 +110,13 @@ $ {
         $ var picturePromise = getPicture(portfolio);
         $ var pictureSourceSetPromise = getSourceSet(portfolio);
         <await(picture from picturePromise)>
-          <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture}" data-gallery="gallery" data-type="image">
+          <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture.large}" data-gallery="gallery" data-type="image">
             <await(pictureSourceSet from pictureSourceSetPromise)>
               <if(pictureSourceSet)>
-                <picture>
-                  <source srcset="${pictureSourceSet}">
-                  <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
-                </picture>
+                <img class="gallery-img" src="${picture.small}" srcset="${pictureSourceSet}" alt="${portfolio.title}">
               </if>
               <else>
-                <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
+                <img class="gallery-img" src="${picture.small}" alt="${portfolio.title}">
               </else>
             </await>
             <div class="overlay">
