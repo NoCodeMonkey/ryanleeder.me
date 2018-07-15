@@ -7,6 +7,7 @@ $ {
         djv = require('djv'),
         fs = require('fs-extra'),
         path = require('path'),
+        {get} = require('underscore.get'),
         env = new djv(),
         portfolioJsonSchema = require('../../config/portfolio-schema.json'),
         portfolioJson = require('../../config/portfolio.json');
@@ -63,19 +64,39 @@ $ {
     var portfolioPromise = Promise.all(_.map(portfolioJson, portfolio =>checkAvailable(portfolio)));
 
     async function getPicture(portfolio) {
-      var picture = '';
-      if (portfolio.directory && portfolio.directory.files && portfolio.directory.files.length) {
-        var directory = portfolio.directory.path.split('\\').pop();
-        if (portfolio.website && portfolio.website.url) {
+      var picture;
+      var portfolioPath = get(portfolio, 'directory.path', null);
+      var portfolioFiles = get(portfolio, 'directory.files', null);
+      if (portfolioPath && portfolioFiles && portfolioFiles.length) {
+        var directory = portfolioPath.split(path.sep).pop();
+        var portfolioUrl = get(portfolio, 'website.url', null);
+        if (portfolioUrl) {
           picture = `img/portfolio/${directory}/fullsize-1920x1280.png`;
         } else {
-          picture = `img/portfolio/${directory}/${portfolio.directory.files[0]}`;
+          picture = `img/portfolio/${directory}/${files[0]}`;
         }
       }
-      if (await exists(path.join(__dirname, '../../public', picture)))
+      if (picture && await exists(path.join(__dirname, '../../public', picture)))
         return picture;
       else
         return 'img/noimageavailable.png';
+    }
+
+    async function getSourceSet(portfolio) {
+      var portfolioUrl = get(portfolio, 'website.url', null);
+      var portfolioPath = get(portfolio, 'directory.path', null);
+      var portfolioFiles = get(portfolio, 'directory.files', null);
+      if (!portfolioUrl || !portfolioPath || !portfolioFiles || !portfolioFiles.length)
+        return null;
+      var directory = portfolioPath.split(path.sep).pop();
+      var sourceSet = [];
+      for (let index = 0; index < portfolioFiles.length; ++index) {
+        if (await exists(path.join(portfolioPath, portfolioFiles[index]))) {
+          var size = portfolioFiles[index].match(/^\d+|\d+\b|\d+(?=\w)/g).map(function (v) {return +v;});
+          sourceSet.push(`img/portfolio/${directory}/${portfolioFiles[index]} ${size[0]}w`)
+        }
+      }
+      return sourceSet.length > 0 ? sourceSet.join(', ') : null;
     }
   }
   <p>Here's a small selection of the projects I've worked on both past and present, for clients ranging from small business to fortune 500 companies.</p>
@@ -85,14 +106,20 @@ $ {
       <for(portfolio in portfolioItems | status-var=loop)>
         $ var effect = effects[loop.getIndex() % effects.length];
         $ var picturePromise = getPicture(portfolio);
+        $ var pictureSourceSetPromise = getSourceSet(portfolio);
         <await(picture from picturePromise)>
           <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture}" data-gallery="gallery" data-type="image">
-            <if(portfolio.website && portfolio.website.url)>
-              <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
-            </if>
-            <else>
-              <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
-            </else>
+            <await(pictureSourceSet from pictureSourceSetPromise)>
+              <if(pictureSourceSet)>
+                <picture>
+                  <source srcset="${pictureSourceSet}">
+                  <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
+                </picture>
+              </if>
+              <else>
+                <img class="gallery-img" src="${picture}" alt="${portfolio.title}">
+              </else>
+            </await>
             <div class="overlay">
               <h2>${portfolio.title}</h2>
               <div class="links-container">
