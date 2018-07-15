@@ -6,25 +6,19 @@ const _ = require('lodash'),
       djv = require('djv'),
       puppeteer = require('puppeteer'),
       jimp = require('jimp'),
-      portfolioJsonSchema = require('./portfolio-schema.json'),
-      portfolioJson = require('./portfolio.json'),
+      portfolioJsonSchema = require('../config/portfolio-schema.json'),
+      portfolioJson = require('../config/portfolio.json'),
       portfolioDirectory = path.join(__dirname, '../public/img/portfolio'),
       imageRegex = /\.(gif|jpg|jpeg|tiff|png)$/i;
 
-function moduleInitialize(moduleRegisterInitialization) {
-  var promise = new Promise((resolve, reject) => {
-    let env = new djv();
-    env.addSchema('portfolio', portfolioJsonSchema);
-    let errors = env.validate('portfolio', _.extend(true, {}, portfolioJson));
-    if (errors && errors.length) {
-      return reject(new Error("Portfolio local JSON file failed validation."));
-    }
-    return resolve();
-  });
-  moduleRegisterInitialization(promise);
+function validateConfig() {
+  let env = new djv();
+  env.addSchema('portfolio', portfolioJsonSchema);
+  let errors = env.validate('portfolio', _.extend(true, {}, portfolioJson));
+  if (errors && errors.length) {
+    throw new Error("Portfolio local JSON file failed validation.");
+  }
 }
-
-var moduleInitWait = ((require('module-async-init'))(moduleInitialize, false));
 
 async function checkDirectory(directory) {
   try {
@@ -85,7 +79,7 @@ async function checkPortfolioItems() {
       portfolios[index] = _.merge({ directory: { files: images } }, portfolio);
     });
   }
-  const config = path.join(__dirname, 'portfolio.json');
+  const config = path.join(__dirname, '../config/portfolio.json');
   const json = JSON.stringify(portfolios);
   await fs.ensureFile(config);
   await fs.writeFile(config, json, 'utf8');
@@ -119,9 +113,9 @@ async function screenshotWebsites(portfolios) {
   await browser.close();
 }
 
-async function initializePortfolioConfig() {
+(async function() {
   try {
-    await moduleInitWait();
+    validateConfig();
     await checkDirectory(portfolioDirectory);
     await checkPortfolioItems();
     console.log("Portfolio local JSON file initialization succeeded.");
@@ -129,8 +123,4 @@ async function initializePortfolioConfig() {
     console.log("Portfolio local JSON file initialization failed.");
     throw e;
   };
-}
-
-module.exports = {
-  initialize: initializePortfolioConfig
-};
+})();
