@@ -107,18 +107,17 @@ $ {
     <div class="gallery">
       <for(portfolio in portfolioItems | status-var=loop)>
         $ var effect = effects[loop.getIndex() % effects.length];
-        $ var picturePromise = getPicture(portfolio);
-        $ var pictureSourceSetPromise = getSourceSet(portfolio);
-        <await(picture from picturePromise)>
+        $ var promises = Promise.all([getPicture(portfolio), getSourceSet(portfolio)]);
+        <await(response from promises)>
+          $ var picture = response[0];
+          $ var pictureSourceSet = response[1];
           <div class="gallery-item hovereffect ${effect}" data-toggle="lightbox" data-remote="${picture.large}" data-gallery="gallery" data-type="image">
-            <await(pictureSourceSet from pictureSourceSetPromise)>
-              <if(pictureSourceSet)>
-                <img class="gallery-img" src="${picture.small}" srcset="${pictureSourceSet}" alt="${portfolio.title}">
-              </if>
-              <else>
-                <img class="gallery-img" src="${picture.small}" alt="${portfolio.title}">
-              </else>
-            </await>
+            <if(pictureSourceSet)>
+              <img class="gallery-img" src="${picture.small}" srcset="${pictureSourceSet}" alt="${portfolio.title}">
+            </if>
+            <else>
+              <img class="gallery-img" src="${picture.small}" alt="${portfolio.title}">
+            </else>
             <div class="overlay">
               <h2>${portfolio.title}</h2>
               <div class="links-container">
@@ -133,6 +132,22 @@ $ {
         </await>
       </for>
     </div>
+    <await-error>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>An Error Occurred:</strong> Unable to load portfolio configuration.
+        <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </await-error>
+    <await-timeout>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>An Error Occurred:</strong> Timed out waiting for portfolio configuration to load.
+        <button type="button" class="hide-js-element close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </await-timeout>
   </await>
   <p class="mt-3">The items above reflect just a small sample of the projects I have worked on. If you are looking for more samples of a specific type, please contact me.</p>
 </else>
