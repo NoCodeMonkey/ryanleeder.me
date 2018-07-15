@@ -13,7 +13,7 @@ module.exports = function(app) {
 
   app.use(function(err, req, res, next) {
     var status = err.status || 500;
-    template = require('../views/pages/' + mapErrorStatusToView[status])
+    template = require('../views/pages/' + mapErrorStatusToView[status] || '500.marko' );
     res.status(status);
     res.marko(template, {});
   });
