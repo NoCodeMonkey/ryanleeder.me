@@ -80,7 +80,7 @@ async function checkPortfolioItems() {
     });
   }
   const config = path.join(__dirname, '../config/portfolio.json');
-  const json = JSON.stringify(portfolios);
+  const json = JSON.stringify(portfolios, null, 2);
   await fs.ensureFile(config);
   await fs.writeFile(config, json, 'utf8');
 }
