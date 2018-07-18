@@ -9,12 +9,18 @@
     "sass",
     "bootstrap",
     "responsive",
-    "node.js"
+    "node.js",
+	"express",
+    "marko"
   ],
   "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nocodemonkey/ryanleeder.me.git"
+  },
+  "homepage": "https://github.com/nocodemonkey/ryanleeder.me",
+  "bugs": {
+    "url": "https://github.com/nocodemonkey/ryanleeder.me/issues"
   },
   "scripts": {
     "start": "node server",
