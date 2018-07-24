@@ -3,6 +3,9 @@
 [![Build Status][travis-image]][travis-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![GNU3 License](https://img.shields.io/github/license/sjtu-ai-go/libgoboard.svg)](https://github.com/sjtu-ai-go/libgoboard/blob/master/LICENSE)
+[![peerDependencies Status](https://david-dm.org/NoCodeMonkey/ryanleeder.me/peer-status.svg)](https://david-dm.org/NoCodeMonkey/ryanleeder.me?type=peer)
+[![dependencies](https://david-dm.org/NoCodeMonkey/ryanleeder.me.svg)](https://david-dm.org/NoCodeMonkey/ryanleeder.me)
+[![devDependencies Status](https://david-dm.org/NoCodeMonkey/ryanleeder.me/dev-status.svg)](https://david-dm.org/NoCodeMonkey/ryanleeder.me?type=dev)
 
 ## Description
 Personal Portfolio Web Application built with [Bootstrap](https://getbootstrap.com), [Node.js](https://nodejs.org), [Express](https://expressjs.com) and [Marko](https://markojs.com).
