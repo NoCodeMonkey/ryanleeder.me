@@ -34,6 +34,7 @@ This project is licensed under the GNU3 License - see the [LICENSE](LICENSE) fil
 * **Bootstrap Navbar Menu without JavaScript - [A PEN BY Dimmi Suicide](https://codepen.io/Dimmi/pen/dpEKpP)**
 * **Implementing A Pure CSS Collapsible - [Alligator.io](https://alligator.io/css/collapsible/)**
 * **Super Simple Bootstrap Responsive Timeline - [A PEN BY mmil](https://codepen.io/mmil/pen/lxvhu)** 
+* **Create a modern flat metro-style menu with flip effect with CSS3 transform property - [CREATIVE PUNCH](http://creative-punch.net/2013/12/create-a-modern-flat-metro-style-menu-with-flip-effect-using-the-css3-transform-property/)** 
 
 [travis-image]: https://img.shields.io/travis/NoCodeMonkey/ryanleeder.me/master.svg
 [travis-url]: https://travis-ci.org/NoCodeMonkey/ryanleeder.me
