@@ -1,2 +1,3 @@
 scss/* linguist-vendored
 public/* linguist-vendored
+*.marko linguist-language=Javascript
