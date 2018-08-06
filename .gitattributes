@@ -1,2 +1,2 @@
-* linguist-vendored
-*.ts linguist-vendored=false
+scss/* linguist-vendored
+public/* linguist-vendored
