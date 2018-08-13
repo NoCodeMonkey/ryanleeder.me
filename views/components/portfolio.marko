@@ -124,7 +124,7 @@ $ {
                 <div class="links">
                   <a class="btn btn-primary preview hide-js-element" href="#" title="Preview"><i class="far fa-eye"></i></a>
                   <a class="btn btn-primary info hide-js-element ml-2" href="#" title="View Information" data-title="${portfolio.title}" data-description="${portfolio.description}" data-technologies="${portfolio.technologies.join()}">View Information</a>
-                  <a class="btn btn-primary website" target="_blank" title="Visit Website" href="${portfolio.website.url}" if (portfolio.website && portfolio.website.available === true)>Visit Website</a>
+                  <a class="btn btn-primary website" target="_blank" title="Visit Website" href="${portfolio.website.url}" rel="noopener" if (portfolio.website && portfolio.website.available === true)>Visit Website</a>
                 </div>
               </div>
             </div>
