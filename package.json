@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My personal portfolio website powered by node.js",
   "author": "Ryan Leeder",
-  "license": "Apache",
+  "license": "GNU GPLv3",
   "keywords": [
     "css",
     "sass",
