@@ -77,5 +77,30 @@
       "HTML5",
       "Modernizr"
     ]
+  },
+  {
+    "directory": {
+      "files": [
+        "desktop-1024x682.png",
+        "fullsize-1920x1280.png",
+        "small-576x384.png",
+        "tablet-768x512.png",
+        "xsmall-320x214.png"
+      ],
+      "path": "C:\\Users\\Ryan\\source\\repos\\ryanleeder.me\\public\\img\\portfolio\\childcarers"
+    },
+    "title": "Childcarers",
+    "description": "ChildCarers is a highly-available, scalable cloud-based early learning support tool for families, teachers and centre owners, provided as a saas (software as a service).",
+    "website": {
+      "url": "http://www.childcarers.com.au/",
+      "verification": "p.footer-text"
+    },
+    "technologies": [
+      "ASP.NET MVC",
+      "AngularJS",
+      "SignalR",
+      "Azure",
+      "Jquery"
+    ]
   }
 ]
