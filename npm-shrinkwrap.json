@@ -6437,9 +6437,9 @@
       }
     },
     "postcss-syntax": {
-      "version": "0.31.0",
-      "resolved": "https://registry.npmjs.org/postcss-syntax/-/postcss-syntax-0.31.0.tgz",
-      "integrity": "sha512-siI3tp74W8paHBCfEEeSCta5GUnEEEztAbkyL87/tqwW6wl2o4CbRA6utW30n9gz/FEqe+eOhvVPXpbpqmcdWw==",
+      "version": "0.34.0",
+      "resolved": "https://registry.npmjs.org/postcss-syntax/-/postcss-syntax-0.34.0.tgz",
+      "integrity": "sha512-L36NZwq2UK743US+vl1CRMdBRZCBmFYfThP9n9jCFhX1Wfk6BqnRSgt0Fy8q44IwxPee/GCzlo7T1c1JIeUDlQ==",
       "dev": true
     },
     "postcss-value-parser": {
