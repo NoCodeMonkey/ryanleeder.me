@@ -82,7 +82,7 @@
     "postcss-syntax": "0.34.0",
     "puppeteer": "1.8.0",
     "sanitize-filename": "1.6.1",
-    "semver": "5.5.0",
+    "semver": "5.5.1",
     "stylelint": "9.3.0",
     "stylelint-config-recommended-scss": "3.2.0",
     "stylelint-config-standard": "18.2.0",
