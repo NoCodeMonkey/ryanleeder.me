@@ -53,7 +53,7 @@
     "moment-timezone": "0.5.21",
     "morgan": "1.9.1",
     "nconf": "0.10.0",
-    "nodemailer": "4.6.7",
+    "nodemailer": "4.6.8",
     "nodemailer-sendgrid": "1.0.3",
     "regex-weburl": "0.1.0",
     "request": "2.87.0",
