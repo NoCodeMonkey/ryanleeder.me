@@ -7185,9 +7185,9 @@
       }
     },
     "regex-weburl": {
-      "version": "0.1.0",
-      "resolved": "https://registry.npmjs.org/regex-weburl/-/regex-weburl-0.1.0.tgz",
-      "integrity": "sha512-WJPJmwzYAUWKEhqodn9qTSqsiWp0QegzdD27R0Pr624ikfTCb2wzM2U0XQJ3TVy4biecI/SV+X/g22AKMnje5w=="
+      "version": "1.0.0",
+      "resolved": "https://registry.npmjs.org/regex-weburl/-/regex-weburl-1.0.0.tgz",
+      "integrity": "sha512-0hSjrdlrlrrbJ0/izD1EF/vmkq6cDtsLb/T5ZyjoBsoncju3Yc+qwvDt6Q5wrZ4KgmEoq3/ZLFdbC88XPHmSrg=="
     },
     "remark": {
       "version": "9.0.0",
@@ -8029,6 +8029,13 @@
         "lodash": "4.17.10",
         "path": "0.12.7",
         "source-map-support": "^0.5.7"
+      },
+      "dependencies": {
+        "lodash": {
+          "version": "4.17.10",
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.10.tgz",
+          "integrity": "sha512-UejweD1pDoXu+AD825lWwp4ZGtSwgnpZxb3JDViD7StjQz+Nb/6l093lx4OQ0foGWNRoc19mWy7BzL+UAK2iVg=="
+        }
       }
     },
     "snyk-nuget-plugin": {
