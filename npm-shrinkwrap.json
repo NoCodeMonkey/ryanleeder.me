@@ -7250,16 +7250,16 @@
       }
     },
     "postcss-preset-env": {
-      "version": "6.0.7",
-      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.0.7.tgz",
-      "integrity": "sha512-K/d2Ch4zRQK28XVFTXMb52oKVH70GhOtNnANI27XwOI7KgqNxKPpr+TTqnwXF2gqiEXUf1ekO4FMNfFl5K2QWA==",
+      "version": "6.0.8",
+      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.0.8.tgz",
+      "integrity": "sha512-6WkzmjSsDDBoJsIhMGlxTSTN/N1erkCo122WDCFqJ41Mj+rn9bU7j875FRG5QQ02R+S45FXOuliqr9tJv3hyAQ==",
       "dev": true,
       "requires": {
         "autoprefixer": "^9.1.5",
         "browserslist": "^4.1.1",
-        "caniuse-lite": "^1.0.30000887",
+        "caniuse-lite": "^1.0.30000888",
         "cssdb": "^3.2.1",
-        "postcss": "^7.0.3",
+        "postcss": "^7.0.4",
         "postcss-attribute-case-insensitive": "^4.0.0",
         "postcss-color-functional-notation": "^2.0.1",
         "postcss-color-hex-alpha": "^5.0.2",
