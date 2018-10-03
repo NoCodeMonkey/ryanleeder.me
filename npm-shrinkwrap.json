@@ -2135,6 +2135,12 @@
       "resolved": "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz",
       "integrity": "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
     },
+    "electron-to-chromium": {
+      "version": "1.3.73",
+      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.73.tgz",
+      "integrity": "sha512-6PIg7v9zRoVGh6EheRF8h6Plti+3Yo/qtHobS4/Htyt53DNHmKKGFqSae1AIk0k1S4gCQvt7I2WgpbuZNcDY+g==",
+      "dev": true
+    },
     "email-validator": {
       "version": "2.0.4",
       "resolved": "https://registry.npmjs.org/email-validator/-/email-validator-2.0.4.tgz",
@@ -6115,9 +6121,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6356,9 +6362,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6388,9 +6394,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6421,9 +6427,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6453,9 +6459,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6484,9 +6490,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6506,19 +6512,19 @@
       }
     },
     "postcss-custom-properties": {
-      "version": "8.0.6",
-      "resolved": "https://registry.npmjs.org/postcss-custom-properties/-/postcss-custom-properties-8.0.6.tgz",
-      "integrity": "sha512-9lBrDTCQCfe7PesXP4om76mLIuNnBXjdJ5SuVcPZpDtWpC2Y3KVlXfC68ha+wek1R7crWi10xW8Hzw0fi4LIPg==",
+      "version": "8.0.8",
+      "resolved": "https://registry.npmjs.org/postcss-custom-properties/-/postcss-custom-properties-8.0.8.tgz",
+      "integrity": "sha512-G3U8uSxj0B4jPJ1QBF5WYeW716n5HV/wcH2lOTV1V+EI+F0T0/ZOhl32MLLTMD79bN2mE77IOoclbCoLl4QtPA==",
       "dev": true,
       "requires": {
-        "postcss": "^7.0.3",
+        "postcss": "^7.0.5",
         "postcss-values-parser": "^2.0.0"
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6548,9 +6554,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6592,9 +6598,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6636,9 +6642,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6667,9 +6673,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6698,9 +6704,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6729,9 +6735,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6760,9 +6766,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6801,9 +6807,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6867,9 +6873,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -6910,9 +6916,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7056,9 +7062,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7097,9 +7103,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7134,9 +7140,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7165,9 +7171,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7196,9 +7202,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7228,9 +7234,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7250,23 +7256,23 @@
       }
     },
     "postcss-preset-env": {
-      "version": "6.0.8",
-      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.0.8.tgz",
-      "integrity": "sha512-6WkzmjSsDDBoJsIhMGlxTSTN/N1erkCo122WDCFqJ41Mj+rn9bU7j875FRG5QQ02R+S45FXOuliqr9tJv3hyAQ==",
+      "version": "6.0.10",
+      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.0.10.tgz",
+      "integrity": "sha512-jTdfckYcArcyFYCW5hgF15XPzq5p7p5Bjnpxh7hWugcoPmOBh/+OCbIADAvXPkd91jSZmVe2zjOczMSCN5pRsQ==",
       "dev": true,
       "requires": {
         "autoprefixer": "^9.1.5",
-        "browserslist": "^4.1.1",
+        "browserslist": "^4.1.2",
         "caniuse-lite": "^1.0.30000888",
         "cssdb": "^3.2.1",
-        "postcss": "^7.0.4",
+        "postcss": "^7.0.5",
         "postcss-attribute-case-insensitive": "^4.0.0",
         "postcss-color-functional-notation": "^2.0.1",
         "postcss-color-hex-alpha": "^5.0.2",
         "postcss-color-mod-function": "^3.0.3",
         "postcss-color-rebeccapurple": "^4.0.1",
         "postcss-custom-media": "^7.0.4",
-        "postcss-custom-properties": "^8.0.6",
+        "postcss-custom-properties": "^8.0.8",
         "postcss-custom-selectors": "^5.1.2",
         "postcss-dir-pseudo-class": "^5.0.0",
         "postcss-env-function": "^2.0.2",
@@ -7289,10 +7295,21 @@
         "postcss-selector-not": "^4.0.0"
       },
       "dependencies": {
+        "browserslist": {
+          "version": "4.1.2",
+          "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.1.2.tgz",
+          "integrity": "sha512-docXmVcYth9AiW5183dEe2IxnbmpXF4jiM6efGBVRAli/iDSS894Svvjenrv5NPqAJ4dEJULmT4MSvmLG9qoYg==",
+          "dev": true,
+          "requires": {
+            "caniuse-lite": "^1.0.30000888",
+            "electron-to-chromium": "^1.3.73",
+            "node-releases": "^1.0.0-alpha.12"
+          }
+        },
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7322,9 +7339,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7365,9 +7382,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7509,9 +7526,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
@@ -7541,9 +7558,9 @@
       },
       "dependencies": {
         "postcss": {
-          "version": "7.0.4",
-          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.4.tgz",
-          "integrity": "sha512-Bg1BrMZGKNOI0mkn8NtjJrOrZKgoHrl+geKJ45mTOkeY4WCsYq/mjd1BUWRgRvydHP/lA07Ys2n9m6Va5FsEsw==",
+          "version": "7.0.5",
+          "resolved": "https://registry.npmjs.org/postcss/-/postcss-7.0.5.tgz",
+          "integrity": "sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==",
           "dev": true,
           "requires": {
             "chalk": "^2.4.1",
