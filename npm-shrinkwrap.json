@@ -5000,9 +5000,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.13.7",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.13.7.tgz",
-      "integrity": "sha512-S3JESPLqCW5djZ0937TQWBkHGw0rpnsc2YZopl+BKhxcHaaV1/d1AXYtGsRGH/2lxQweOVHUwNsrbzJnHQBV3A==",
+      "version": "4.13.8",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.13.8.tgz",
+      "integrity": "sha512-APfb/5KgDswm2fdxZBknxubEgNmXchmGZ1aCV1Brb8eGqHzd8I1xZzykvj1/mDU/bzhsAIYDV2yyC9Os7Ue9AQ==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
