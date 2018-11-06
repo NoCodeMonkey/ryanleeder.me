@@ -1184,9 +1184,9 @@
       "integrity": "sha1-FkpUg+Yw+kMh5a8HAg5TGDGyYJs="
     },
     "caniuse-lite": {
-      "version": "1.0.30000905",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000905.tgz",
-      "integrity": "sha512-cR6ICguvhRrkAjFfBoe54vJQMVOEz7vFmqrV6oor1a7GRg6DdswI40lkiV/QQvAMb4txzTkjSaLaJaiAtSuQzA==",
+      "version": "1.0.30000906",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30000906.tgz",
+      "integrity": "sha512-ME7JFX6h0402om/nC/8Lw+q23QvPe2ust9U0ntLmkX9F2zaGwq47fZkjlyHKirFBuq1EM+T/LXBcDdW4bvkCTA==",
       "dev": true
     },
     "caseless": {
@@ -1631,6 +1631,15 @@
       "resolved": "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-1.0.0.tgz",
       "integrity": "sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4="
     },
+    "css-prefers-color-scheme": {
+      "version": "3.0.0",
+      "resolved": "https://registry.npmjs.org/css-prefers-color-scheme/-/css-prefers-color-scheme-3.0.0.tgz",
+      "integrity": "sha512-1+K66s3763YVIoXf7n9Qj+hZLy8+j5N3sDOW9NBkcvg++EhhfP3bSOhyFFytICaQBvPSgi6xBOXfMQJKq+a1LA==",
+      "dev": true,
+      "requires": {
+        "postcss": "^7.0.5"
+      }
+    },
     "css-select": {
       "version": "1.2.0",
       "resolved": "https://registry.npmjs.org/css-select/-/css-select-1.2.0.tgz",
@@ -1659,9 +1668,9 @@
       "integrity": "sha1-lGfQMsOM+u+58teVASUwYvh/ob0="
     },
     "cssdb": {
-      "version": "4.1.0",
-      "resolved": "https://registry.npmjs.org/cssdb/-/cssdb-4.1.0.tgz",
-      "integrity": "sha512-qaEHVEtScIHoBgdTEHNUMKQw7GXfVYHiaFcL8jerXWJ47lNBy2PgApHdHbR4yovVJsZK6Zq+YkBw8MuhAOvixg==",
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/cssdb/-/cssdb-4.2.0.tgz",
+      "integrity": "sha512-27CuM+rp1/HIH4hkiOvrRUjgv31WamWk7+XSGz7OP/uWR8EOMeXOh4Ncpa/Eq1eO/1eRhQx7HWj8KEbt4nKQBA==",
       "dev": true
     },
     "cssesc": {
@@ -6508,15 +6517,16 @@
       }
     },
     "postcss-preset-env": {
-      "version": "6.3.1",
-      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.3.1.tgz",
-      "integrity": "sha512-erl+OcCTr1+jsfJNQjBweyb8Y1s6KngUBwoqJnRXO197PmEE6u9HxZfnpKkTQqasxZljxNHzXR5hMb7MdD0Zdw==",
+      "version": "6.4.0",
+      "resolved": "https://registry.npmjs.org/postcss-preset-env/-/postcss-preset-env-6.4.0.tgz",
+      "integrity": "sha512-0jCyY/T9kWv1i2abt5DOOoh0uHJia0HUTWMV72Tw75tGx3pH628oSS8WBMCE5L1Ou3LvoAl9pe07u8g/afvc3A==",
       "dev": true,
       "requires": {
         "autoprefixer": "^9.3.1",
         "browserslist": "^4.3.4",
         "caniuse-lite": "^1.0.30000905",
-        "cssdb": "^4.1.0",
+        "css-prefers-color-scheme": "^3.0.0",
+        "cssdb": "^4.2.0",
         "postcss": "^7.0.5",
         "postcss-attribute-case-insensitive": "^4.0.0",
         "postcss-color-functional-notation": "^2.0.1",
