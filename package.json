@@ -44,7 +44,7 @@
     "express-favicon": "2.0.1",
     "express-validator": "5.3.0",
     "fs": "0.0.2",
-    "helmet": "3.14.0",
+    "helmet": "3.15.0",
     "lodash": "4.17.11",
     "marko": "4.13.8",
     "method-override": "3.0.0",
