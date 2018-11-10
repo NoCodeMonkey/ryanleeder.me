@@ -83,7 +83,7 @@
     "puppeteer": "1.10.0",
     "sanitize-filename": "1.6.1",
     "semver": "5.6.0",
-    "stylelint": "9.7.1",
+    "stylelint": "9.8.0",
     "stylelint-config-recommended-scss": "3.2.0",
     "stylelint-config-standard": "18.2.0",
     "stylelint-order": "1.0.0",
