@@ -48,7 +48,7 @@
     "lodash": "4.17.11",
     "marko": "4.13.12",
     "method-override": "3.0.0",
-    "mime": "2.3.1",
+    "mime": "2.4.0",
     "moment": "2.22.2",
     "moment-timezone": "0.5.23",
     "morgan": "1.9.1",
