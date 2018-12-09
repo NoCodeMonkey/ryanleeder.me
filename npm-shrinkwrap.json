@@ -5407,9 +5407,9 @@
       }
     },
     "node-sass": {
-      "version": "4.10.0",
-      "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-4.10.0.tgz",
-      "integrity": "sha512-fDQJfXszw6vek63Fe/ldkYXmRYK/QS6NbvM3i5oEo9ntPDy4XX7BcKZyTKv+/kSSxRtXXc7l+MSwEmYc0CSy6Q==",
+      "version": "4.11.0",
+      "resolved": "https://registry.npmjs.org/node-sass/-/node-sass-4.11.0.tgz",
+      "integrity": "sha512-bHUdHTphgQJZaF1LASx0kAviPH7sGlcyNhWade4eVIpFp6tsn7SV8xNMTbsQFpEV9VXpnwTTnNYlfsZXgGgmkA==",
       "dev": true,
       "requires": {
         "async-foreach": "^0.1.3",
@@ -5672,7 +5672,7 @@
     },
     "os-homedir": {
       "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz",
+      "resolved": "http://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz",
       "integrity": "sha1-/7xJiDNuDoM94MFox+8VISGqf7M=",
       "dev": true
     },
@@ -7508,7 +7508,7 @@
       "dependencies": {
         "source-map": {
           "version": "0.4.4",
-          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz",
+          "resolved": "http://registry.npmjs.org/source-map/-/source-map-0.4.4.tgz",
           "integrity": "sha1-66T12pwNyZneaAMti092FzZSA2s=",
           "dev": true,
           "requires": {
@@ -8796,7 +8796,7 @@
     },
     "tar": {
       "version": "2.2.1",
-      "resolved": "https://registry.npmjs.org/tar/-/tar-2.2.1.tgz",
+      "resolved": "http://registry.npmjs.org/tar/-/tar-2.2.1.tgz",
       "integrity": "sha1-jk0qJWwOIYXGsYrWlK7JaLg8sdE=",
       "dev": true,
       "requires": {
