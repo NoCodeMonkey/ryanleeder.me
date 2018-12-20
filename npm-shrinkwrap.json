@@ -2973,12 +2973,14 @@
         "balanced-match": {
           "version": "1.0.0",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "brace-expansion": {
           "version": "1.1.11",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "balanced-match": "^1.0.0",
             "concat-map": "0.0.1"
@@ -2993,17 +2995,20 @@
         "code-point-at": {
           "version": "1.1.0",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "concat-map": {
           "version": "0.0.1",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "console-control-strings": {
           "version": "1.1.0",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "core-util-is": {
           "version": "1.0.2",
@@ -3120,7 +3125,8 @@
         "inherits": {
           "version": "2.0.3",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "ini": {
           "version": "1.3.5",
@@ -3132,6 +3138,7 @@
           "version": "1.0.0",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "number-is-nan": "^1.0.0"
           }
@@ -3146,6 +3153,7 @@
           "version": "3.0.4",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "brace-expansion": "^1.1.7"
           }
@@ -3153,12 +3161,14 @@
         "minimist": {
           "version": "0.0.8",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "minipass": {
           "version": "2.2.4",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "safe-buffer": "^5.1.1",
             "yallist": "^3.0.0"
@@ -3177,6 +3187,7 @@
           "version": "0.5.1",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "minimist": "0.0.8"
           }
@@ -3257,7 +3268,8 @@
         "number-is-nan": {
           "version": "1.0.1",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "object-assign": {
           "version": "4.1.1",
@@ -3269,6 +3281,7 @@
           "version": "1.4.0",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "wrappy": "1"
           }
@@ -3390,6 +3403,7 @@
           "version": "1.0.2",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "code-point-at": "^1.0.0",
             "is-fullwidth-code-point": "^1.0.0",
@@ -7925,9 +7939,9 @@
       }
     },
     "snyk": {
-      "version": "1.118.1",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.118.1.tgz",
-      "integrity": "sha512-17EqEie7yuFEgXkO4zWLdk7+4ghxlqKlgiRfxiZKWlhsKc0mwKVBIG8qInDX8gFotKWlpQOWKDLh/tN/i8eCOw==",
+      "version": "1.118.2",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.118.2.tgz",
+      "integrity": "sha512-n+5FjHwcHndAr9mSZ8Z4tnUBK02NykQs7sezhYe43XPzxW5yPTfsVI7YLkL+dWPs4YWJ8QkGWF85rP7xDDwO+Q==",
       "requires": {
         "@snyk/dep-graph": "1.1.2",
         "@snyk/gemfile": "1.1.0",
@@ -7955,7 +7969,7 @@
         "snyk-nodejs-lockfile-parser": "1.10.1",
         "snyk-nuget-plugin": "1.6.5",
         "snyk-php-plugin": "1.5.1",
-        "snyk-policy": "1.13.2",
+        "snyk-policy": "1.13.3",
         "snyk-python-plugin": "1.9.1",
         "snyk-resolve": "1.0.1",
         "snyk-resolve-deps": "4.0.2",
@@ -8072,9 +8086,9 @@
       }
     },
     "snyk-policy": {
-      "version": "1.13.2",
-      "resolved": "https://registry.npmjs.org/snyk-policy/-/snyk-policy-1.13.2.tgz",
-      "integrity": "sha512-6pMRdd4sOOTAKMM7c0+XNM8iPW37y2F/qSei4maa8OYREWOHv/yNyVODpbTa2B868Acdj+k8GiV4kgHX9MF76w==",
+      "version": "1.13.3",
+      "resolved": "https://registry.npmjs.org/snyk-policy/-/snyk-policy-1.13.3.tgz",
+      "integrity": "sha512-6J2a+Wt9zgvTtCwi4x8rLtkDQzFNPqubfIgs3aR35ZsEXPwI4XHGo0cxnJPDriqncp2JK72vnRpNfIZ7v0L1Mw==",
       "requires": {
         "debug": "^3.1.0",
         "email-validator": "^2.0.4",
