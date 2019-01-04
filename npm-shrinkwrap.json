@@ -2970,7 +2970,8 @@
         "ansi-regex": {
           "version": "2.1.1",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "aproba": {
           "version": "1.2.0",
@@ -3385,7 +3386,8 @@
         "safe-buffer": {
           "version": "5.1.1",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "safer-buffer": {
           "version": "2.1.2",
@@ -3441,6 +3443,7 @@
           "version": "3.0.1",
           "bundled": true,
           "dev": true,
+          "optional": true,
           "requires": {
             "ansi-regex": "^2.0.0"
           }
@@ -3484,12 +3487,14 @@
         "wrappy": {
           "version": "1.0.2",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         },
         "yallist": {
           "version": "3.0.2",
           "bundled": true,
-          "dev": true
+          "dev": true,
+          "optional": true
         }
       }
     },
@@ -5043,9 +5048,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.14.14",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.14.14.tgz",
-      "integrity": "sha512-E9mhoR7oDa12k9MFv87FYuzTicy5B3C+gzellhyeDMnEvbAyIHvL5Q18sL/OOf9PqseqdzQwLAbA9gwnO69dzA==",
+      "version": "4.14.15",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.14.15.tgz",
+      "integrity": "sha512-UTazMHrkwDoxod2xEZnOPVRKxVa5BTOCkS3uGXGIrOej4e9Ds71XcCcbl7NgFVGsdIHyE9jE1bOVKc4u432P6A==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
