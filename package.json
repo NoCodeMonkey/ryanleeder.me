@@ -61,7 +61,7 @@
     "request-promise-native": "1.0.5",
     "serve-static": "1.13.2",
     "simple-recaptcha-new": "1.1.1",
-    "snyk": "1.127.0",
+    "snyk": "1.129.0",
     "underscore.get": "0.2.9"
   },
   "noAnalyze": true,
