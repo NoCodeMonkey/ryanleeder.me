@@ -5115,9 +5115,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.15.1",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.15.1.tgz",
-      "integrity": "sha512-gMTx26A/Fw1n3II03yyxVxuMFaZdvWO512AEq9+CE7cl2MxhtxYsPvZgcnZJ0uf4jYU+f5Bzs5fD+jT36o9VtA==",
+      "version": "4.15.2",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.15.2.tgz",
+      "integrity": "sha512-Wn2SCjMS13q8UC+loaG6fX10NTrF4XbgXS0OafosvGu9w6XMhFuJFSUaUk1thtKMQEOKbueo/NFfg9kRbb7b/Q==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
