@@ -4088,9 +4088,9 @@
       "dev": true
     },
     "htmljs-parser": {
-      "version": "2.6.5",
-      "resolved": "https://registry.npmjs.org/htmljs-parser/-/htmljs-parser-2.6.5.tgz",
-      "integrity": "sha512-e5skq04FESLazLExvtEuw+QoF2IbgWbYF0TE3/mCx+hJNmhuyiqdxV0A0z1zQK+Mrpi+Ecr0pB99JQvxI2u8Aw==",
+      "version": "2.6.6",
+      "resolved": "https://registry.npmjs.org/htmljs-parser/-/htmljs-parser-2.6.6.tgz",
+      "integrity": "sha512-cwIV9dkA5WgDuhZigrL6Aw1+sGdhlVi5b4csijnGVHe0GATGY0ibHt68q2O7nULTtg5HTMtR8tdvd2yVfPIZxg==",
       "requires": {
         "char-props": "^0.1.5",
         "complain": "^1.0.0"
@@ -5112,9 +5112,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.15.2",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.15.2.tgz",
-      "integrity": "sha512-Wn2SCjMS13q8UC+loaG6fX10NTrF4XbgXS0OafosvGu9w6XMhFuJFSUaUk1thtKMQEOKbueo/NFfg9kRbb7b/Q==",
+      "version": "4.15.3",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.15.3.tgz",
+      "integrity": "sha512-wKUS9nma1r7AAWX+uak2rt0VQ65isGtKi9nRRgoLtmmQfDyUEB2+Ov5Rop9j/zUnkyHMm7bpydHVcTHk0TL9qg==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
