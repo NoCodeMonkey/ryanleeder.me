@@ -8513,9 +8513,9 @@
       }
     },
     "snyk": {
-      "version": "1.168.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.168.0.tgz",
-      "integrity": "sha512-W4Jm4KAQtEhTgdGpJ2htKxqFkaQ98WcUiMKpcW4dmap4DUqAGYEpZyEp8Kfyfh58o0k8Uiy/Grj3jeS7jRnT/w==",
+      "version": "1.169.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.169.0.tgz",
+      "integrity": "sha512-Q+RBq7DcmYHPsfNtR3RTJKB+TJaFWgEla8P+/pBI50feczQgLUxb26iV6zf7wIglD2Qo0tU8XAYGHN6CqFShWw==",
       "requires": {
         "@snyk/dep-graph": "1.4.1",
         "@snyk/gemfile": "1.2.0",
