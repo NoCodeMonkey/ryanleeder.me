@@ -32,7 +32,8 @@
     "css:watch": "watch 'npm run css' scss",
     "check-portfolio-config": "node build/portfolio.config.js",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "1.19.0",
@@ -61,7 +62,7 @@
     "request-promise-native": "1.0.7",
     "serve-static": "1.14.1",
     "simple-recaptcha-new": "1.1.1",
-    "snyk": "1.192.0",
+    "snyk": "^1.192.0",
     "underscore.get": "0.2.9"
   },
   "noAnalyze": true,
