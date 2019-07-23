@@ -81,7 +81,7 @@
     "postcss-loader": "3.0.0",
     "postcss-preset-env": "6.7.0",
     "postcss-syntax": "0.36.2",
-    "puppeteer": "1.18.1",
+    "puppeteer": "1.19.0",
     "sanitize-filename": "1.6.1",
     "semver": "6.2.0",
     "stylelint": "10.1.0",
