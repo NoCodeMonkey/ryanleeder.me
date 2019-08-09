@@ -8930,9 +8930,9 @@
       }
     },
     "snyk": {
-      "version": "1.214.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.214.0.tgz",
-      "integrity": "sha512-Y6/JQF+FSv8ABwdltMmAClXH04IttNxbjZQtGIhFmraZ9y7GQRH4ACZf4DeJBWp0weAeqWnsoBocH8Qlqn+QAQ==",
+      "version": "1.215.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.215.0.tgz",
+      "integrity": "sha512-/g/GHTNK4czP9XHuoxZ56/qf53eExTGU5GHmSF1OWSc1+OXppE0Dtn9Grmz96xLtxIRPXwnubagiwfFIbaehNA==",
       "requires": {
         "@snyk/dep-graph": "1.12.0",
         "@snyk/gemfile": "1.2.0",
@@ -8958,7 +8958,7 @@
         "snyk-go-plugin": "1.11.0",
         "snyk-gradle-plugin": "^3.0.2",
         "snyk-module": "1.9.1",
-        "snyk-mvn-plugin": "2.3.3",
+        "snyk-mvn-plugin": "2.4.0",
         "snyk-nodejs-lockfile-parser": "1.16.0",
         "snyk-nuget-plugin": "1.11.3",
         "snyk-php-plugin": "1.6.4",
@@ -9158,9 +9158,9 @@
       }
     },
     "snyk-mvn-plugin": {
-      "version": "2.3.3",
-      "resolved": "https://registry.npmjs.org/snyk-mvn-plugin/-/snyk-mvn-plugin-2.3.3.tgz",
-      "integrity": "sha512-NYFL+jtHfAJk+Jdyme4I8pTvg/wfoHgkOs1g1nFUEPTcpBb5mfqy7Q9hDJWvnfXY8M6P9aEqvO+bmCVgTQvySg==",
+      "version": "2.4.0",
+      "resolved": "https://registry.npmjs.org/snyk-mvn-plugin/-/snyk-mvn-plugin-2.4.0.tgz",
+      "integrity": "sha512-Fmt6Mjx6zZz+4q6PnBkhuNGhEX++q/pKMI26ls4p3JPkx4KxBz89oncpkmf7P8YCkoaka8oHhtDEv/R4Z9LleQ==",
       "requires": {
         "lodash": "^4.17.15",
         "tslib": "1.9.3"
