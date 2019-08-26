@@ -2576,9 +2576,9 @@
       }
     },
     "error-stack-parser": {
-      "version": "2.0.2",
-      "resolved": "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-2.0.2.tgz",
-      "integrity": "sha512-E1fPutRDdIj/hohG0UpT5mayXNCxXP9d+snxFsPU9X0XgccOumKraa3juDMwTUyi7+Bu5+mCGagjg4IYeNbOdw==",
+      "version": "2.0.3",
+      "resolved": "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-2.0.3.tgz",
+      "integrity": "sha512-vRC4rKv87twMZy92X4+TmUdv3iYMsmePbpG/YguHsfzmZ8bYJZYYep7yrXH09yFUaCEPKgNK5X79+Yq7hwLVOA==",
       "requires": {
         "stackframe": "^1.0.4"
       }
@@ -5472,9 +5472,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.18.11",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.11.tgz",
-      "integrity": "sha512-jUvwJsfUg9AEIIUgBKnlbSYP+83At7r22V7vVQA6oad9i3KUh0oVrhPv2w4+MakDh7QZmv1FDoyNNkdwUrFdXA==",
+      "version": "4.18.12",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.12.tgz",
+      "integrity": "sha512-Jo/bpR8kLIqrOtmb8D2KQ1AE//BGa2kmQi1rYb4YvGbjX151c9Xrv8tGTtpv4EsnT/qX/FkKT469YOp1OmAXgw==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
