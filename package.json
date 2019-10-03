@@ -86,7 +86,7 @@
     "semver": "6.3.0",
     "stylelint": "10.1.0",
     "stylelint-config-recommended-scss": "4.0.0",
-    "stylelint-config-standard": "18.3.0",
+    "stylelint-config-standard": "19.0.0",
     "stylelint-order": "3.1.1",
     "stylelint-scss": "3.11.1",
     "watch": "1.0.2"
