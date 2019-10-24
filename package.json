@@ -71,7 +71,7 @@
     "npm": ">=5.6.0"
   },
   "devDependencies": {
-    "autoprefixer": "9.6.5",
+    "autoprefixer": "9.7.0",
     "clean-css-cli": "4.3.0",
     "fs-extra": "8.1.0",
     "jimp": "0.8.5",
