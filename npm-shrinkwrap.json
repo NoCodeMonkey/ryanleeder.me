@@ -5455,9 +5455,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.18.27",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.27.tgz",
-      "integrity": "sha512-baR/G7Hl+3TC3IEeO1j/R4a8+1x2+pgA0wpI9WOtPDJQJRKUGElqHaXIxdQGlS//cBS7PkEZIsypDFZvLfx41w==",
+      "version": "4.18.28",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.28.tgz",
+      "integrity": "sha512-LNqyRBCRkLpgoGmPljdvczVnIszkuNRGdvbL1a5o6SIqyt7oXd8fo7H84rWHUReuKJk0Eb9xqvSd+DtU3ILvIw==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
@@ -5468,7 +5468,7 @@
         "deresolve": "^1.1.2",
         "escodegen": "^1.8.1",
         "esprima": "^4.0.0",
-        "estraverse": "^4.2.0",
+        "estraverse": "^4.3.0",
         "events": "^1.0.2",
         "events-light": "^1.0.0",
         "he": "^1.1.0",
