@@ -43,7 +43,7 @@
     "djv": "2.1.2",
     "express": "4.17.1",
     "express-favicon": "2.0.1",
-    "express-validator": "6.3.0",
+    "express-validator": "6.3.1",
     "fs": "0.0.2",
     "helmet": "3.21.2",
     "lodash": "4.17.15",
