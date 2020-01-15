@@ -5502,9 +5502,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.18.32",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.32.tgz",
-      "integrity": "sha512-sVRs2kpNSHwGpHRQJtBIH+UeCzPkOdsg5e/VmIvAs5/VayUGhEEBtKWJdfrb9iPPAeMk/X4ZMBW+Z53ljWVBZQ==",
+      "version": "4.18.33",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.18.33.tgz",
+      "integrity": "sha512-tmtPPiwAm3sRy/RSUD21MXXFZFEtgW8v4l6zFRV48E9hRhXxMAqIwKiwfw7VwsQ3MgqlGoqfC2hLKdA6wEmwAQ==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
