@@ -2284,9 +2284,9 @@
       "integrity": "sha512-hvSnros73+qyZXhHFjx2CMLwoj3Fe7eR9EJsFsqmcI1bB2OBWL/+0YzaEaKssCHnj/6crawNnUyw74Gm2EKe+Q=="
     },
     "dockerfile-ast": {
-      "version": "0.0.16",
-      "resolved": "https://registry.npmjs.org/dockerfile-ast/-/dockerfile-ast-0.0.16.tgz",
-      "integrity": "sha512-+HZToHjjiLPl46TqBrok5dMrg5oCkZFPSROMQjRmvin0zG4FxK0DJXTpV/CUPYY2zpmEvVza55XLwSHFx/xZMw==",
+      "version": "0.0.18",
+      "resolved": "https://registry.npmjs.org/dockerfile-ast/-/dockerfile-ast-0.0.18.tgz",
+      "integrity": "sha512-SEp95qCox1KAzf8BBtjHoBDD0a7/eNlZJ6fgDf9RxqeSEDwLuEN9YjdZ/tRlkrYLxXR4i+kqZzS4eDRSqs8VKQ==",
       "requires": {
         "vscode-languageserver-types": "^3.5.0"
       }
@@ -2439,9 +2439,9 @@
       }
     },
     "es6-promise": {
-      "version": "4.2.4",
-      "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.4.tgz",
-      "integrity": "sha512-/NdNZVJg+uZgtm9eS3O6lrOLYmQag2DjdEXuPaHlZ6RuVqgqaVZfgYCepEIKsLqwdQArOPtC3XzRLqGGfT8KQQ=="
+      "version": "4.2.8",
+      "resolved": "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.8.tgz",
+      "integrity": "sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w=="
     },
     "es6-promisify": {
       "version": "5.0.0",
@@ -2499,6 +2499,14 @@
       "version": "1.8.1",
       "resolved": "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz",
       "integrity": "sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc="
+    },
+    "event-loop-spinner": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/event-loop-spinner/-/event-loop-spinner-1.1.0.tgz",
+      "integrity": "sha512-YVFs6dPpZIgH665kKckDktEVvSBccSYJmoZUfhNUdv5d3Xv+Q+SKF4Xis1jolq9aBzuW1ZZhQh/m/zU/TPdDhw==",
+      "requires": {
+        "tslib": "^1.10.0"
+      }
     },
     "events-light": {
       "version": "1.0.5",
@@ -3441,16 +3449,6 @@
       "requires": {
         "agent-base": "^4.3.0",
         "debug": "^3.1.0"
-      },
-      "dependencies": {
-        "agent-base": {
-          "version": "4.3.0",
-          "resolved": "https://registry.npmjs.org/agent-base/-/agent-base-4.3.0.tgz",
-          "integrity": "sha512-salcGninV0nPrwpGNn4VTXBb1SOuXQBiqbrNXoeizJsHrsL6ERFM2Ne3JUSBWRE6aeNJI2ROP/WEEIDUiDe3cg==",
-          "requires": {
-            "es6-promisify": "^5.0.0"
-          }
-        }
       }
     },
     "iconv-lite": {
@@ -7472,9 +7470,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.282.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.282.0.tgz",
-      "integrity": "sha512-CRZVl8UQXFAWab19vzKfu1jQ8Nz9ZF1rFQUc/RO5E71FcUoMr1S4vTqgar989jSCJLY7bLP0LZidslPxe3upsA==",
+      "version": "1.283.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.283.0.tgz",
+      "integrity": "sha512-rabhZgdT79UVagkaDF1CvMbs6O6iVi8/ydhzHnqQfh1Zx3Wbyew/ccxyUPezf2t4t8EDQ6u3Lo8HHc/JK49E+A==",
       "requires": {
         "@snyk/cli-interface": "2.3.0",
         "@snyk/dep-graph": "1.13.1",
@@ -7500,7 +7498,7 @@
         "proxy-from-env": "^1.0.0",
         "semver": "^6.0.0",
         "snyk-config": "^2.2.1",
-        "snyk-docker-plugin": "1.33.1",
+        "snyk-docker-plugin": "1.38.0",
         "snyk-go-plugin": "1.11.1",
         "snyk-gradle-plugin": "3.2.4",
         "snyk-module": "1.9.1",
@@ -7608,12 +7606,13 @@
       }
     },
     "snyk-docker-plugin": {
-      "version": "1.33.1",
-      "resolved": "https://registry.npmjs.org/snyk-docker-plugin/-/snyk-docker-plugin-1.33.1.tgz",
-      "integrity": "sha512-xfs3DN1tPMTh6J8x2341wGK4HRr+pI5+i/YRuRmsslnBnwk/DkKYcbt8zOIWk6kzMoW8vo+9LqqXBQO/24szKg==",
+      "version": "1.38.0",
+      "resolved": "https://registry.npmjs.org/snyk-docker-plugin/-/snyk-docker-plugin-1.38.0.tgz",
+      "integrity": "sha512-43HbJj6QatuL2BNG+Uq2Taa73wdfSQSID8FJWW4q5/LYgd9D+RtdiE4lAMwxqYYbvThU9uuza4epuF/B1CAlYw==",
       "requires": {
         "debug": "^4.1.1",
-        "dockerfile-ast": "0.0.16",
+        "dockerfile-ast": "0.0.18",
+        "event-loop-spinner": "^1.1.0",
         "semver": "^6.1.0",
         "tar-stream": "^2.1.0",
         "tslib": "^1"
