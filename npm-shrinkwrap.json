@@ -4383,9 +4383,9 @@
       "dev": true
     },
     "marko": {
-      "version": "4.19.7",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.19.7.tgz",
-      "integrity": "sha512-2nOtBe88V0UDV1xB8iQ1HdnyXRWj+SvF6Shm/yp06ZByD1ZKkmWMdNnq64jpLDAOgzYtihy+C8G9RSexjcDD3w==",
+      "version": "4.19.8",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.19.8.tgz",
+      "integrity": "sha512-63jiu5uumdtbPcitj1lCt34txa4gc/+B9w5Wcl/4SBI30eVEukVqX36AstLprcmMmcV50ojpWaOfBFTo67iSrg==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
