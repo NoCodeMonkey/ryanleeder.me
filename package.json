@@ -73,7 +73,7 @@
   "devDependencies": {
     "autoprefixer": "9.7.6",
     "clean-css-cli": "4.3.0",
-    "fs-extra": "8.1.0",
+    "fs-extra": "9.0.0",
     "jimp": "0.10.3",
     "node-sass": "4.14.1",
     "postcss-cli": "7.1.1",
