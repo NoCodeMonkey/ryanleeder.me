@@ -4612,9 +4612,9 @@
       }
     },
     "marko": {
-      "version": "4.21.9",
-      "resolved": "https://registry.npmjs.org/marko/-/marko-4.21.9.tgz",
-      "integrity": "sha512-vFYrue+Hr1gDhU1Kh+pGkNPSm1qva/zzYtv5KFpgqZdflbGc7XUpkoBGnP+/lb6a/anfkPGqIOR7AuiQafgZ0w==",
+      "version": "4.21.10",
+      "resolved": "https://registry.npmjs.org/marko/-/marko-4.21.10.tgz",
+      "integrity": "sha512-OeK56Z7Zt4ERAzIS9t+jr2hjPsjl34DieJYaADgyPSCy0JS8ymHzd6AgSg7tYCY+BlGe1Su6roebwrLwFwFeKQ==",
       "requires": {
         "app-module-path": "^2.2.0",
         "argly": "^1.0.0",
