@@ -7918,9 +7918,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.353.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.353.0.tgz",
-      "integrity": "sha512-4hre8JlSHhl35yNarE2tVJixtJB0SYeCdKsUe2ggrU19nC8kwIiYs2ZAjj9yPpLmn7Kmz+2BBdanHxPtckh7DQ==",
+      "version": "1.353.1",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.353.1.tgz",
+      "integrity": "sha512-JcA649PIMDGHoM+jlktzXdgqKwtT5MMDviMrD9VaotB13a8rmI3wNkL+RN8cTB8KXKG4wtbrnsaJT9r4KsPJUQ==",
       "requires": {
         "@snyk/cli-interface": "2.8.0",
         "@snyk/dep-graph": "1.18.3",
@@ -7938,7 +7938,6 @@
         "debug": "4.1.1",
         "diff": "4.0.2",
         "glob": "7.1.6",
-        "ipaddr.js": "1.9.1",
         "needle": "2.5.0",
         "open": "7.0.4",
         "os-name": "3.1.0",
@@ -8041,11 +8040,6 @@
             "once": "1.4.0",
             "path-is-absolute": "1.0.1"
           }
-        },
-        "ipaddr.js": {
-          "version": "1.9.1",
-          "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz",
-          "integrity": "sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g=="
         },
         "is-fullwidth-code-point": {
           "version": "2.0.0",
