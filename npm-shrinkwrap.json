@@ -787,6 +787,16 @@
         "tslib": "1.13.0"
       }
     },
+    "@snyk/docker-registry-v2-client": {
+      "version": "1.13.5",
+      "resolved": "https://registry.npmjs.org/@snyk/docker-registry-v2-client/-/docker-registry-v2-client-1.13.5.tgz",
+      "integrity": "sha512-lgJiC071abCpFVLp47OnykU8MMrhdQe386Wt6QaDmjI0s2DQn/S58NfdLrPU7s6l4zoGT7UwRW9+7paozRgFTA==",
+      "requires": {
+        "needle": "2.5.0",
+        "parse-link-header": "1.0.1",
+        "tslib": "1.13.0"
+      }
+    },
     "@snyk/gemfile": {
       "version": "1.2.0",
       "resolved": "https://registry.npmjs.org/@snyk/gemfile/-/gemfile-1.2.0.tgz",
@@ -984,6 +994,48 @@
           "version": "2.0.0",
           "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.0.tgz",
           "integrity": "sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g=="
+        }
+      }
+    },
+    "@snyk/snyk-docker-pull": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/@snyk/snyk-docker-pull/-/snyk-docker-pull-3.1.3.tgz",
+      "integrity": "sha512-3OmWFBoQ/y27HBsG+j47kigGdFS1Sc+XMc+7NSSQkQJZTfvH9wdxI835uew9f8JKWSNSHqLWgG7QVcByRSCfbA==",
+      "requires": {
+        "@snyk/docker-registry-v2-client": "1.13.5",
+        "child-process": "1.0.2",
+        "tar-stream": "2.1.2",
+        "tmp": "0.1.0"
+      },
+      "dependencies": {
+        "glob": {
+          "version": "7.1.6",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.6.tgz",
+          "integrity": "sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==",
+          "requires": {
+            "fs.realpath": "1.0.0",
+            "inflight": "1.0.6",
+            "inherits": "2.0.3",
+            "minimatch": "3.0.4",
+            "once": "1.4.0",
+            "path-is-absolute": "1.0.1"
+          }
+        },
+        "rimraf": {
+          "version": "2.7.1",
+          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz",
+          "integrity": "sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==",
+          "requires": {
+            "glob": "7.1.6"
+          }
+        },
+        "tmp": {
+          "version": "0.1.0",
+          "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.1.0.tgz",
+          "integrity": "sha512-J7Z2K08jbGcdA1kkQpJSqLF6T0tdQqpR2pnSUXsIchbPdTI9v3e85cLW0d6WDhwuAleOV71j2xWs8qMPfK7nKw==",
+          "requires": {
+            "rimraf": "2.7.1"
+          }
         }
       }
     },
@@ -2430,6 +2482,11 @@
           }
         }
       }
+    },
+    "child-process": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/child-process/-/child-process-1.0.2.tgz",
+      "integrity": "sha1-mJdNx+0e5MYin44wX6cxOmiFp/I="
     },
     "chokidar": {
       "version": "3.4.0",
@@ -6072,6 +6129,14 @@
         "error-ex": "1.3.2"
       }
     },
+    "parse-link-header": {
+      "version": "1.0.1",
+      "resolved": "https://registry.npmjs.org/parse-link-header/-/parse-link-header-1.0.1.tgz",
+      "integrity": "sha1-vt/g0hGK64S+deewJUGeyKYRQKc=",
+      "requires": {
+        "xtend": "4.0.1"
+      }
+    },
     "parse5": {
       "version": "3.0.3",
       "resolved": "https://registry.npmjs.org/parse5/-/parse5-3.0.3.tgz",
@@ -8501,9 +8566,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.359.1",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.359.1.tgz",
-      "integrity": "sha512-BSoDyJkkyN1OUzgVR3V6xgfyRTheEPgE7fPQCa3AfQs6JBKpy+7gDVmi8Puc49c3HCXLHJUOCyDzVj3ANw0ihQ==",
+      "version": "1.360.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.360.0.tgz",
+      "integrity": "sha512-Q0eqLOTGvXxSWhQCiOcasSJq8LyYkhnQa/MxxeULjy8VK06uWru9ytvTwan3lKMDDwCFExS3dXQHFUWVNzoxjw==",
       "requires": {
         "@snyk/cli-interface": "2.8.0",
         "@snyk/dep-graph": "1.18.3",
@@ -8528,7 +8593,7 @@
         "proxy-from-env": "1.0.0",
         "semver": "6.3.0",
         "snyk-config": "3.1.0",
-        "snyk-docker-plugin": "3.12.3",
+        "snyk-docker-plugin": "3.13.0",
         "snyk-go-plugin": "1.14.2",
         "snyk-gradle-plugin": "3.5.1",
         "snyk-module": "3.1.0",
@@ -8611,14 +8676,6 @@
           "resolved": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-7.0.3.tgz",
           "integrity": "sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA=="
         },
-        "event-loop-spinner": {
-          "version": "2.0.0",
-          "resolved": "https://registry.npmjs.org/event-loop-spinner/-/event-loop-spinner-2.0.0.tgz",
-          "integrity": "sha512-1y4j/Mhttr8ordvHkbDsGzGrlQaSYJoXD/3YKUxiOXIk7myEn9UPfybEk/lLtrcU3D4QvCNmVUxVQaPtvAIaUw==",
-          "requires": {
-            "tslib": "1.13.0"
-          }
-        },
         "glob": {
           "version": "7.1.6",
           "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.6.tgz",
@@ -8642,10 +8699,55 @@
           "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
           "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
         },
+        "rimraf": {
+          "version": "3.0.2",
+          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz",
+          "integrity": "sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==",
+          "requires": {
+            "glob": "7.1.6"
+          }
+        },
         "semver": {
           "version": "6.3.0",
           "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
           "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
+        },
+        "snyk-docker-plugin": {
+          "version": "3.13.0",
+          "resolved": "https://registry.npmjs.org/snyk-docker-plugin/-/snyk-docker-plugin-3.13.0.tgz",
+          "integrity": "sha512-sOfl0VOog8LxRvl/GUX2lNxXDY0EqgRq32nqPieG9Cq9e1f5h6EU3d8CmxyFo+MaHOOP7vTdaN8TUe2uuJ2Ysw==",
+          "requires": {
+            "@snyk/rpm-parser": "2.0.0",
+            "@snyk/snyk-docker-pull": "3.1.3",
+            "debug": "4.1.1",
+            "docker-modem": "2.1.3",
+            "dockerfile-ast": "0.0.19",
+            "event-loop-spinner": "1.1.0",
+            "gunzip-maybe": "1.4.2",
+            "semver": "6.3.0",
+            "snyk-nodejs-lockfile-parser": "1.22.0",
+            "tar-stream": "2.1.2",
+            "tmp": "0.2.1",
+            "tslib": "1.13.0"
+          },
+          "dependencies": {
+            "snyk-nodejs-lockfile-parser": {
+              "version": "1.22.0",
+              "resolved": "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.22.0.tgz",
+              "integrity": "sha512-l6jLoJxqcIIkQopSdQuAstXdMw5AIgLu+uGc5CYpHyw8fYqOwna8rawwofNeGuwJAAv4nEiNiexeYaR88OCq6Q==",
+              "requires": {
+                "@snyk/graphlib": "2.1.9-patch",
+                "@snyk/lodash": "4.17.15-patch",
+                "@yarnpkg/lockfile": "1.1.0",
+                "event-loop-spinner": "1.1.0",
+                "p-map": "2.1.0",
+                "snyk-config": "3.1.0",
+                "source-map-support": "0.5.19",
+                "tslib": "1.13.0",
+                "uuid": "3.4.0"
+              }
+            }
+          }
         },
         "snyk-nodejs-lockfile-parser": {
           "version": "1.25.0",
@@ -8666,6 +8768,16 @@
             "tslib": "1.13.0",
             "uuid": "3.4.0",
             "yaml": "1.10.0"
+          },
+          "dependencies": {
+            "event-loop-spinner": {
+              "version": "2.0.0",
+              "resolved": "https://registry.npmjs.org/event-loop-spinner/-/event-loop-spinner-2.0.0.tgz",
+              "integrity": "sha512-1y4j/Mhttr8ordvHkbDsGzGrlQaSYJoXD/3YKUxiOXIk7myEn9UPfybEk/lLtrcU3D4QvCNmVUxVQaPtvAIaUw==",
+              "requires": {
+                "tslib": "1.13.0"
+              }
+            }
           }
         },
         "string-width": {
@@ -8684,6 +8796,14 @@
           "integrity": "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==",
           "requires": {
             "ansi-regex": "4.1.0"
+          }
+        },
+        "tmp": {
+          "version": "0.2.1",
+          "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.2.1.tgz",
+          "integrity": "sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==",
+          "requires": {
+            "rimraf": "3.0.2"
           }
         },
         "wrap-ansi": {
@@ -8720,43 +8840,6 @@
           "version": "2.1.2",
           "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
           "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
-        }
-      }
-    },
-    "snyk-docker-plugin": {
-      "version": "3.12.3",
-      "resolved": "https://registry.npmjs.org/snyk-docker-plugin/-/snyk-docker-plugin-3.12.3.tgz",
-      "integrity": "sha512-Ysv7ZDvXFt6K11f1m6wJaqYS3yM7c8YhzOIPoEmrYZW+4tL+Al5DiyKaAQBudbfYEA7xa6S6qGqE3QRitHZ5nQ==",
-      "requires": {
-        "@snyk/rpm-parser": "2.0.0",
-        "debug": "4.1.1",
-        "docker-modem": "2.1.3",
-        "dockerfile-ast": "0.0.19",
-        "event-loop-spinner": "1.1.0",
-        "gunzip-maybe": "1.4.2",
-        "semver": "6.3.0",
-        "snyk-nodejs-lockfile-parser": "1.22.0",
-        "tar-stream": "2.1.2",
-        "tslib": "1.13.0"
-      },
-      "dependencies": {
-        "debug": {
-          "version": "4.1.1",
-          "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
-          "integrity": "sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==",
-          "requires": {
-            "ms": "2.1.2"
-          }
-        },
-        "ms": {
-          "version": "2.1.2",
-          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
-          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
-        },
-        "semver": {
-          "version": "6.3.0",
-          "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
-          "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
         }
       }
     },
@@ -9087,22 +9170,6 @@
           "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.11.1.tgz",
           "integrity": "sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA=="
         }
-      }
-    },
-    "snyk-nodejs-lockfile-parser": {
-      "version": "1.22.0",
-      "resolved": "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.22.0.tgz",
-      "integrity": "sha512-l6jLoJxqcIIkQopSdQuAstXdMw5AIgLu+uGc5CYpHyw8fYqOwna8rawwofNeGuwJAAv4nEiNiexeYaR88OCq6Q==",
-      "requires": {
-        "@snyk/graphlib": "2.1.9-patch",
-        "@snyk/lodash": "4.17.15-patch",
-        "@yarnpkg/lockfile": "1.1.0",
-        "event-loop-spinner": "1.1.0",
-        "p-map": "2.1.0",
-        "snyk-config": "3.1.0",
-        "source-map-support": "0.5.19",
-        "tslib": "1.13.0",
-        "uuid": "3.4.0"
       }
     },
     "snyk-nuget-plugin": {
