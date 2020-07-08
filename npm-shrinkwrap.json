@@ -31,7 +31,7 @@
         "debug": "4.1.1",
         "gensync": "1.0.0-beta.1",
         "json5": "2.1.3",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "resolve": "1.8.1",
         "semver": "5.7.1",
         "source-map": "0.5.7"
@@ -89,7 +89,7 @@
       "requires": {
         "@babel/types": "7.9.6",
         "jsesc": "2.5.2",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "source-map": "0.5.7"
       },
       "dependencies": {
@@ -151,7 +151,7 @@
         "@babel/helper-split-export-declaration": "7.8.3",
         "@babel/template": "7.8.6",
         "@babel/types": "7.9.6",
-        "lodash": "4.17.15"
+        "lodash": "4.17.17"
       }
     },
     "@babel/helper-optimise-call-expression": {
@@ -262,7 +262,7 @@
         "@babel/types": "7.9.6",
         "debug": "4.1.1",
         "globals": "11.12.0",
-        "lodash": "4.17.15"
+        "lodash": "4.17.17"
       },
       "dependencies": {
         "debug": {
@@ -289,7 +289,7 @@
       "dev": true,
       "requires": {
         "@babel/helper-validator-identifier": "7.9.5",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "to-fast-properties": "2.0.0"
       }
     },
@@ -2468,7 +2468,7 @@
         "dom-serializer": "0.1.1",
         "entities": "1.1.1",
         "htmlparser2": "3.10.1",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "parse5": "3.0.3"
       },
       "dependencies": {
@@ -3551,7 +3551,7 @@
       "resolved": "https://registry.npmjs.org/express-validator/-/express-validator-6.6.0.tgz",
       "integrity": "sha512-xcephfzFbUssJph/nOSKIdx+I+8GRz5by/8rOIKL6gJikKKKJjnwYH5TG1nIDB6kEalUtZMbOFuSNOp/HHY84Q==",
       "requires": {
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "validator": "13.1.1"
       },
       "dependencies": {
@@ -4111,7 +4111,7 @@
       "dev": true,
       "requires": {
         "glob": "7.1.2",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "minimatch": "3.0.4"
       }
     },
@@ -5075,9 +5075,9 @@
       }
     },
     "lodash": {
-      "version": "4.17.15",
-      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz",
-      "integrity": "sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A=="
+      "version": "4.17.17",
+      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.17.tgz",
+      "integrity": "sha512-/B2DjOphAoqi5BX4Gg2oh4UR0Gy/A7xYAMh3aSECEKzwS3eCDEpS0Cals1Ktvxwlal3bBJNc+5W9kNIcADdw5Q=="
     },
     "lodash._reinterpolate": {
       "version": "3.0.0",
@@ -5679,7 +5679,7 @@
         "get-stdin": "4.0.1",
         "glob": "7.1.2",
         "in-publish": "2.0.1",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "meow": "3.7.0",
         "mkdirp": "0.5.1",
         "nan": "2.14.1",
@@ -7253,7 +7253,7 @@
       "dev": true,
       "requires": {
         "chalk": "2.4.1",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "log-symbols": "2.2.0",
         "postcss": "7.0.17"
       },
@@ -7515,7 +7515,7 @@
       "integrity": "sha512-Y9fUFkIhfrm6i0Ta3n+89j56EFqaNRdUKqXyRp6kvTcSXnmgEjaVowCXH+JBe9+YKWqd4nc28r2sgwnzJalccA==",
       "dev": true,
       "requires": {
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "postcss": "7.0.31"
       },
       "dependencies": {
@@ -8154,7 +8154,7 @@
       "resolved": "https://registry.npmjs.org/request-promise-core/-/request-promise-core-1.1.3.tgz",
       "integrity": "sha512-QIs2+ArIGQVp5ZYbWD5ZLCY29D5CfWizP8eWnm8FoGD1TX61veauETVQbrV60662V0oFBkrDOuaBI8XgtuyYAQ==",
       "requires": {
-        "lodash": "4.17.15"
+        "lodash": "4.17.17"
       }
     },
     "request-promise-native": {
@@ -8285,7 +8285,7 @@
       "dev": true,
       "requires": {
         "glob": "7.1.2",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "scss-tokenizer": "0.2.3",
         "yargs": "13.3.2"
       }
@@ -9785,7 +9785,7 @@
         "imurmurhash": "0.1.4",
         "known-css-properties": "0.19.0",
         "leven": "3.1.0",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "log-symbols": "4.0.0",
         "mathml-tag-names": "2.1.3",
         "meow": "7.0.1",
@@ -10247,7 +10247,7 @@
       "integrity": "sha512-sVTikaDvMqg2aJjh4r48jsdfmqLT+nqB1MOsaBnvM3OwLx4S+WXcsxsgk5w18h/OZoxZCxuyXMh61iBHcj9Qiw==",
       "dev": true,
       "requires": {
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "postcss": "7.0.31",
         "postcss-sorting": "5.0.1"
       },
@@ -10302,7 +10302,7 @@
       "integrity": "sha512-LD7+hv/6/ApNGt7+nR/50ft7cezKP2HM5rI8avIdGaUWre3xlHfV4jKO/DRZhscfuN+Ewy9FMhcTq0CcS0C/SA==",
       "dev": true,
       "requires": {
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "postcss-media-query-parser": "0.2.3",
         "postcss-resolve-nested-selector": "0.1.1",
         "postcss-selector-parser": "6.0.2",
@@ -10347,7 +10347,7 @@
       "dev": true,
       "requires": {
         "ajv": "6.12.2",
-        "lodash": "4.17.15",
+        "lodash": "4.17.17",
         "slice-ansi": "2.1.0",
         "string-width": "3.1.0"
       },
