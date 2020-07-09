@@ -8566,9 +8566,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.361.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.361.0.tgz",
-      "integrity": "sha512-ct4GqYo6Q8CIVi6PnCRDaAoCEXGWvH3OTa9rLb23FfszUn6A/UnkdtFHxJmtLA1V4qlUWsFLzb5Gw2A0l8NKXA==",
+      "version": "1.361.1",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.361.1.tgz",
+      "integrity": "sha512-1cS28jODZvWNZFXMgWMMfIN9b8SVUGSfES1eCQY4ooMTtyM7iAwnp4G68LI/c+vnfXJxtCOUHIKVkU/v62U4Vw==",
       "requires": {
         "@snyk/cli-interface": "2.8.0",
         "@snyk/dep-graph": "1.18.3",
@@ -8598,7 +8598,7 @@
         "snyk-gradle-plugin": "3.5.1",
         "snyk-module": "3.1.0",
         "snyk-mvn-plugin": "2.17.1",
-        "snyk-nodejs-lockfile-parser": "1.26.1",
+        "snyk-nodejs-lockfile-parser": "1.26.2",
         "snyk-nuget-plugin": "1.18.1",
         "snyk-php-plugin": "1.9.0",
         "snyk-policy": "1.14.1",
@@ -8676,6 +8676,14 @@
           "resolved": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-7.0.3.tgz",
           "integrity": "sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA=="
         },
+        "event-loop-spinner": {
+          "version": "2.0.0",
+          "resolved": "https://registry.npmjs.org/event-loop-spinner/-/event-loop-spinner-2.0.0.tgz",
+          "integrity": "sha512-1y4j/Mhttr8ordvHkbDsGzGrlQaSYJoXD/3YKUxiOXIk7myEn9UPfybEk/lLtrcU3D4QvCNmVUxVQaPtvAIaUw==",
+          "requires": {
+            "tslib": "1.13.0"
+          }
+        },
         "glob": {
           "version": "7.1.6",
           "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.6.tgz",
@@ -8703,6 +8711,27 @@
           "version": "6.3.0",
           "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
           "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
+        },
+        "snyk-nodejs-lockfile-parser": {
+          "version": "1.26.2",
+          "resolved": "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.26.2.tgz",
+          "integrity": "sha512-FwyVEoDCXt5yBT8/NqQLLOcN61AMUZgTCMl6WYGeWx6H+FZdmTFtv5tVUBJCpRYl5uIg019eL5+EsuDK9jZUiA==",
+          "requires": {
+            "@snyk/graphlib": "2.1.9-patch",
+            "@yarnpkg/core": "2.0.0-rc.30",
+            "@yarnpkg/lockfile": "1.1.0",
+            "event-loop-spinner": "2.0.0",
+            "lodash.clonedeep": "4.5.0",
+            "lodash.isempty": "4.4.0",
+            "lodash.set": "4.3.2",
+            "lodash.topairs": "4.3.0",
+            "p-map": "2.1.0",
+            "snyk-config": "3.1.0",
+            "source-map-support": "0.5.19",
+            "tslib": "1.13.0",
+            "uuid": "3.4.0",
+            "yaml": "1.10.0"
+          }
         },
         "string-width": {
           "version": "3.1.0",
@@ -9169,37 +9198,6 @@
           "version": "1.11.1",
           "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.11.1.tgz",
           "integrity": "sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA=="
-        }
-      }
-    },
-    "snyk-nodejs-lockfile-parser": {
-      "version": "1.26.1",
-      "resolved": "https://registry.npmjs.org/snyk-nodejs-lockfile-parser/-/snyk-nodejs-lockfile-parser-1.26.1.tgz",
-      "integrity": "sha512-mTNScSs2u2u0L8wX5S588lfnrKAOlQqjWeo4y1dIuuSoS9Dh8k57ddxhUI40++84rUB5+E4HSBirpmC6wz14/A==",
-      "requires": {
-        "@snyk/graphlib": "2.1.9-patch",
-        "@yarnpkg/core": "2.0.0-rc.30",
-        "@yarnpkg/lockfile": "1.1.0",
-        "event-loop-spinner": "2.0.0",
-        "lodash.clonedeep": "4.5.0",
-        "lodash.isempty": "4.4.0",
-        "lodash.set": "4.3.2",
-        "lodash.topairs": "4.3.0",
-        "p-map": "2.1.0",
-        "snyk-config": "3.1.0",
-        "source-map-support": "0.5.19",
-        "tslib": "1.13.0",
-        "uuid": "3.4.0",
-        "yaml": "1.10.0"
-      },
-      "dependencies": {
-        "event-loop-spinner": {
-          "version": "2.0.0",
-          "resolved": "https://registry.npmjs.org/event-loop-spinner/-/event-loop-spinner-2.0.0.tgz",
-          "integrity": "sha512-1y4j/Mhttr8ordvHkbDsGzGrlQaSYJoXD/3YKUxiOXIk7myEn9UPfybEk/lLtrcU3D4QvCNmVUxVQaPtvAIaUw==",
-          "requires": {
-            "tslib": "1.13.0"
-          }
         }
       }
     },
