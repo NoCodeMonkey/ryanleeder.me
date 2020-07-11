@@ -5490,6 +5490,12 @@
         "minipass": "2.9.0"
       }
     },
+    "mitt": {
+      "version": "2.0.1",
+      "resolved": "https://registry.npmjs.org/mitt/-/mitt-2.0.1.tgz",
+      "integrity": "sha512-FhuJY+tYHLnPcBHQhbUFzscD5512HumCPE4URXZUgPi3IvOJi4Xva5IIgy3xX56GqCmw++MAm5UURG6kDBYTdg==",
+      "dev": true
+    },
     "mkdirp": {
       "version": "0.5.1",
       "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
@@ -6262,6 +6268,33 @@
       "dev": true,
       "requires": {
         "pngjs": "3.4.0"
+      }
+    },
+    "pkg-dir": {
+      "version": "4.2.0",
+      "resolved": "https://registry.npmjs.org/pkg-dir/-/pkg-dir-4.2.0.tgz",
+      "integrity": "sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==",
+      "dev": true,
+      "requires": {
+        "find-up": "4.1.0"
+      },
+      "dependencies": {
+        "find-up": {
+          "version": "4.1.0",
+          "resolved": "https://registry.npmjs.org/find-up/-/find-up-4.1.0.tgz",
+          "integrity": "sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==",
+          "dev": true,
+          "requires": {
+            "locate-path": "5.0.0",
+            "path-exists": "4.0.0"
+          }
+        },
+        "path-exists": {
+          "version": "4.0.0",
+          "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
+          "integrity": "sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==",
+          "dev": true
+        }
       }
     },
     "pluralize": {
@@ -7710,15 +7743,17 @@
       }
     },
     "puppeteer": {
-      "version": "3.3.0",
-      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-3.3.0.tgz",
-      "integrity": "sha512-23zNqRltZ1PPoK28uRefWJ/zKb5Jhnzbbwbpcna2o5+QMn17F0khq5s1bdH3vPlyj+J36pubccR8wiNA/VE0Vw==",
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-5.0.0.tgz",
+      "integrity": "sha512-JnZcgRQnfowRSJoSHteKU7G9fP/YYGB/juPn8m4jNqtzvR0h8GOoFmdjTBesJFfzhYkPU1FosHXnBVUB++xgaA==",
       "dev": true,
       "requires": {
         "debug": "4.1.1",
         "extract-zip": "2.0.0",
         "https-proxy-agent": "4.0.0",
         "mime": "2.4.6",
+        "mitt": "2.0.1",
+        "pkg-dir": "4.2.0",
         "progress": "2.0.3",
         "proxy-from-env": "1.0.0",
         "rimraf": "3.0.2",
