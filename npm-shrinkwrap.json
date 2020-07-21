@@ -3036,12 +3036,6 @@
       "resolved": "https://registry.npmjs.org/destroy/-/destroy-1.0.4.tgz",
       "integrity": "sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA="
     },
-    "devtools-protocol": {
-      "version": "0.0.767361",
-      "resolved": "https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.767361.tgz",
-      "integrity": "sha512-ziRTdhEVQ9jEwedaUaXZ7kl9w9TF/7A3SXQ0XuqrJB+hMS62POHZUWTbumDN2ehRTfvWqTPc2Jw4gUl/jggmHA==",
-      "dev": true
-    },
     "diff": {
       "version": "4.0.2",
       "resolved": "https://registry.npmjs.org/diff/-/diff-4.0.2.tgz",
@@ -7763,13 +7757,13 @@
       }
     },
     "puppeteer": {
-      "version": "5.2.0",
-      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-5.2.0.tgz",
-      "integrity": "sha512-Hru70mFT+dts5W3l1MVg46EfJiWE63qjmXlDvC2kkCeEzLgt6KrwEkDJcJKKzERTvy9xXhOvjyGNx36fd78mVQ==",
+      "version": "5.2.1",
+      "resolved": "https://registry.npmjs.org/puppeteer/-/puppeteer-5.2.1.tgz",
+      "integrity": "sha512-PZoZG7u+T6N1GFWBQmGVG162Ak5MAy8nYSVpeeQrwJK2oYUlDWpHEJPcd/zopyuEMTv7DiztS1blgny1txR2qw==",
       "dev": true,
       "requires": {
         "debug": "4.1.1",
-        "devtools-protocol": "0.0.767361",
+        "devtools-protocol": "0.0.781568",
         "extract-zip": "2.0.0",
         "https-proxy-agent": "4.0.0",
         "mime": "2.4.6",
@@ -7796,6 +7790,12 @@
           "requires": {
             "ms": "2.1.2"
           }
+        },
+        "devtools-protocol": {
+          "version": "0.0.781568",
+          "resolved": "https://registry.npmjs.org/devtools-protocol/-/devtools-protocol-0.0.781568.tgz",
+          "integrity": "sha512-9Uqnzy6m6zEStluH9iyJ3iHyaQziFnMnLeC8vK0eN6smiJmIx7+yB64d67C2lH/LZra+5cGscJAJsNXO+MdPMg==",
+          "dev": true
         },
         "glob": {
           "version": "7.1.6",
