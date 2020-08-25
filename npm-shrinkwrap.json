@@ -8715,9 +8715,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.382.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.382.0.tgz",
-      "integrity": "sha512-lZsuJ6HUVNO7ZYDQm6B2gPdcXiRtd8bCQUre8xYMZu1VakKwrCCNsJbxo91z3gK5aYqempjmTe7+qH2CksXZ+Q==",
+      "version": "1.383.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.383.0.tgz",
+      "integrity": "sha512-5AZ34Y2JXTyeS7n6sdNrlZ91Q5ftTZZGxwRqF1g0cBUqiNy9oLAwJFeFI+MS9jJsHU2N8sYz6wYmvCY2XXNDAQ==",
       "requires": {
         "@snyk/cli-interface": "2.8.1",
         "@snyk/dep-graph": "1.19.3",
@@ -8742,7 +8742,7 @@
         "proxy-from-env": "1.0.0",
         "semver": "6.3.0",
         "snyk-config": "3.1.0",
-        "snyk-cpp-plugin": "1.2.0",
+        "snyk-cpp-plugin": "1.4.0",
         "snyk-docker-plugin": "3.17.0",
         "snyk-go-plugin": "1.16.0",
         "snyk-gradle-plugin": "3.5.1",
@@ -8892,6 +8892,22 @@
           "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
           "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
         },
+        "snyk-cpp-plugin": {
+          "version": "1.4.0",
+          "resolved": "https://registry.npmjs.org/snyk-cpp-plugin/-/snyk-cpp-plugin-1.4.0.tgz",
+          "integrity": "sha512-DaI2u42FRvASQpcu+p52nzDd3QPsrIHLN4JxnvcH32diPps9ynkx5CMNkarBgDo00GZfsWgz9RrDfDFCx3TSQQ==",
+          "requires": {
+            "@snyk/dep-graph": "1.19.3",
+            "tslib": "2.0.1"
+          },
+          "dependencies": {
+            "tslib": {
+              "version": "2.0.1",
+              "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.1.tgz",
+              "integrity": "sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ=="
+            }
+          }
+        },
         "string-width": {
           "version": "3.1.0",
           "resolved": "https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz",
@@ -8944,21 +8960,6 @@
           "version": "2.1.2",
           "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
           "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
-        }
-      }
-    },
-    "snyk-cpp-plugin": {
-      "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/snyk-cpp-plugin/-/snyk-cpp-plugin-1.2.0.tgz",
-      "integrity": "sha512-zc2h0IAAjcxJwxWp4rauliwEUXZahmC3WoCgjTmRi36UhzwlxWJf8QpIeSOKJnc3t0NhlKzUc1YFkaQGJ2dXVQ==",
-      "requires": {
-        "tslib": "2.0.1"
-      },
-      "dependencies": {
-        "tslib": {
-          "version": "2.0.1",
-          "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.1.tgz",
-          "integrity": "sha512-SgIkNheinmEBgx1IUNirK0TUD4X9yjjBRTqqjggWCU3pUEqIk3/Uwl3yRixYKT6WjQuGiwDv4NomL3wqRCj+CQ=="
         }
       }
     },
