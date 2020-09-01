@@ -8656,9 +8656,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.387.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.387.0.tgz",
-      "integrity": "sha512-u6MjArTLN5oLiUeHHprx9RkG2zcDiFT3Xz0HN1VvvN4is1tLjsLiY4XWeRqrxhTUOek2F1tGjeTALADSDchHNA==",
+      "version": "1.387.1",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.387.1.tgz",
+      "integrity": "sha512-a925xz73f4V4DEPJgKK58eTt7QwpqAMS5Q9+MqNNRYCYUfF6PRIGshKf3tDRCVF26hexxHQHaZRqa5uHiy9aAw==",
       "requires": {
         "@snyk/cli-interface": "2.9.0",
         "@snyk/dep-graph": "1.19.3",
