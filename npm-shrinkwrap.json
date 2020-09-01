@@ -8656,11 +8656,11 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.386.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.386.0.tgz",
-      "integrity": "sha512-qPe/EWMhFQEoWhrTYXPCE5fGT2g3EiGD72mi+VA9gX+5rik7wdGBmcV5FETWRJEjmKd6UjLksQBJstGluzphRw==",
+      "version": "1.387.0",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.387.0.tgz",
+      "integrity": "sha512-u6MjArTLN5oLiUeHHprx9RkG2zcDiFT3Xz0HN1VvvN4is1tLjsLiY4XWeRqrxhTUOek2F1tGjeTALADSDchHNA==",
       "requires": {
-        "@snyk/cli-interface": "2.8.1",
+        "@snyk/cli-interface": "2.9.0",
         "@snyk/dep-graph": "1.19.3",
         "@snyk/gemfile": "1.2.0",
         "@snyk/graphlib": "2.1.9-patch",
@@ -8708,9 +8708,9 @@
       },
       "dependencies": {
         "@snyk/cli-interface": {
-          "version": "2.8.1",
-          "resolved": "https://registry.npmjs.org/@snyk/cli-interface/-/cli-interface-2.8.1.tgz",
-          "integrity": "sha512-pALcfgoY0hAavy/pBlDIqEu+FFC5m+D4bMnCwlQ26mObL/zzxp2+Ohx+HykCIom62u2J94SzAtRLFdm/2TgoOw==",
+          "version": "2.9.0",
+          "resolved": "https://registry.npmjs.org/@snyk/cli-interface/-/cli-interface-2.9.0.tgz",
+          "integrity": "sha512-KDVHsU71apUPHK1PiIUXVW7stGZilbwKIoi0ffz1Qa0Er03fm3aV602scnOinbTtVy5UTm3L4WmdCdQrRoBYOQ==",
           "requires": {
             "@snyk/dep-graph": "1.19.0",
             "@snyk/graphlib": "2.1.9-patch",
