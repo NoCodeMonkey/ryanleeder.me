@@ -8121,9 +8121,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.413.3",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.413.3.tgz",
-      "integrity": "sha512-Yxhn9Cr3D5xNh2CUt6JiraKBizMopovSDT+V4JeEMr9sfMjDSOLWDiWtuE5c13u6zujUBD3Ws1Pxbm109gYDMQ==",
+      "version": "1.413.5",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.413.5.tgz",
+      "integrity": "sha512-dM2DMf7Q4yBoIo+cp0gnsNr3xjKIp3m1l3ywlTMonwmm/LU/L5+naK7+rCXapOPgteecMpku6zH0jisM4H5NQw==",
       "requires": {
         "@snyk/cli-interface": "2.9.2",
         "@snyk/dep-graph": "1.19.4",
@@ -8152,7 +8152,7 @@
         "snyk-go-plugin": "1.16.2",
         "snyk-gradle-plugin": "3.10.0",
         "snyk-module": "3.1.0",
-        "snyk-mvn-plugin": "2.22.0",
+        "snyk-mvn-plugin": "2.23.0",
         "snyk-nodejs-lockfile-parser": "1.28.1",
         "snyk-nuget-plugin": "1.19.3",
         "snyk-php-plugin": "1.9.2",
@@ -8178,6 +8178,24 @@
           "requires": {
             "@snyk/dep-graph": "1.19.4",
             "@types/graphlib": "2.1.7",
+            "tslib": "1.13.0"
+          }
+        },
+        "@snyk/java-call-graph-builder": {
+          "version": "1.16.1",
+          "resolved": "https://registry.npmjs.org/@snyk/java-call-graph-builder/-/java-call-graph-builder-1.16.1.tgz",
+          "integrity": "sha512-rxvSS9sz5h6fNjvUG6NhqYpUI8eok+xLTzLShfnSuDllI3JLxPMc/f7EKv5mv3GLlh1sVCCVXYeyIw3RAg5xQg==",
+          "requires": {
+            "ci-info": "2.0.0",
+            "debug": "4.2.0",
+            "glob": "7.1.6",
+            "graphlib": "2.1.8",
+            "jszip": "3.4.0",
+            "needle": "2.5.0",
+            "progress": "2.0.3",
+            "snyk-config": "3.1.1",
+            "source-map-support": "0.5.19",
+            "temp-dir": "2.0.0",
             "tslib": "1.13.0"
           }
         },
@@ -8232,6 +8250,14 @@
           "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
           "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
         },
+        "rimraf": {
+          "version": "2.7.1",
+          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz",
+          "integrity": "sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==",
+          "requires": {
+            "glob": "7.1.6"
+          }
+        },
         "semver": {
           "version": "6.3.0",
           "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
@@ -8245,6 +8271,37 @@
             "debug": "4.2.0",
             "lodash.merge": "4.6.2",
             "nconf": "0.10.0"
+          }
+        },
+        "snyk-mvn-plugin": {
+          "version": "2.23.0",
+          "resolved": "https://registry.npmjs.org/snyk-mvn-plugin/-/snyk-mvn-plugin-2.23.0.tgz",
+          "integrity": "sha512-aCmXPRvK89bcRNKjtU6mCqe6tnKaSR++/Co3V1XjqfJSRDiZ+c7A0LdtpTkRF/HbVdzZVHJ8glOn67yO/VGKhQ==",
+          "requires": {
+            "@snyk/cli-interface": "2.9.1",
+            "@snyk/java-call-graph-builder": "1.16.1",
+            "debug": "4.2.0",
+            "glob": "7.1.6",
+            "needle": "2.5.0",
+            "tmp": "0.1.0",
+            "tslib": "1.11.1"
+          },
+          "dependencies": {
+            "@snyk/cli-interface": {
+              "version": "2.9.1",
+              "resolved": "https://registry.npmjs.org/@snyk/cli-interface/-/cli-interface-2.9.1.tgz",
+              "integrity": "sha512-2zHRvEt4S0DO+hPRX3hp5ssELouJqgb/JUTmPDMr/32r//qooSTxojwSvAK2A6VYgYOHuo1S3VTpsSP/ywkPXA==",
+              "requires": {
+                "@snyk/dep-graph": "1.19.4",
+                "@types/graphlib": "2.1.7",
+                "tslib": "1.11.1"
+              }
+            },
+            "tslib": {
+              "version": "1.11.1",
+              "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.11.1.tgz",
+              "integrity": "sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA=="
+            }
           }
         },
         "string-width": {
@@ -8263,6 +8320,14 @@
           "integrity": "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==",
           "requires": {
             "ansi-regex": "4.1.0"
+          }
+        },
+        "tmp": {
+          "version": "0.1.0",
+          "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.1.0.tgz",
+          "integrity": "sha512-J7Z2K08jbGcdA1kkQpJSqLF6T0tdQqpR2pnSUXsIchbPdTI9v3e85cLW0d6WDhwuAleOV71j2xWs8qMPfK7nKw==",
+          "requires": {
+            "rimraf": "2.7.1"
           }
         },
         "wrap-ansi": {
@@ -8843,79 +8908,6 @@
           "version": "3.1.1",
           "resolved": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
           "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
-        }
-      }
-    },
-    "snyk-mvn-plugin": {
-      "version": "2.22.0",
-      "resolved": "https://registry.npmjs.org/snyk-mvn-plugin/-/snyk-mvn-plugin-2.22.0.tgz",
-      "integrity": "sha512-5gs9SPN3niqJWktfsZFw31bqAAQ85MfJWrTurdGjjn2RHtdOfirc68VrJNY4gFJdFrlkWzxKm2kEzJIs5MCsdQ==",
-      "requires": {
-        "@snyk/cli-interface": "2.9.1",
-        "@snyk/java-call-graph-builder": "1.16.0",
-        "debug": "4.2.0",
-        "glob": "7.1.6",
-        "needle": "2.5.0",
-        "tmp": "0.1.0",
-        "tslib": "1.11.1"
-      },
-      "dependencies": {
-        "@snyk/cli-interface": {
-          "version": "2.9.1",
-          "resolved": "https://registry.npmjs.org/@snyk/cli-interface/-/cli-interface-2.9.1.tgz",
-          "integrity": "sha512-2zHRvEt4S0DO+hPRX3hp5ssELouJqgb/JUTmPDMr/32r//qooSTxojwSvAK2A6VYgYOHuo1S3VTpsSP/ywkPXA==",
-          "requires": {
-            "@snyk/dep-graph": "1.19.4",
-            "@types/graphlib": "2.1.7",
-            "tslib": "1.11.1"
-          }
-        },
-        "debug": {
-          "version": "4.2.0",
-          "resolved": "https://registry.npmjs.org/debug/-/debug-4.2.0.tgz",
-          "integrity": "sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==",
-          "requires": {
-            "ms": "2.1.2"
-          }
-        },
-        "glob": {
-          "version": "7.1.6",
-          "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.6.tgz",
-          "integrity": "sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==",
-          "requires": {
-            "fs.realpath": "1.0.0",
-            "inflight": "1.0.6",
-            "inherits": "2.0.3",
-            "minimatch": "3.0.4",
-            "once": "1.4.0",
-            "path-is-absolute": "1.0.1"
-          }
-        },
-        "ms": {
-          "version": "2.1.2",
-          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
-          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
-        },
-        "rimraf": {
-          "version": "2.7.1",
-          "resolved": "https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz",
-          "integrity": "sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==",
-          "requires": {
-            "glob": "7.1.6"
-          }
-        },
-        "tmp": {
-          "version": "0.1.0",
-          "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.1.0.tgz",
-          "integrity": "sha512-J7Z2K08jbGcdA1kkQpJSqLF6T0tdQqpR2pnSUXsIchbPdTI9v3e85cLW0d6WDhwuAleOV71j2xWs8qMPfK7nKw==",
-          "requires": {
-            "rimraf": "2.7.1"
-          }
-        },
-        "tslib": {
-          "version": "1.11.1",
-          "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.11.1.tgz",
-          "integrity": "sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA=="
         }
       }
     },
