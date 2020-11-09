@@ -8116,9 +8116,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.425.0",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.425.0.tgz",
-      "integrity": "sha512-eSGngNVgBNFyQ4pV1c55p5T+X/zJ4bva8tagMyTyI+XZ8Ffj+O00Z4MrwFWsoP5Y7L33sKqPlPZVAjG/Uc3ZZg==",
+      "version": "1.425.1",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.425.1.tgz",
+      "integrity": "sha512-flPZPY853o7M5lRu9nfNOguCcHyJGvWlrkPVE0ZvNiy7O0YApFoMQ9Cqhw2ryUL6ijWAmuOLew2LxUzH4gl+fA==",
       "requires": {
         "@snyk/cli-interface": "2.9.2",
         "@snyk/dep-graph": "1.19.4",
@@ -8153,7 +8153,7 @@
         "snyk-nuget-plugin": "1.19.3",
         "snyk-php-plugin": "1.9.2",
         "snyk-policy": "1.14.1",
-        "snyk-python-plugin": "1.19.0",
+        "snyk-python-plugin": "1.19.1",
         "snyk-resolve": "1.0.1",
         "snyk-resolve-deps": "4.4.0",
         "snyk-sbt-plugin": "2.11.0",
@@ -8231,16 +8231,6 @@
             "debug": "4.2.0",
             "lodash.merge": "4.6.2",
             "nconf": "0.10.0"
-          }
-        },
-        "snyk-python-plugin": {
-          "version": "1.19.0",
-          "resolved": "https://registry.npmjs.org/snyk-python-plugin/-/snyk-python-plugin-1.19.0.tgz",
-          "integrity": "sha512-qvWyZIzn/F9uZsrrmvKmOlyEbzY7tiZjNMQVcoWUIVOw/MVQPWCVjiIEe2HJ4fzs/Dt59OWNHqHxDjKOURwj5Q==",
-          "requires": {
-            "@snyk/cli-interface": "2.9.2",
-            "snyk-poetry-lockfile-parser": "1.1.0",
-            "tmp": "0.0.33"
           }
         },
         "string-width": {
@@ -9147,79 +9137,6 @@
         }
       }
     },
-    "snyk-poetry-lockfile-parser": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/snyk-poetry-lockfile-parser/-/snyk-poetry-lockfile-parser-1.1.0.tgz",
-      "integrity": "sha512-FTMF6dVl9xOsDBcQT6k4gyoIurO7oZ2i78+rfb4X0W0XH4XYwSXeFw02vQLcWza2eNBvCcFmI0DtXRvQS880SA==",
-      "requires": {
-        "@snyk/cli-interface": "2.10.0",
-        "@snyk/dep-graph": "1.20.0",
-        "debug": "4.2.0",
-        "toml": "3.0.0",
-        "tslib": "2.0.3"
-      },
-      "dependencies": {
-        "@snyk/cli-interface": {
-          "version": "2.10.0",
-          "resolved": "https://registry.npmjs.org/@snyk/cli-interface/-/cli-interface-2.10.0.tgz",
-          "integrity": "sha512-ix2uKITHqcI/Z8CcUpml9RfIASYUDSmtaxmAhBwQ6sGicOu+MqN1R8ZI5bqkWgzhOYCnq4h83RFAYZ+PHRnmPQ==",
-          "requires": {
-            "@snyk/dep-graph": "1.20.0",
-            "@types/graphlib": "2.1.7",
-            "tslib": "1.14.1"
-          },
-          "dependencies": {
-            "tslib": {
-              "version": "1.14.1",
-              "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
-              "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
-            }
-          }
-        },
-        "@snyk/dep-graph": {
-          "version": "1.20.0",
-          "resolved": "https://registry.npmjs.org/@snyk/dep-graph/-/dep-graph-1.20.0.tgz",
-          "integrity": "sha512-/TOzXGh+JFgAu8pWdo1oLFKDNfFk99TnSQG2lbEu+vKLI2ZrGAk9oGO0geNogAN7Ib4EDQOEhgb7YwqwL7aA7w==",
-          "requires": {
-            "graphlib": "2.1.8",
-            "lodash.isequal": "4.5.0",
-            "object-hash": "2.0.3",
-            "semver": "6.3.0",
-            "tslib": "1.14.1"
-          },
-          "dependencies": {
-            "tslib": {
-              "version": "1.14.1",
-              "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
-              "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
-            }
-          }
-        },
-        "debug": {
-          "version": "4.2.0",
-          "resolved": "https://registry.npmjs.org/debug/-/debug-4.2.0.tgz",
-          "integrity": "sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==",
-          "requires": {
-            "ms": "2.1.2"
-          }
-        },
-        "ms": {
-          "version": "2.1.2",
-          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
-          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
-        },
-        "semver": {
-          "version": "6.3.0",
-          "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
-          "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
-        },
-        "tslib": {
-          "version": "2.0.3",
-          "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.3.tgz",
-          "integrity": "sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ=="
-        }
-      }
-    },
     "snyk-policy": {
       "version": "1.14.1",
       "resolved": "https://registry.npmjs.org/snyk-policy/-/snyk-policy-1.14.1.tgz",
@@ -9293,6 +9210,72 @@
               }
             }
           }
+        }
+      }
+    },
+    "snyk-python-plugin": {
+      "version": "1.19.1",
+      "resolved": "https://registry.npmjs.org/snyk-python-plugin/-/snyk-python-plugin-1.19.1.tgz",
+      "integrity": "sha512-JoOUHnA76L3pekCblSuE9jQ9CuA5jt+GqXpsLQbEIZ0FQQTBa+0F7vfolg3Q7+s1it4ZdtgSbSWrlxCngIJt8g==",
+      "requires": {
+        "@snyk/cli-interface": "2.9.2",
+        "snyk-poetry-lockfile-parser": "1.1.1",
+        "tmp": "0.0.33"
+      },
+      "dependencies": {
+        "@snyk/dep-graph": {
+          "version": "1.20.0",
+          "resolved": "https://registry.npmjs.org/@snyk/dep-graph/-/dep-graph-1.20.0.tgz",
+          "integrity": "sha512-/TOzXGh+JFgAu8pWdo1oLFKDNfFk99TnSQG2lbEu+vKLI2ZrGAk9oGO0geNogAN7Ib4EDQOEhgb7YwqwL7aA7w==",
+          "requires": {
+            "graphlib": "2.1.8",
+            "lodash.isequal": "4.5.0",
+            "object-hash": "2.0.3",
+            "semver": "6.3.0",
+            "tslib": "1.14.1"
+          },
+          "dependencies": {
+            "tslib": {
+              "version": "1.14.1",
+              "resolved": "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz",
+              "integrity": "sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg=="
+            }
+          }
+        },
+        "debug": {
+          "version": "4.2.0",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-4.2.0.tgz",
+          "integrity": "sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==",
+          "requires": {
+            "ms": "2.1.2"
+          }
+        },
+        "ms": {
+          "version": "2.1.2",
+          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
+          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
+        },
+        "semver": {
+          "version": "6.3.0",
+          "resolved": "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz",
+          "integrity": "sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw=="
+        },
+        "snyk-poetry-lockfile-parser": {
+          "version": "1.1.1",
+          "resolved": "https://registry.npmjs.org/snyk-poetry-lockfile-parser/-/snyk-poetry-lockfile-parser-1.1.1.tgz",
+          "integrity": "sha512-G3LX27V2KUsKObwVN4vDDjrYr5BERad9pXHAf+SST5+vZsdPUUZjd1ZUIrHgCv7IQhwq+7mZrtqedY5x7+LIGA==",
+          "requires": {
+            "@snyk/cli-interface": "2.9.2",
+            "@snyk/dep-graph": "1.20.0",
+            "debug": "4.2.0",
+            "toml": "3.0.0",
+            "tslib": "2.0.3"
+          }
+        },
+        "tslib": {
+          "version": "2.0.3",
+          "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.0.3.tgz",
+          "integrity": "sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ=="
         }
       }
     },
