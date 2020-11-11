@@ -8116,9 +8116,9 @@
       "integrity": "sha512-iVICrxOzCynf/SNaBQCw34eM9jROU/s5rzIhpOvzhzuYHfJR/DhZfDkXiZSgKXfgv26HT3Yni3AV/DGw0cGnnw=="
     },
     "snyk": {
-      "version": "1.425.2",
-      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.425.2.tgz",
-      "integrity": "sha512-HgUEY6v2P/rGXCNQUATbmLNtqhG0iZIdNQE1OyWENH9CBnSoCfPK0wT1Py8UI7WDPFblqZwnb3abS6g4vplFaA==",
+      "version": "1.425.3",
+      "resolved": "https://registry.npmjs.org/snyk/-/snyk-1.425.3.tgz",
+      "integrity": "sha512-cEIhxs+om4MjnwYaO7rCGpWca61oXqYulRTZkhYhXJ+Sc1xRoy8z5ZXPz3KtoTr5oRlbC4eyz3PGEcdyzw9EsQ==",
       "requires": {
         "@snyk/cli-interface": "2.9.2",
         "@snyk/dep-graph": "1.19.4",
@@ -8231,20 +8231,6 @@
             "debug": "4.2.0",
             "lodash.merge": "4.6.2",
             "nconf": "0.10.0"
-          }
-        },
-        "snyk-nuget-plugin": {
-          "version": "1.19.4",
-          "resolved": "https://registry.npmjs.org/snyk-nuget-plugin/-/snyk-nuget-plugin-1.19.4.tgz",
-          "integrity": "sha512-6BvLJc7gpNdfPJSnvpmTL4BrbaOVbXh/9q1FNMs5OVp8NbnZ3l97iM+bpQXWTJHOa3BJBZz7iEg+3suH4AWoWw==",
-          "requires": {
-            "debug": "4.2.0",
-            "dotnet-deps-parser": "5.0.0",
-            "jszip": "3.4.0",
-            "lodash": "4.17.20",
-            "snyk-paket-parser": "1.6.0",
-            "tslib": "1.13.0",
-            "xml2js": "0.4.19"
           }
         },
         "string-width": {
@@ -9059,6 +9045,35 @@
           "requires": {
             "lowercase-keys": "2.0.0"
           }
+        }
+      }
+    },
+    "snyk-nuget-plugin": {
+      "version": "1.19.4",
+      "resolved": "https://registry.npmjs.org/snyk-nuget-plugin/-/snyk-nuget-plugin-1.19.4.tgz",
+      "integrity": "sha512-6BvLJc7gpNdfPJSnvpmTL4BrbaOVbXh/9q1FNMs5OVp8NbnZ3l97iM+bpQXWTJHOa3BJBZz7iEg+3suH4AWoWw==",
+      "requires": {
+        "debug": "4.2.0",
+        "dotnet-deps-parser": "5.0.0",
+        "jszip": "3.4.0",
+        "lodash": "4.17.20",
+        "snyk-paket-parser": "1.6.0",
+        "tslib": "1.13.0",
+        "xml2js": "0.4.19"
+      },
+      "dependencies": {
+        "debug": {
+          "version": "4.2.0",
+          "resolved": "https://registry.npmjs.org/debug/-/debug-4.2.0.tgz",
+          "integrity": "sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==",
+          "requires": {
+            "ms": "2.1.2"
+          }
+        },
+        "ms": {
+          "version": "2.1.2",
+          "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz",
+          "integrity": "sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w=="
         }
       }
     },
