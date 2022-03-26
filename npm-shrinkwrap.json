@@ -2753,19 +2753,12 @@
       "integrity": "sha512-KZZF9lIUKU9lkyZM/7AVql7qeXA6EVkHCU5rGU4NvgbWNcYFn6zvCw3cwS5IY/vvP+MzVNVvBABnWfaVZoy7bQ=="
     },
     "express-validator": {
-      "version": "6.6.1",
-      "resolved": "https://registry.npmjs.org/express-validator/-/express-validator-6.6.1.tgz",
-      "integrity": "sha512-+MrZKJ3eGYXkNF9p9Zf7MS7NkPJFg9MDYATU5c80Cf4F62JdLBIjWxy6481tRC0y1NnC9cgOw8FuN364bWaGhA==",
+      "version": "6.14.0",
+      "resolved": "https://registry.npmjs.org/express-validator/-/express-validator-6.14.0.tgz",
+      "integrity": "sha512-ZWHJfnRgePp3FKRSKMtnZVnD1s8ZchWD+jSl7UMseGIqhweCo1Z9916/xXBbJAa6PrA3pUZfkOvIsHZG4ZtIMw==",
       "requires": {
-        "lodash": "4.17.20",
-        "validator": "13.1.1"
-      },
-      "dependencies": {
-        "lodash": {
-          "version": "4.17.20",
-          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz",
-          "integrity": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA=="
-        }
+        "lodash": "^4.17.21",
+        "validator": "^13.7.0"
       }
     },
     "extend": {
@@ -10816,9 +10809,9 @@
       }
     },
     "validator": {
-      "version": "13.1.1",
-      "resolved": "https://registry.npmjs.org/validator/-/validator-13.1.1.tgz",
-      "integrity": "sha512-8GfPiwzzRoWTg7OV1zva1KvrSemuMkv07MA9TTl91hfhe+wKrsrgVN4H2QSFd/U/FhiU3iWPYVgvbsOGwhyFWw=="
+      "version": "13.7.0",
+      "resolved": "https://registry.npmjs.org/validator/-/validator-13.7.0.tgz",
+      "integrity": "sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw=="
     },
     "vary": {
       "version": "1.1.2",
