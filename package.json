@@ -56,7 +56,7 @@
     "nconf": "0.10.0",
     "nodemailer": "6.6.1",
     "nodemailer-sendgrid": "1.0.3",
-    "regex-weburl": "1.0.0",
+    "regex-weburl": "2.0.0",
     "request": "2.88.2",
     "request-ip": "2.1.3",
     "request-promise-native": "1.0.9",
