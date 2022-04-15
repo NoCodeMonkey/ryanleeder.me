@@ -47,7 +47,7 @@
     "fs": "0.0.2",
     "helmet": "5.0.2",
     "lodash": "4.17.21",
-    "marko": "5.20.4",
+    "marko": "5.20.5",
     "method-override": "3.0.0",
     "mime": "3.0.0",
     "moment": "2.29.2",
