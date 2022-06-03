@@ -79,7 +79,7 @@
     "postcss-cli": "9.1.0",
     "postcss-import": "14.1.0",
     "postcss-loader": "7.0.0",
-    "postcss-preset-env": "7.7.0",
+    "postcss-preset-env": "7.7.1",
     "postcss-syntax": "0.36.2",
     "puppeteer": "14.2.1",
     "sanitize-filename": "1.6.3",
