@@ -58,7 +58,7 @@
     "nodemailer-sendgrid": "1.0.3",
     "regex-weburl": "2.0.0",
     "request": "2.88.2",
-    "request-ip": "3.1.0",
+    "request-ip": "3.2.0",
     "request-promise-native": "1.0.9",
     "serve-static": "1.15.0",
     "simple-recaptcha-new": "1.1.1",
