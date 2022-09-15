@@ -74,7 +74,7 @@
     "autoprefixer": "10.4.11",
     "clean-css-cli": "5.6.1",
     "fs-extra": "10.1.0",
-    "jimp": "0.16.1",
+    "jimp": "0.16.2",
     "node-sass": "7.0.3",
     "postcss-cli": "10.0.0",
     "postcss-import": "14.1.0",
