@@ -85,7 +85,7 @@
     "sanitize-filename": "1.6.3",
     "semver": "7.3.8",
     "stylelint": "14.16.1",
-    "stylelint-config-recommended-scss": "6.0.0",
+    "stylelint-config-recommended-scss": "9.0.1",
     "stylelint-config-standard": "26.0.0",
     "stylelint-order": "5.0.0",
     "stylelint-scss": "4.4.0",
