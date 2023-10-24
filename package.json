@@ -67,7 +67,7 @@
   },
   "noAnalyze": true,
   "engines": {
-    "node": ">=6.x.x <17",
+    "node": ">=6.x.x <21",
     "npm": ">=5.6.0"
   },
   "devDependencies": {
